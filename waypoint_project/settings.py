@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'homeless_guide_app.apps.HomelessGuideAppConfig',
+    'waypoint_app.apps.WaypointAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'homeless_guide_project.urls'
+ROOT_URLCONF = 'waypoint_project.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'homeless_guide_project.wsgi.application'
+WSGI_APPLICATION = 'waypoint_project.wsgi.application'
 
 
 # Database
