@@ -3,6 +3,10 @@ from rest_framework import viewsets
 from .models import Shelter
 from .serializers import ShelterSerializer
 
+
+def index(request):
+    return render(request, 'index.html')
+
 # Create your views here.
 class SheltersViewSet(viewsets.ModelViewSet):
     """
