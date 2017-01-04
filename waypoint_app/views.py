@@ -9,6 +9,11 @@ from .serializers import TransportationSerializer
 def index(request):
     return render(request, 'index.html')
 
+
+def foods(request):
+    food = Food.objects.all()
+    return render(request, 'foods.html', {'food': food})
+
 # Create your views here.
 class SheltersViewSet(viewsets.ModelViewSet):
     """

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,7 +7,7 @@
     </head>
     <body>
       <div class="Header">
-        
+
       </div>
 
 
@@ -45,7 +46,13 @@
           <h3>Buses</h3>
           <h3>Various</h3>
       </div>
-
+<a href='foods'><button id="foodButton" type="button" name="button">FOODS</button></a>
 
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 </html>
