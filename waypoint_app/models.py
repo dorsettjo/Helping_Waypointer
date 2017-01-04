@@ -10,8 +10,8 @@ class Shelter(models.Model):
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
     additional_contact = models.CharField(max_length=200, blank=True)
-    description_text = models.TextField()
-    target_customers = models.CharField(max_length=200)
+    description_text = models.TextField(blank=True)
+    target_customers = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
         return self.sheltername
@@ -24,10 +24,10 @@ class Food(models.Model):
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
     additional_contact = models.CharField(max_length=200, blank=True)
-    description_text = models.TextField()
+    description_text = models.TextField(blank=True)
     food_meals = models.BooleanField()
     food_pantry = models.BooleanField()
-    times = models.CharField(max_length=200)
+    times = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
         return self.providername
@@ -40,7 +40,7 @@ class Medical(models.Model):
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
     additional_contact = models.CharField(max_length=200, blank=True)
-    description_text = models.TextField()
+    description_text = models.TextField(blank=True)
     general_health = models.BooleanField()
     mental_health = models.BooleanField()
     addiction_treatment = models.BooleanField()
@@ -52,7 +52,7 @@ class Medical(models.Model):
 class Crisis(models.Model):
     crisisname = models.CharField(max_length=200)
     contact_information = models.CharField(max_length=200, blank=True)
-    second_phone = models.CharField(max_length=200)
+    second_phone = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
         return self.crisisname
@@ -64,7 +64,7 @@ class Legal(models.Model):
     zipcode = models.IntegerField(default=0)
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
-    description_text = models.TextField()
+    description_text = models.TextField(blank=True)
     refugee = models.BooleanField()
 
     def __str__(self):
@@ -76,8 +76,8 @@ class Transportation(models.Model):
     city = models.CharField(max_length=200, blank=True)
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
-    target_customers = models.CharField(max_length=200)
-    description_text = models.TextField()
+    target_customers = models.CharField(max_length=200, blank=True)
+    description_text = models.TextField(blank=True)
 
     def __str__(self):
         return self.transportname
