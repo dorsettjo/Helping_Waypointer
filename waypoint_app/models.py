@@ -10,7 +10,7 @@ class Shelter(models.Model):
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
     additional_contact = models.CharField(max_length=200, blank=True)
-    description_text = models.CharField(max_length=200)
+    description_text = models.TextField()
     target_customers = models.CharField(max_length=200)
 
     def __str__(self):
@@ -24,7 +24,7 @@ class Food(models.Model):
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
     additional_contact = models.CharField(max_length=200, blank=True)
-    description_text = models.CharField(max_length=200)
+    description_text = models.TextField()
     food_meals = models.BooleanField()
     food_pantry = models.BooleanField()
     times = models.CharField(max_length=200)
@@ -40,7 +40,7 @@ class Medical(models.Model):
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
     additional_contact = models.CharField(max_length=200, blank=True)
-    description_text = models.CharField(max_length=200)
+    description_text = models.TextField()
     general_health = models.BooleanField()
     mental_health = models.BooleanField()
     addiction_treatment = models.BooleanField()
@@ -64,7 +64,7 @@ class Legal(models.Model):
     zipcode = models.IntegerField(default=0)
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
-    description_text = models.CharField(max_length=200)
+    description_text = models.TextField()
     refugee = models.BooleanField()
 
     def __str__(self):
@@ -77,7 +77,7 @@ class Transportation(models.Model):
     website = models.CharField(max_length=200, blank=True)
     phone_number = models.CharField(max_length=200, blank=True)
     target_customers = models.CharField(max_length=200)
-    description_text = models.CharField(max_length=200)
+    description_text = models.TextField()
 
     def __str__(self):
         return self.transportname
