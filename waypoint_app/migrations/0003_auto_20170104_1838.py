@@ -8,7 +8,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('waypoint_app', '0002_auto_20170104_1820'),
+        ('waypoint_app', '0001_initial'),
     ]
 
     operations = [
