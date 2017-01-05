@@ -20,7 +20,12 @@ from waypoint_app import views
 
 
 router = routers.DefaultRouter()
-router.register(r'shelters', views.SheltersViewSet)
+router.register(r'api/shelters', views.SheltersViewSet)
+router.register(r'api/foods', views.FoodsViewSet)
+router.register(r'api/medicals', views.MedicalsViewSet)
+router.register(r'api/crisiss', views.CrisissViewSet)
+router.register(r'api/legals', views.LegalsViewSet)
+router.register(r'api/transportations', views.TransportationsViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
