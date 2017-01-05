@@ -10,9 +10,35 @@ def index(request):
     return render(request, 'index.html')
 
 
+def shelters(request):
+    shelter = Shelter.objects.all()
+    return render(request, 'shelters.html', {'shelter': shelter})
+
+
 def foods(request):
     food = Food.objects.all()
     return render(request, 'foods.html', {'food': food})
+
+
+def medicals(request):
+    medical = Medical.objects.all()
+    return render(request, 'medicals.html', {'medical': medical})
+
+
+def crisiss(request):
+    crisis = Crisis.objects.all()
+    return render(request, 'crisiss.html', {'crisis': crisis})
+
+
+def legels(request):
+    legal = Legal.objects.all()
+    return render(request, 'legals.html', {'legal': legal})
+
+
+def transportations(request):
+    transportation = Transportation.objects.all()
+    return render(request, 'transportations.html', {'transportation': transportation})
+
 
 # Create your views here.
 class SheltersViewSet(viewsets.ModelViewSet):
