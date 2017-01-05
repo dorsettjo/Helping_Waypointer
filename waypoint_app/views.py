@@ -30,14 +30,15 @@ def crisiss(request):
     return render(request, 'crisiss.html', {'crisis': crisis})
 
 
-def legels(request):
+def legals(request):
     legal = Legal.objects.all()
     return render(request, 'legals.html', {'legal': legal})
 
 
 def transportations(request):
     transportation = Transportation.objects.all()
-    return render(request, 'transportations.html', {'transportation': transportation})
+    return render(request, 'transportations.html',
+                  {'transportation': transportation})
 
 
 # Create your views here.
@@ -56,12 +57,14 @@ class FoodsViewSet(viewsets.ModelViewSet):
     queryset = Food.objects.all().order_by('zipcode')
     serializer_class = FoodSerializer
 
+
 class MedicalsViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows abilities to be viewed or edited.
     """
     queryset = Medical.objects.all().order_by('zipcode')
     serializer_class = MedicalSerializer
+
 
 class CrisissViewSet(viewsets.ModelViewSet):
     """
@@ -70,12 +73,14 @@ class CrisissViewSet(viewsets.ModelViewSet):
     queryset = Crisis.objects.all().order_by('crisisname')
     serializer_class = CrisisSerializer
 
+
 class LegalsViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows abilities to be viewed or edited.
     """
     queryset = Legal.objects.all().order_by('zipcode')
     serializer_class = LegalSerializer
+
 
 class TransportationsViewSet(viewsets.ModelViewSet):
     """
