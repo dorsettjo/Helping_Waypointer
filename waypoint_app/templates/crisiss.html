@@ -37,14 +37,16 @@ crisis
 
 {% verbatim %}
 <script id="handlebarsTest" type="text/x-handlebars-template">
-  {{#each this}}
+    {{#each this}}
       <li>{{this.crisisname}}</li>
       <li>{{this.contact_information}}</li>
-  {{/each}}
-</script>
+      {{/each}}
+
+
+  </script>
 {% endverbatim %}
 
-
+</body>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
@@ -59,5 +61,5 @@ crisis
 
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
 
-    </body>
+
 </html>

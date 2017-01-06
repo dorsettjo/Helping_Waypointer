@@ -15,12 +15,13 @@
     </head>
     <body>
 foods
-
-<div class="remodal-bg">
-  <div id="foodResults">
-  </div>
+<a href="#foodModal">Click Here</a>
+<div id="foodResults">
 </div>
-<!-- food modal  -->
+
+
+<!-- food modal -->
+<div class="remodal-bg">
 <div class="remodal" data-remodal-id="foodModal">
   <button data-remodal-action="close" class="remodal-close"></button>
   <h1>Remodal</h1>
@@ -28,21 +29,20 @@ foods
     Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
   </p>
   <br>
-  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
-  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
+    <button data-remodal-action="confirm"         class="remodal-confirm">OK</button>
+  </div>
 </div>
 
     {% verbatim %}
     <script id="handlebarsTest" type="text/x-handlebars-template">
-       {{#each .}}
+        {{#each .}}
            <li>{{this.providername}}</li>
            <li>{{this.address}}</li>
            <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
-
-       {{/each}}
+           {{/each}}
    </script>
      {% endverbatim %}
-
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
@@ -60,15 +60,11 @@ foods
     <div id="latitude"></div>
     <div id="longitude"></div>
 
+  </body>
 
 
-    <!-- <script type="text/javascript">
-    navigator.geolocation.getCurrentPosition(function(location) {
-        $("#content").html(location.coords.latitude + "</br>" +
-                           location.coords.longitude + "</br>" +
-                           location.coords.accuracy)
-    });
-    </script> -->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -77,5 +73,5 @@ foods
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
 
     <script type="text/javascript" src="{% static '/js/foods.js' %}"></script>
-      </body>
+
 </html>
