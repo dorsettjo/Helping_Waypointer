@@ -33,6 +33,15 @@ foods
 </div>
 
     {% verbatim %}
+    <script id="handlebarsTest" type="text/x-handlebars-template">
+       {{#each .}}
+           <li>{{this.providername}}</li>
+           <li>{{this.address}}</li>
+           <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
+
+       {{/each}}
+   </script>
+     {% endverbatim %}
 
 
 
@@ -46,7 +55,8 @@ foods
     <script src="{% static '/js/remodal.min.js' %}"></script>
 
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
-    {% endverbatim %}
+
+
     <div id="latitude"></div>
     <div id="longitude"></div>
 
