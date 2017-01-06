@@ -29,6 +29,7 @@ function getDistance(address,id){
     var splitAddress = address.split(' ')
     var joinAddress = splitAddress.join('+')
     console.log(lat)
+    console.log('oi')
     console.log(lon)
     var ronald = getCoords(lat, lon)
     // return joinAddress
@@ -39,7 +40,6 @@ function getDistance(address,id){
 }
 
 function getCoords(lat, lon){
-    console.log(lat+lon)
     console.log(lat)
     return lat + lon;
 }
