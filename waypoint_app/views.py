@@ -14,6 +14,10 @@ def foods(request):
     food = Food.objects.all()
     return render(request, 'foods.html', {'food': food})
 
+def crisiss(request):
+    crisis = Crisis.objects.all()
+    return render(request, 'crisiss.html', {'crisis': crisis})
+
 # Create your views here.
 class SheltersViewSet(viewsets.ModelViewSet):
     """

@@ -12,19 +12,32 @@ foods
     </div>
     {% verbatim %}
     <script id="handlebarsTest" type="text/x-handlebars-template">
-        {{#each this}}
+        {{#each .}}
             <li>{{this.providername}}</li>
+            <li>{{this.address}}</li>
+            <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
+
         {{/each}}
     </script>
     {% endverbatim %}
-
+    <div id="latitude"></div>
+    <div id="longitude"></div>
 
 
     </body>
+    <!-- <script type="text/javascript">
+    navigator.geolocation.getCurrentPosition(function(location) {
+        $("#content").html(location.coords.latitude + "</br>" +
+                           location.coords.longitude + "</br>" +
+                           location.coords.accuracy)
+    });
+    </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
+
+    <script type="text/javascript" src="{% static '/js/foods.js' %}"></script>
 </html>
