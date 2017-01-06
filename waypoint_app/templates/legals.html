@@ -6,16 +6,14 @@
         <title></title>
     </head>
     <body>
+legal
 
-crisis
-
-    <div id="crisisResults">
+    <div id="legalResults">
     </div>
     {% verbatim %}
     <script id="handlebarsTest" type="text/x-handlebars-template">
         {{#each this}}
-            <li>{{this.crisisname}}</li>
-            <li>{{this.contact_information}}</li>
+            <li>{{this.providername}}</li>
         {{/each}}
     </script>
     {% endverbatim %}
@@ -28,6 +26,5 @@ crisis
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{% static '/js/crisiss.js' %}"></script>
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
 </html>

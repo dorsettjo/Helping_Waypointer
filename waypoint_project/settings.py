@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-from .secrets import *
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+SECRET_KEY = os.environ['SECRET_KEY']
+
+ALLOWED_HOSTS = ['0.0.0.0', 'vast-wave-89193.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -79,6 +81,9 @@ WSGI_APPLICATION = 'waypoint_project.wsgi.application'
 
 # Database
 
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES = {'default': {}}
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
@@ -117,4 +122,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, '../waypoint_app/static'),
+)
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
+DATABASES['default'] =  dj_database_url.config()

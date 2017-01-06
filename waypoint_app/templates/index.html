@@ -2,49 +2,97 @@
 {% load static %}
 <html>
     <head>
+      <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
+
         <meta charset="utf-8">
         <title>WayPointer</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     </head>
-    <body>
-      <div class="Header">
 
+    <body>
+      <div class="topBox">
+        <h1>WayPointer</h1>
       </div>
 
+      <div class="stationaryWayPointerIcon">
+            <h4>Help Us Help You<br />Help Yourself</h4>
+      </div>
 
-
+<div class="row1">
         <div class="Shelter">
-          <h2>Shelter</h2>
-            <h3>Shelters</h3>
+          <div class="iconsRow1">
+              <a href="{% url 'shelters' %}">
+                <img src="{% static 'images/1icon_placeholder.png' %}" alt="shelter Link" />
+              </a>
+              <h2>Shelter</h2>
+              <h3>List</h3>
+              <h3>lllllk</h3>
+
+            </div>
         </div>
 
         <div class="Food">
-          <h2>Food</h2>
-            <h3>Meals</h3>
-            <h3>Food Assistance</h3>
+          <div class="iconsRow1">
+              <a href="{% url 'foods' %}">
+                <img src="{% static 'images/2icon_placeholder.png' %}" alt="food Link" />
+              </a>
+              <h2>Food</h2>
+              <h3>Meals</h3>
+              <h3>Food Assistance</h3>
+            </div>
         </div>
 
         <div class="Medical">
-          <h2>Medical</h2>
-            <h3>General Health</h3>
-            <h3>Mental Health</h3>
+          <div class="iconsRow1">
+
+              <a href="{% url 'medicals' %}">
+                <img src="{% static 'images/3icon_placeholder.png' %}" alt="medical Link" />
+              </a>
+                <h2>Medical</h2>
+              <h3>General Health</h3>
+              <h3>Mental Health</h3>
+            </div>
         </div>
+  </div>
+
+<div class="row2">
 
       <div class="Crisis">
-        <h2>Crisis</h2>
-          <h3>Hotlines</h3>
+
+        <div class="iconsRow2">
+
+            <a href="{% url 'crisiss' %}">
+              <img src="{% static 'images/4icon_placeholder.png' %}" alt="crisis Link" />
+            </a>
+            <h2>Crisis</h2>
+            <h3>Hotlines</h3>
+          </div>
       </div>
 
 
       <div class="Legal">
-        <h2>Legal</h2>
-          <h3>Jobs</h3>
-          <h3>Refuge Assistance</h3>
+
+        <div class="iconsRow2">
+
+            <a href="{% url 'legals' %}">
+              <img src="{% static 'images/5icon_placeholder.png' %}" alt="legal Link" />
+            </a>
+            <h2>Legal</h2>
+            <h3>Jobs</h3>
+            <h3>Refuge Assistance</h3>
+          </div>
       </div>
 
       <div class="Transportation">
-        <h2>Transportation</h2>
-          <h3>Buses</h3>
-          <h3>Various</h3>
+        <div class="iconsRow2">
+
+            <a href="{% url 'transportations' %}">
+              <img class="image" src="{% static 'images/6icon_placeholder.png' %}" alt="Transportation Link" />
+            </a>
+            <h2>Transportation</h2>
+            <h3>Buses</h3>
+            <h3>Various</h3>
+          </div>
       </div>
 <a href='foods'><button id="foodButton" type="button" name="button">FOODS</button></a>
 <a href='crisiss'><button id="crisisButton" type="button" name="button">Crisiss</button></a>
@@ -60,5 +108,4 @@
     crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
-
 </html>
