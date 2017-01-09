@@ -127,6 +127,20 @@ text-align: center;}
 
   // height: 25px;
 }
+.centerTag {
+  width: 80%;
+  height: 300px;
+  background-color: yellow;
+  background-size: cover;
+   img {
+     width: 60%;
+     height: auto;
+     align-self: center;
+     top: 90%;
+     margin: 0 auto;
+     display: block;
+ }
+}
 
 .iconsRow2 img {
   width: 30%;
