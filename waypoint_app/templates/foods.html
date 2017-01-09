@@ -34,12 +34,36 @@ foods
   </div>
 </div>
 
+<!-- {% verbatim %}
+<script id="handlebarsTest" type="text/x-handlebars-template">
+    {{#each .}}
+        <div class="remodal-bg">
+            <div class="remodal" data-remodal-id="foodModal{{@index}}">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>{{this.providername}}</h1>
+                <li>{{this.providername}}</li>
+                <li>{{this.address}}</li>
+                <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
+                <br>
+                <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
+                <button data-remodal-action="confirm"         class="remodal-confirm">OK</button>
+            </div>
+        </div>
+    {{/each}}
+</script>
+{% endverbatim %} -->
+
     {% verbatim %}
     <script id="handlebarsTest" type="text/x-handlebars-template">
         {{#each .}}
+        <a href="#foodModal{{@index}}">{{this.providername}}</a>
            <li>{{this.providername}}</li>
            <li>{{this.address}}</li>
            <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
+           <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
+                &zoom=17
+                &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
+            </iframe>
            {{/each}}
    </script>
      {% endverbatim %}
