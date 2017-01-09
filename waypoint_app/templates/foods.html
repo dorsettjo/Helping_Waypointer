@@ -15,14 +15,14 @@
     </head>
     <body>
 foods
-<a href="#foodModal">Click Here</a>
+<a href="#foodyModal">Click Here</a>
 <div id="foodResults">
 </div>
 
 
 <!-- food modal -->
 <div class="remodal-bg">
-<div class="remodal" data-remodal-id="foodModal">
+<div class="remodal" data-remodal-id="foodyModal">
   <button data-remodal-action="close" class="remodal-close"></button>
   <h1>Remodal</h1>
   <p>
@@ -60,10 +60,28 @@ foods
     <script id="handlebarsTest" type="text/x-handlebars-template">
         {{#each .}}
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a href="#foodModal{{@index}}">{{this.providername}}</a>
 =======
         <a href="#foodModal{{this.providername}}">{{this.providername}}</a>
 >>>>>>> 203282ef31229747f2117bc80ea9dd0f7ba3cfe8
+=======
+        <a href="#foodModal{{@index}}">{{this.providername}}</a>
+        <div class="remodal-bg">
+            <div class="remodal" data-remodal-id="foodModal{{@index}}">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>{{this.providername}}</h1>
+                <li>{{this.description_text}}</li>
+                <li>{{this.phone_number}}</li>
+                <li>{{this.website}}</li>
+                <li>{{this.address}}</li>
+                <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
+                <br>
+                <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
+                <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+            </div>
+        </div>
+>>>>>>> fc6508720994e92235231fc4708b435e36465b9f
            <li>{{this.providername}}</li>
            <li>{{this.address}}</li>
            <li>{{this.phone_number}} {{this.times}}</li>
@@ -72,6 +90,7 @@ foods
                 &zoom=17
                 &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
             </iframe>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -94,6 +113,8 @@ foods
                 </div>
             </div>
 >>>>>>> 203282ef31229747f2117bc80ea9dd0f7ba3cfe8
+=======
+>>>>>>> fc6508720994e92235231fc4708b435e36465b9f
            {{/each}}
    </script>
      {% endverbatim %}
