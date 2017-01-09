@@ -38,9 +38,9 @@ foods
     {% verbatim %}
     <script id="handlebarsTest" type="text/x-handlebars-template">
         {{#each .}}
-        <a href="#foodModal">{{this.providername}}</a>
+        <a href="#foodModal{{@index}}">{{this.providername}}</a>
         <div class="remodal-bg">
-            <div class="remodal" data-remodal-id="foodModal">
+            <div class="remodal" data-remodal-id="foodModal{{@index}}">
                 <button data-remodal-action="close" class="remodal-close"></button>
                 <h1>{{this.providername}}</h1>
                 <li>{{this.description_text}}</li>
