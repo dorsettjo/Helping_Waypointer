@@ -11,6 +11,13 @@ body {
   height: 100px;
   background-color: green;
 }
+
+.topBox img {
+top: 90%;
+margin: 0 auto;
+display: block;
+}
+
 .stationaryWayPointerIcon {
   background-color: #8ad5dd;
   width: 100%;
@@ -64,7 +71,7 @@ text-align: center;}
   // position: absolute;;
   // text-align: center;
     img {
-    top: 30%;
+    top: 60%;
     margin: 0 auto;
     display: block;
   }
@@ -84,7 +91,7 @@ text-align: center;}
   float: left;
   width: 30%;
     img {
-      top: 30%;
+      top: 60%;
       margin: 0 auto;
       display: block;
   }
@@ -93,7 +100,7 @@ text-align: center;}
   float: left;
   width: 30%;
     img {
-      top: 30%;
+      bottom: 60%;
       margin: 0 auto;
       display: block;
   }
@@ -103,7 +110,7 @@ text-align: center;}
   float: left;
   width: 30%;
     img {
-      top: 30%;
+      bottom: 30%;
       margin: 0 auto;
       display: block;
   }
@@ -113,7 +120,7 @@ text-align: center;}
   float: left;
   width: 30%;
     img {
-      top: 30%;
+      bottom: 60%;
       margin: 0 auto;
       display: block;
   }
@@ -126,6 +133,23 @@ text-align: center;}
 
 
   // height: 25px;
+}
+.centerTag {
+  z-index: 10;
+  width: 80%;
+  height: 300px;
+  background-color: yellow;
+  background-size: cover;
+  display:block;
+  margin: 0 auto;
+   img {
+     width: 60%;
+     height: auto;
+     align-self: center;
+     top: 90%;
+     margin: 0 auto;
+     display: block;
+ }
 }
 
 .iconsRow2 img {
