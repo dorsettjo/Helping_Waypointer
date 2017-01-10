@@ -17,7 +17,7 @@ function getDistance(address,id){
     var ronald = getCoords(lat, lon)
     console.log(ronald)
     // return joinAddress
-    $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&callback=?&origins=35.7778208,-78.6388908&destinations="+joinAddress).done(function(results){
+    $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=35.7778208,-78.6388908&destinations="+joinAddress).done(function(results){
         var distance = results['rows'][0]['elements'][0]['distance'].text
         $("#dist" + id).html(distance)
     })
