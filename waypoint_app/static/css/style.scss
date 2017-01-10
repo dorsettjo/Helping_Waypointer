@@ -10,11 +10,12 @@ body {
 .topBox {
   height: 100px;
   background-color: green;
-  img {
-  top: 90%;
-  margin: 0 auto;
-  display: block;
 }
+
+.topBox img {
+top: 90%;
+margin: 0 auto;
+display: block;
 }
 
 .stationaryWayPointerIcon {
