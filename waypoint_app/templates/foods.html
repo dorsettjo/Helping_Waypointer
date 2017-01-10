@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 <html>
-    <head>
+
       <head>
         <meta charset="utf-8">
         <title>WayPointer</title>
@@ -12,40 +12,46 @@
 
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
       </head>
-    </head>
+
     <body>
 foods
-<a href="#foodModal">Click Here</a>
+
 <div id="foodResults">
 </div>
 
 
+{% verbatim %}
+<script id="handlebarsTest" type="text/x-handlebars-template">
+    {{#each .}}
 <!-- food modal -->
+<a href="#foodModal{{@index}}">{{this.providername}}</a>
 <div class="remodal-bg">
-<div class="remodal" data-remodal-id="foodModal">
+<div class="remodal" data-remodal-id="foodModal{{@index}}">
   <button data-remodal-action="close" class="remodal-close"></button>
-  <h1>Remodal</h1>
-  <p>
-    Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
-  </p>
+  <h1>{{this.providername}}</h1>
+  <li>{{this.address}}</li>
+  <li id="dist{{@index}}">Distance{{showDistance this.address @index }}</li>
+  <li>{{this.website}}</li>
+  <li>{{this.phone_number}}</li>
+  <iframe
+width="600"
+height="450"
+frameborder="0" style="border:0"
+src="//www.google.com/maps/embed/v1/place?q={{this.address}}
+                &zoom=17
+                &key=AIzaSyCyNJzLx5ioxyCHFL-thkt0y3jMCZwXqfw" allowfullscreen>
+</iframe>
   <br>
     <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
-    <button data-remodal-action="confirm"         class="remodal-confirm">OK</button>
+    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
   </div>
 </div>
-
-    {% verbatim %}
-    <script id="handlebarsTest" type="text/x-handlebars-template">
-        {{#each .}}
-           <li>{{this.providername}}</li>
-           <li>{{this.address}}</li>
-           <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
            {{/each}}
    </script>
      {% endverbatim %}
+<p id="latitude"></p>
+<p id="longitude"></p>
 
-    <div id="latitude"></div>
-    <div id="longitude"></div>
 
   </body>
 
