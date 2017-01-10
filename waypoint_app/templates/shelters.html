@@ -21,37 +21,45 @@ shelter
 </div>
 
 <img src="{% static 'images/1icon_shelter.png' %}" alt="shelter image" />
-    <a href="#sheltersModal">Click Here</a>
-    <div id="sheltersResults">
-    </div>
-
-<!-- shelter modal -->
-<div class="remodal-bg">
-  <div class="remodal" data-remodal-id="sheltersModal">
-    <button data-remodal-action="close" class="remodal-close"></button>
-    <h1>Remodal</h1>
-    <p>
-      Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
-    </p>
-    <br>
-    <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
-    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
-  </div>
+<div id="shelterResults">
 </div>
 
 
 {% verbatim %}
 <script id="handlebarsTest" type="text/x-handlebars-template">
-    {{#each this}}
-      <li>{{this.sheltersname}}</li>
-      <li>{{this.contact_information}}</li>
-      {{/each}}
+    {{#each .}}
+<!-- food modal -->
+<a href="#shelterModal{{@index}}">{{this.sheltername}}</a>
+<div class="remodal-bg">
+<div class="remodal" data-remodal-id="shelterModal{{@index}}">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>{{this.sheltername}}</h1>
+  <li>{{this.address}}</li>
+  <li id="dist{{@index}}">Distance{{showDistance this.address @index }}</li>
+  <li>{{this.website}}</li>
+  <li>{{this.phone_number}}</li>
+  <iframe
+width="600"
+height="450"
+frameborder="0" style="border:0"
+src="//www.google.com/maps/embed/v1/place?q={{this.address}}
+                &zoom=17
+                &key=AIzaSyCyNJzLx5ioxyCHFL-thkt0y3jMCZwXqfw" allowfullscreen>
+</iframe>
+  <br>
+    <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
+    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+  </div>
+</div>
+
+           {{/each}}
+   </script>
+     {% endverbatim %}
+<p id="latitude"></p>
+<p id="longitude"></p>
 
 
-  </script>
-{% endverbatim %}
-
-</body>
+  </body>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
