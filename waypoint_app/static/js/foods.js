@@ -14,6 +14,7 @@
 // $("#foodButton").click(function(){location.href='foods'}).done(foodList())
 
 
+
 function foodList(){
         $.getJSON("/api/foods/").done(function(results){
             var source = $("#handlebarsTest").html();
@@ -28,10 +29,8 @@ foodList()
 function getDistance(address,id){
     var splitAddress = address.split(' ')
     var joinAddress = splitAddress.join('+')
-    console.log(lat)
-    console.log('oi')
-    console.log(lon)
     var ronald = getCoords(lat, lon)
+    console.log(ronald)
     // return joinAddress
     $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=35.7778208,-78.6388908&destinations="+joinAddress).done(function(results){
         var distance = results['rows'][0]['elements'][0]['distance'].text
@@ -40,15 +39,15 @@ function getDistance(address,id){
 }
 
 function getCoords(lat, lon){
-    console.log(lat)
+    console.log('test')
+    console.log(lon)
+    console.log('endtest')
     return lat + lon;
 }
 
 
-
 Handlebars.registerHelper("showDistance", function(address, id) {
     console.log(address)
-    // distance = getDistance(address)
     getDistance(address, id)
     // console.log(distance)
     // return distance
