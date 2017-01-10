@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 {% load static %}
 <html>
-    <head>
+
       <head>
         <meta charset="utf-8">
         <title>WayPointer</title>
@@ -13,54 +12,67 @@
 
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
       </head>
-    </head>
+
     <body>
+Legal
 
-legal
-    <a href="#legalModal">Click Here</a>
-    <div id="legalResults">
-    </div>
-
-<!-- legal modal -->
-<div class="remodal-bg">
-  <div class="remodal" data-remodal-id="legalModal">
-    <button data-remodal-action="close" class="remodal-close"></button>
-    <h1>Remodal</h1>
-    <p>
-      Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
-    </p>
-    <br>
-    <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
-    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
-  </div>
+<div id="legalResults">
 </div>
 
+<a href="{% url 'index' %}">Home</a>
 
 {% verbatim %}
-<script id="handlebarsTest" type="text/x-handlebars-template">
-    {{#each this}}
-      <li>{{this.name}}</li>
-      <li>{{this.contact_information}}</li>
-      {{/each}}
+     <script id="handlebarsTest" type="text/x-handlebars-template">
+         {{#each .}}
+            <a href="#legalModal{{@index}}">{{this.providername}}</a>
+            <div class="remodal-bg">
+                <div class="remodal" data-remodal-id="legalModal{{@index}}">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <h1>{{this.legalname}}</h1>
+                    <li>{{this.description_text}}</li>
+                    <li>{{this.phone_number}}</li>
+                    <li>{{this.website}}</li>
+                    <li>{{this.address}}</li>
+                    <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
+                    <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
+                        &zoom=17
+                        &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
+                    </iframe>
+                    <br>
+                    <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+                </div>
+            </div>
+            <li>{{this.legalname}}</li>
+            <li>{{this.address}}</li>
+            <li>{{this.phone_number}} {{this.times}}</li>
+            <iframe
+          width="600"
+          height="450"
+          frameborder="0" style="border:0"
+          src="//www.google.com/maps/embed/v1/place?q={{this.address}}
+                          &zoom=17
+                          &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM" allowfullscreen>
+          </iframe>
+            {{/each}}
+    </script>
+      {% endverbatim %}
 
 
-  </script>
-{% endverbatim %}
+<p id="latitude"></p>
+<p id="longitude"></p>
 
-</body>
 
+  </body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
     <script type="text/javascript" src="{% static '/js/legals.js' %}"></script>
-
     <script src="{% static '/js/remodal.js' %}"></script>
     <script src="{% static '/js/remodal.min.js' %}"></script>
-
-    <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
-
 
 </html>
