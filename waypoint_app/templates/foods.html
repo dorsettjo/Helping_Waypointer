@@ -38,10 +38,12 @@ foods
     {% verbatim %}
     <script id="handlebarsTest" type="text/x-handlebars-template">
         {{#each .}}
+        <br>
         <a href="#foodModal{{@index}}">{{this.providername}}</a>
         <div class="remodal-bg">
             <div class="remodal" data-remodal-id="foodModal{{@index}}">
                 <button data-remodal-action="close" class="remodal-close"></button>
+                <br>
                 <h1>{{this.providername}}</h1>
                 <li>{{this.description_text}}</li>
                 <li>{{this.phone_number}}</li>
@@ -70,10 +72,11 @@ foods
 
   </body>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
     <script type="text/javascript" src="{% static '/js/foods.js' %}"></script>
     <script src="{% static '/js/remodal.js' %}"></script>
