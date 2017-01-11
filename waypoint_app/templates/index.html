@@ -14,99 +14,60 @@
     </head>
 
     <body>
-      <div class="topBox">
+      <!-- <div class="topBox">
         <h1>WayPointer</h1>
-        <img src="{% static 'images/images/way_PointerLogo.png' %}" alt="tagline" />
+        <img src="{% static 'images/way_PointerLogo.png' %}" alt="tagline" />
       </div>
 
       <div class="stationaryWayPointerIcon">
             <h4>Help Us Help You<br />Help Yourself</h4>
+      </div> -->
+
+
+      <div class="logo">
+        <!-- <img src="{% static 'images/way_PointerLogo_Tagline.png' %}" alt="tagline" /> -->
       </div>
 
-<div class="row1">
-        <div class="Shelter">
-          <div class="iconsRow1">
+      <ul class='circle-container'>
+
+            <li>
               <a href="{% url 'shelters' %}">
                 <img src="{% static 'images/1icon_shelter.png' %}" alt="shelter Link" />
               </a>
-              <h2>Shelter</h2>
-              <h3>List</h3>
-              <h3>lllllk</h3>
+            </li>
 
-            </div>
-        </div>
-
-        <div class="Food">
-          <div class="iconsRow1">
+            <li>
               <a href="{% url 'foods' %}">
                 <img src="{% static 'images/2icon_food.png' %}" alt="food Link" />
               </a>
-              <h2>Food</h2>
-              <h3>Meals</h3>
-              <h3>Food Assistance</h3>
-            </div>
-        </div>
+              </li>
 
-        <div class="Medical">
-          <div class="iconsRow1">
-
+            <li>
               <a href="{% url 'medicals' %}">
                 <img src="{% static 'images/3icon_medical.png' %}" alt="medical Link" />
               </a>
-                <h2>Medical</h2>
-              <h3>General Health</h3>
-              <h3>Mental Health</h3>
-            </div>
-        </div>
-  </div>
-<div class="centerTag">
-  <img src="{% static 'images/images/way_PointerLogo_Tagline.png' %}" alt="tagline" />
-</div>
+            </li>
 
-<div class="row2">
+            <li>
+              <a href="{% url 'crisiss' %}">
+                <img src="{% static 'images/4icon_crisis.png' %}" alt="crisis Link" />
+              </a>
+            </li>
 
-      <div class="Crisis">
+            <li>
+              <a href="{% url 'legals' %}">
+                <img src="{% static 'images/5icon_legal.png' %}" alt="legal Link" />
+              </a>
+            </li>
 
-        <div class="iconsRow2">
+            <li>
+              <a href="{% url 'transportations' %}">
+                <img class="image" src="{% static 'images/6icon_transportation.png' %}" alt="Transportation Link" />
+              </a>
+            </li>
 
-            <a href="{% url 'crisiss' %}">
-              <img src="{% static 'images/4icon_crisis.png' %}" alt="crisis Link" />
-            </a>
-            <h2>Crisis</h2>
-            <h3>Hotlines</h3>
-          </div>
-      </div>
+      </ul>
 
-
-      <div class="Legal">
-
-        <div class="iconsRow2">
-
-            <a href="{% url 'legals' %}">
-              <img src="{% static 'images/5icon_legal.png' %}" alt="legal Link" />
-            </a>
-            <h2>Legal</h2>
-            <h3>Jobs</h3>
-            <h3>Refuge Assistance</h3>
-          </div>
-      </div>
-
-      <div class="Transportation">
-        <div class="iconsRow2">
-
-            <a href="{% url 'transportations' %}">
-              <img class="image" src="{% static 'images/6icon_transportation.png' %}" alt="Transportation Link" />
-            </a>
-            <h2>Transportation</h2>
-            <h3>Buses</h3>
-            <h3>Various</h3>
-          </div>
-      </div>
-<a href='foods'><button id="foodButton" type="button" name="button">FOODS</button></a>
-<a href='crisiss'><button id="crisisButton" type="button" name="button">Crisiss</button></a>
-
-<p id="latitude"></p>
-<p id="longitude"></p>
   </body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
