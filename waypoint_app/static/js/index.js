@@ -1,5 +1,5 @@
 navigator.geolocation.getCurrentPosition(function(location) {
-    $("#latitude").html(location.coords.latitude)
+    $("#latitude").val(location.coords.latitude)
     $("#longitude").html(location.coords.longitude)
 });
 
