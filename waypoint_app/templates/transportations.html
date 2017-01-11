@@ -28,12 +28,6 @@
                         <li>{{this.description_text}}</li>
                         <li>{{this.phone_number}}</li>
                         <li>{{this.website}}</li>
-                        <li>{{this.address}}</li>
-                        <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
-                        <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
-                            &zoom=17
-                            &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
-                        </iframe>
                         <br>
                         <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
                         <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
