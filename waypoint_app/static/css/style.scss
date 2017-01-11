@@ -4,11 +4,11 @@ body {
 }
 
 
-h1 {font-family: 'Roboto', sans-serif;
+h1 {font-family: 'Roboto Condensed', sans-serif;
 text-align: center;}
 h2 {font-family: 'Roboto Condensed', sans-serif;
 text-align: center;}
-h3 {font-family: 'Roboto', sans-serif;
+h3 {font-family: 'Roboto Condensed', sans-serif;
 text-align: center;}
 h4 {font-family: 'Covered By Your Grace', cursive;
 text-align: center;
@@ -146,7 +146,85 @@ text-align: center;}
   background-image: url(../images/map_BG.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 2000px;
   margin: 0;
   padding: 0, 0, 0, 0,;
+}
+
+// beginning of pages
+
+.leftColumn {
+  background-color: #0f4580;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left:0px;
+  top: 0px;
+  float: left;
+  height: 100vh;
+  color: white;
+ .ParticularIcon {
+    width: 400px;
+    padding: 0;
+    display: block;
+    margin:0 auto;
+  }
+  .Compass {
+    // width: 1000px;
+    padding-top: 12%;
+    padding-right: 38%;
+    padding: 0;
+    display: block;
+    margin:0 auto;
+    width: 180px;
+  }
+}
+
+
+
+.rightSideWhole {
+  background-color: yellow;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+  float: right;
+  // .img {
+  //
+  // }
+}
+
+.titleBar {
+  background-color: black;
+  height: 100px;
+  color: white;
+  font-family: sans-serif;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width:60%;
+}
+
+.bottomBar {
+  background-color: black;
+  height: 100px;
+  font-family: sans-serif;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width:60%;
+}
+.tagline {
+  // padding-top: 2%;
+  padding-bottom: 100px;
+  padding-right: 38%;
+  padding: 0;
+  display: block;
+  margin:0 auto;
+  width: 250px;
 }

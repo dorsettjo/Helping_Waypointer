@@ -3,7 +3,7 @@ body {
   margin: 0 auto; }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: center; }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
   text-align: center; }
 
 h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: center; }
 
 h4 {
@@ -40,9 +40,8 @@ p {
   border-radius: 50%;
   padding: 0;
   list-style: none;
-  margin: 5em auto 0;}
-
-
+  margin: 5em auto 0;
+  z-index: 10; }
   .circle-container > * {
     display: block;
     position: absolute;
@@ -75,8 +74,71 @@ p {
   background-image: url(../images/map_BG.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 2000px;
   margin: 0;
   padding: 0, 0, 0, 0; }
+
+.leftColumn {
+  background-color: #0f4580;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  float: left;
+  height: 100vh;
+  color: white; }
+  .leftColumn .ParticularIcon {
+    width: 400px;
+    padding: 0;
+    display: block;
+    margin: 0 auto; }
+  .leftColumn .Compass {
+    padding-top: 12%;
+    padding-right: 38%;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    width: 180px; }
+
+.rightSideWhole {
+  background-color: yellow;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+  float: right; }
+
+.titleBar {
+  background-color: black;
+  height: 100px;
+  color: white;
+  font-family: sans-serif;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 60%; }
+
+.bottomBar {
+  background-color: black;
+  height: 100px;
+  font-family: sans-serif;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 60%; }
+
+.tagline {
+  padding-bottom: 100px;
+  padding-right: 38%;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  width: 250px; }
 
 /*# sourceMappingURL=style.css.map */

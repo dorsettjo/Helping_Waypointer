@@ -13,17 +13,36 @@
         <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
     </head>
     <body>
-        <div class="topBox">
-            <img src="{% static 'images/way_PointerLogo_Tagline.png' %}" alt="tagline" />
+
+      <div class="shelterPage">
+
+        <div class="leftColumn">
+          <img src="{% static 'images/Shelter1_WH.png' %}" class="ParticularIcon" alt="shelterIcon" />
+          <h1>SHELTERS</h1>
+          <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" />
+
         </div>
-        <img src="{% static 'images/1icon_shelter.png' %}" alt="shelter image" />
+
+        <div class="rightSideWhole">
+          <div class="titleBar">
+            <h1>Click Name for Location and Map</h1>
+          </div>
+
+          <div class="bottomBar">
+            <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+          </div>
+
+
+  </div>
+
+
         <div id="shelterResults">
         </div>
         <a href="{% url 'index' %}">Home</a>
         {% verbatim %}
             <script id="handlebarsTest" type="text/x-handlebars-template">
                 {{#each .}}
-                    <a href="#shelterModal{{@index}}">{{this.sheltername}}</a>
+                    <h2><a href="#shelterModal{{@index}}">{{this.sheltername}}</a></h2>
                     <p>{{this.description_text}}</p>
                     <div class="remodal-bg">
                         <div class="remodal" data-remodal-id="shelterModal{{@index}}">
@@ -51,6 +70,9 @@
      {% endverbatim %}
      <p id="latitude"></p>
      <p id="longitude"></p>
+
+
+       </div>
     </body>
 
 
