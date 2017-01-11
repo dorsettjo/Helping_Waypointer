@@ -42,7 +42,7 @@ p {
   list-style: none;
   margin: 5em auto 0;
   z-index: 10;
-  background: url(images/way_PointerLogo_Tagline.png); }
+  background: url(../images/way_PointerLogo_Tagline.png); }
   .circle-container > * {
     display: block;
     position: absolute;
