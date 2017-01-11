@@ -115,20 +115,38 @@ text-align: center;}
 }
 
 .circle-container {
-  @include on-circle($item-count: 6, $circle-size:40em, $item-size: 18em);
+  @include on-circle($item-count: 6, $circle-size:50em, $item-size: 18em);
   margin: 5em auto 0;
   z-index: 10;
-  background: url(images/way_PointerLogo_Tagline.png);
+  // background: url(../images/map_BG.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+
+  // background-position: center;
+
+
+
 
   img {
     display: block;
     max-width: 100%;
-    // filter: grayscale(100%);
+    filter: opacity(85%);
     // border: solid 5px tomato;
-    // transition: .15s;
+    transition: .15s;
 
     &:hover {
-      // filter: grayscale(0);
+      filter: grayscale(0);
     }
   }
+}
+
+
+.map {
+  background-image: url(../images/map_BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0, 0, 0, 0,;
 }

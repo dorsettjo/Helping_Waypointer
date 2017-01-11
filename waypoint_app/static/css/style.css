@@ -35,14 +35,13 @@ p {
 
 .circle-container {
   position: relative;
-  width: 40em;
-  height: 40em;
+  width: 50em;
+  height: 50em;
   border-radius: 50%;
   padding: 0;
   list-style: none;
   margin: 5em auto 0;
-  z-index: 10;
-  background: url(images/way_PointerLogo_Tagline.png); }
+  z-index: 10; }
   .circle-container > * {
     display: block;
     position: absolute;
@@ -52,19 +51,31 @@ p {
     width: 18em;
     height: 18em; }
     .circle-container > *:nth-of-type(1) {
-      transform: rotate(0deg) translate(20em) rotate(0deg); }
+      transform: rotate(0deg) translate(25em) rotate(0deg); }
     .circle-container > *:nth-of-type(2) {
-      transform: rotate(60deg) translate(20em) rotate(-60deg); }
+      transform: rotate(60deg) translate(25em) rotate(-60deg); }
     .circle-container > *:nth-of-type(3) {
-      transform: rotate(120deg) translate(20em) rotate(-120deg); }
+      transform: rotate(120deg) translate(25em) rotate(-120deg); }
     .circle-container > *:nth-of-type(4) {
-      transform: rotate(180deg) translate(20em) rotate(-180deg); }
+      transform: rotate(180deg) translate(25em) rotate(-180deg); }
     .circle-container > *:nth-of-type(5) {
-      transform: rotate(240deg) translate(20em) rotate(-240deg); }
+      transform: rotate(240deg) translate(25em) rotate(-240deg); }
     .circle-container > *:nth-of-type(6) {
-      transform: rotate(300deg) translate(20em) rotate(-300deg); }
+      transform: rotate(300deg) translate(25em) rotate(-300deg); }
   .circle-container img {
     display: block;
-    max-width: 100%; }
+    max-width: 100%;
+    filter: opacity(85%);
+    transition: .15s; }
+    .circle-container img:hover {
+      filter: grayscale(0); }
+
+.map {
+  background-image: url(../images/map_BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0, 0, 0, 0; }
 
 /*# sourceMappingURL=style.css.map */
