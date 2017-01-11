@@ -13,8 +13,6 @@
 //
 // $("#foodButton").click(function(){location.href='foods'}).done(foodList())
 
-
-
 function foodList(){
         $.getJSON("/api/foods/").done(function(results){
             var source = $("#handlebarsTest").html();
@@ -40,7 +38,7 @@ function getDistance(address,id){
 
 function getCoords(lat, lon){
     console.log('test')
-    console.log(lon)
+    console.log(lat)
     console.log('endtest')
     return lat + lon;
 }
@@ -52,6 +50,7 @@ Handlebars.registerHelper("showDistance", function(address, id) {
     // console.log(distance)
     // return distance
 })
+
 
 
 
