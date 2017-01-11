@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
 <html>
-
       <head>
         <meta charset="utf-8">
         <title>WayPointer</title>
@@ -13,48 +12,41 @@
       </head>
 
     <body>
-foods
-
-<div id="foodResults">
-</div>
-
-<a href="{% url 'index' %}">Home</a>
-
-{% verbatim %}
-<script id="handlebarsTest" type="text/x-handlebars-template">
-    {{#each .}}
-<!-- food modal -->
-<a href="#foodModal{{@index}}">{{this.providername}}</a>
-<div class="remodal-bg">
-<div class="remodal" data-remodal-id="foodModal{{@index}}">
-  <button data-remodal-action="close" class="remodal-close"></button>
-  <h1>{{this.providername}}</h1>
-  <li>{{this.address}}</li>
-  <li id="dist{{@index}}">Distance{{showDistance this.address @index }}</li>
-  <li>{{this.website}}</li>
-  <li>{{this.phone_number}}</li>
-  <iframe
-width="600"
-height="450"
-frameborder="0" style="border:0"
-src="//www.google.com/maps/embed/v1/place?q={{this.address}}
-                &zoom=17
-                &key=AIzaSyCyNJzLx5ioxyCHFL-thkt0y3jMCZwXqfw" allowfullscreen>
-</iframe>
-  <br>
-    <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
-    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
-  </div>
-</div>
-
-           {{/each}}
-   </script>
+        <div id="foodResults">
+        </div>
+        <a href="{% url 'index' %}">Home</a>
+        {% verbatim %}
+            <script id="handlebarsTest" type="text/x-handlebars-template">
+                {{#each .}}
+                    <a href="#foodModal{{@index}}">{{this.providername}}</a>
+                    <p>{{this.times}}</p>
+                    <div class="remodal-bg">
+                        <div class="remodal" data-remodal-id="foodModal{{@index}}">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <h1>{{this.providername}}</h1>
+                            <li>{{this.address}}</li>
+                            <li id="dist{{@index}}">Distance{{showDistance this.address @index }}</li>
+                            <li>{{this.website}}</li>
+                            <li>{{this.phone_number}}</li>
+                            <iframe
+                                width="600"
+                                height="450"
+                                frameborder="0" style="border:0"
+                                src="//www.google.com/maps/embed/v1/place?q={{this.address}}
+                                    &zoom=17
+                                    &key=AIzaSyCyNJzLx5ioxyCHFL-thkt0y3jMCZwXqfw" allowfullscreen>
+                            </iframe>
+                            <br>
+                            <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
+                            <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+                        </div>
+                    </div>
+                {{/each}}
+            </script>
      {% endverbatim %}
-<p id="latitude"></p>
-<p id="longitude"></p>
-
-
-  </body>
+     <p id="latitude"></p>
+     <p id="longitude"></p>
+    </body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
@@ -65,5 +57,4 @@ src="//www.google.com/maps/embed/v1/place?q={{this.address}}
     <script type="text/javascript" src="{% static '/js/foods.js' %}"></script>
     <script src="{% static '/js/remodal.js' %}"></script>
     <script src="{% static '/js/remodal.min.js' %}"></script>
-
 </html>

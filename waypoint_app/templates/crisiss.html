@@ -12,41 +12,29 @@
       </head>
     </head>
     <body>
-
-crisis
-
-     <div id="crisisResults"></div>
-     {% verbatim %}
-     <script id="handlebarsTest" type="text/x-handlebars-template">
-         {{#each this}}
-         <a href="#crisisModal{{@index}}">{{this.crisisname}}</a>
-         <div class="remodal-bg">
-           <div class="remodal" data-remodal-id="crisisModal{{@index}}">
-               <button data-remodal-action="close" class="remodal-close"></button>
-               <h1>{{this.crisisname}}</h1>
-               <li>phone: {{this.contact_information}}</li>
-               {{#if this.second_phone}}
-               <li>second phone: {{this.second_phone}}</li>
-               {{/if}}
-               <br>
-               <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
-               <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
-               </div>
-               </div>
-
-
-
-<!-- crisis modal -->
-
-      {{/each}}
-
-
-  </script>
-{% endverbatim %}
-
-</body>
-
-
+        <div id="crisisResults"></div>
+            {% verbatim %}
+                <script id="handlebarsTest" type="text/x-handlebars-template">
+                    {{#each this}}
+                        <a href="#crisisModal{{@index}}">{{this.crisisname}}</a>
+                        <p>{{this.contact_information}}</p>
+                        <div class="remodal-bg">
+                            <div class="remodal" data-remodal-id="crisisModal{{@index}}">
+                                <button data-remodal-action="close" class="remodal-close"></button>
+                                <h1>{{this.crisisname}}</h1>
+                                <li>phone: {{this.contact_information}}</li>
+                                {{#if this.second_phone}}
+                                    <li>second phone: {{this.second_phone}}</li>
+                                {{/if}}
+                                <br>
+                                <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+                                <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+                            </div>
+                        </div>
+                    {{/each}}
+                </script>
+            {% endverbatim %}
+    </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -56,6 +44,4 @@ crisis
     <script src="{% static '/js/remodal.js' %}"></script>
     <script src="{% static '/js/remodal.min.js' %}"></script>
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
-
-
 </html>
