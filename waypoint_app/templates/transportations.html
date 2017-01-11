@@ -14,56 +14,31 @@
       </head>
 
     <body>
-transportations
-
-<div id="transportationResults">
-</div>
-
-<a href="{% url 'index' %}">Home</a>
-
-{% verbatim %}
-     <script id="handlebarsTest" type="text/x-handlebars-template">
-         {{#each .}}
-            <a href="#transportationModal{{@index}}">{{this.transportname}}</a>
-            <div class="remodal-bg">
-                <div class="remodal" data-remodal-id="transportationModal{{@index}}">
-                    <button data-remodal-action="close" class="remodal-close"></button>
-                    <h1>{{this.transportname}}</h1>
-                    <li>{{this.description_text}}</li>
-                    <li>{{this.phone_number}}</li>
-                    <li>{{this.website}}</li>
-                    <li>{{this.address}}</li>
-                    <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
-                    <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
-                        &zoom=17
-                        &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
-                    </iframe>
-                    <br>
-                    <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
-                    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+        <div id="transportationResults">
+        </div>
+        <a href="{% url 'index' %}">Home</a>
+        {% verbatim %}
+            <script id="handlebarsTest" type="text/x-handlebars-template">
+            {{#each .}}
+                <a href="#transportationModal{{@index}}">{{this.transportname}}</a>
+                <div class="remodal-bg">
+                    <div class="remodal" data-remodal-id="transportationModal{{@index}}">
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                        <h1>{{this.transportname}}</h1>
+                        <li>{{this.description_text}}</li>
+                        <li>{{this.phone_number}}</li>
+                        <li>{{this.website}}</li>
+                        <br>
+                        <button data-remodal-action="cancel"  class="remodal-cancel">Cancel</button>
+                        <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+                    </div>
                 </div>
-            </div>
-            <li>{{this.transportname}}</li>
-            <li>{{this.address}}</li>
-            <li>{{this.phone_number}} {{this.times}}</li>
-            <iframe
-          width="600"
-          height="450"
-          frameborder="0" style="border:0"
-          src="//www.google.com/maps/embed/v1/place?q={{this.address}}
-                          &zoom=17
-                          &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM" allowfullscreen>
-          </iframe>
             {{/each}}
-    </script>
+            </script>
       {% endverbatim %}
-
-
-<p id="latitude"></p>
-<p id="longitude"></p>
-
-
-  </body>
+      <p id="latitude"></p>
+      <p id="longitude"></p>
+    </body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
