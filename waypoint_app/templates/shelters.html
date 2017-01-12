@@ -20,7 +20,7 @@
         <div class="leftColumn">
           <img src="{% static 'images/Shelter1_WH.png' %}" class="ParticularIcon" alt="shelterIcon" />
           <h1>SHELTERS</h1>
-          <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" />
+          <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
 
         </div>
 
@@ -38,7 +38,8 @@
 
 
         <div id="shelterResults">
-          </div>
+           </div>
+
 
         <a href="{% url 'index' %}">Home</a>
         {% verbatim %}
@@ -75,6 +76,13 @@
      {% endverbatim %}
      <p id="latitude"></p>
      <p id="longitude"></p>
+
+
+
+     <div class="bottomBar">
+       <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+     </div>
+
 
   </div>
        </div>
