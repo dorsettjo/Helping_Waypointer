@@ -33,7 +33,9 @@ p {
 .btn-lg {
   background-color: black;
   border: none;
-  border-radius: 0px 15px 15px 0px; }
+  border-radius: 0px 15px 15px 0px;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 24px; }
 
 .btn-lg:hover {
   background-color: #8ad5dd; }
