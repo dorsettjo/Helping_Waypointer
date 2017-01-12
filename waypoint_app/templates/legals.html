@@ -15,6 +15,32 @@
       </head>
 
     <body>
+      <div class="legalPage">
+
+        <div class="leftColumn ltblueColumn">
+          <img src="{% static 'images/Legal5_WH.png' %}" class="ParticularIcon" alt="legal Icon" />
+          <h1>LEGAL ASSISTANCE</h1>
+          <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
+
+        </div>
+
+        <div class="rightSideWhole">
+          <div class="titleBar">
+            <h1>Click Name for Location and Map</h1>
+          </div>
+
+          <div class="bottomBar">
+            <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+          </div>
+
+
+
+
+
+
+
+
+
         <div id="legalResults">
         <div id="google_translate_element"></div>
         <script type="text/javascript">
@@ -55,8 +81,17 @@
                 {{/each}}
             </script>
       {% endverbatim %}
-      <p id="latitude"></p>
-      <p id="longitude"></p>
+    
+
+
+
+           <div class="bottomBar">
+             <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+           </div>
+
+
+        </div>
+             </div>
     </body>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>

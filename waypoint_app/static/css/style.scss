@@ -173,8 +173,19 @@ font-size: 18px}
     width: 125px;
   }
 }
+.redColumn {
+  background-color:#ff0033;
+}
+.ltblueColumn {
+  background-color:#8ad5dd;
+}
 
-
+.redBtn:Hover {
+  background-color:#ff0033;
+}
+.ltblueBtn:Hover {
+  background-color:#8ad5dd;
+}
 
 .rightSideWhole {
   background-color: white;
