@@ -143,7 +143,7 @@ p {
   width: 60%;
   margin: 0;
   padding: 0;
-  height: 2000px;
+  height: 100vh;
   float: right; }
 
 .titleBar {
