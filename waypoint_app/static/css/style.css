@@ -21,7 +21,11 @@ h4 {
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
-  text-align: center; }
+  text-align: center;
+  font-size: 18px; }
+
+.btn btn-info btn-lg {
+  color: black; }
 
 .outerRim {
   width: 600px;
@@ -88,22 +92,31 @@ p {
   top: 0px;
   float: left;
   height: 100vh;
-  color: white; }
+  color: white;
+  border-right: 2px solid black; }
+  .leftColumn h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 55px;
+    font-weight: 600;
+    padding-bottom: 15%; }
   .leftColumn .ParticularIcon {
-    width: 400px;
+    width: 300px;
     padding: 0;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 5%; }
   .leftColumn .Compass {
     padding-top: 12%;
     padding-right: 38%;
     padding: 0;
     display: block;
     margin: 0 auto;
-    width: 180px; }
+    width: 125px; }
 
 .rightSideWhole {
-  background-color: yellow;
+  background-color: white;
   width: 60%;
   margin: 0;
   padding: 0;
@@ -112,7 +125,7 @@ p {
 
 .titleBar {
   background-color: black;
-  height: 100px;
+  height: 75px;
   color: white;
   font-family: sans-serif;
   top: 0;
@@ -124,7 +137,7 @@ p {
 
 .bottomBar {
   background-color: black;
-  height: 100px;
+  height: 75px;
   font-family: sans-serif;
   bottom: 0;
   right: 0;
@@ -132,13 +145,13 @@ p {
   padding: 0;
   position: fixed;
   width: 60%; }
-
-.tagline {
-  padding-bottom: 100px;
-  padding-right: 38%;
-  padding: 0;
-  display: block;
-  margin: 0 auto;
-  width: 250px; }
+  .bottomBar .tagline {
+    border-top: 5px solid black;
+    margin-bottom: 20%;
+    padding-top: 25px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
