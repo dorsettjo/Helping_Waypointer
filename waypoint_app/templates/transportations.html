@@ -21,7 +21,7 @@
         {% verbatim %}
             <script id="handlebarsTest" type="text/x-handlebars-template">
             {{#each .}}
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#transportationModal{{@index}}"><h4>{{this.transportname}}</h4></button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#transportationModal{{@index}}">{{this.transportname}}</button>
                 <div id="transportationModal{{@index}}" class="modal fade" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
