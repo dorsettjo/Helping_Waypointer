@@ -29,12 +29,14 @@ p {
   border: none; }
 
 .btn-lg:hover {
-  background-color: #8ad5dd; }
+  background-color: #8ad5dd;
+  border-radius: 0px 10px 10px 0px; }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
   outline: none;
   outline-color: none;
-  outline-width: none; }
+  outline-width: none;
+  outline-offset: none; }
 
 .outerRim {
   width: 600px;
