@@ -15,14 +15,15 @@
       </head>
 
     <body>
-        <div id="legalResults">
-        </div>
         <div id="google_translate_element"></div>
         <script type="text/javascript">
         function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
         }
         </script>
+        
+        <div id="legalResults">
+        </div>
 
         <a href="{% url 'index' %}">Home</a>
         {% verbatim %}
