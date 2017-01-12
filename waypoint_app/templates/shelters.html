@@ -20,7 +20,7 @@
         <div class="leftColumn">
           <img src="{% static 'images/Shelter1_WH.png' %}" class="ParticularIcon" alt="shelterIcon" />
           <h1>SHELTERS</h1>
-          <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" />
+          <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
 
         </div>
 
@@ -39,12 +39,14 @@
 
         <div id="shelterResults">
             <div id="google_translate_element"></div>
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-            }
-            </script>
+                <script type="text/javascript">
+                function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+                }
+                </script>
           </div>
+           </div>
+
 
         <a href="{% url 'index' %}">Home</a>
         {% verbatim %}
@@ -75,12 +77,19 @@
                             </div>
                         </div>
                     </div>
-                    <p>{{this.description_text}}</p>
+                    <p class="list-information">{{this.description_text}}</p>
                 {{/each}}
             </script>
      {% endverbatim %}
      <p id="latitude"></p>
      <p id="longitude"></p>
+
+
+
+     <div class="bottomBar">
+       <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+     </div>
+
 
   </div>
        </div>
