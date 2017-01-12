@@ -27,6 +27,12 @@ font-size: 18px}
   background-color: #8ad5dd;
 }
 
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+   outline: none;
+   outline-color: none;
+   outline-width: none;
+}
+
 .outerRim {
     width: 600px;
     height: 600px;
