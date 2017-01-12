@@ -42,19 +42,19 @@ p {
   width: 100%; }
 
 .btn-lg:hover {
-  background-color: #fff; }
+  background-color: #0f4580; }
 
 .btn-info.focus, .btn-info:focus {
-  color: #000;
-  background-color: #fff;
-  border-color: #fff; }
+  color: #fff;
+  background-color: #0f4580;
+  border-color: #0f4580; }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
   outline: none;
   outline-color: none;
   outline-width: none;
   outline-offset: none;
-  background-color: #fff; }
+  background-color: #0f4580; }
 
 .outerRim {
   width: 600px;
