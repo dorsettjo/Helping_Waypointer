@@ -15,15 +15,14 @@
       </head>
 
     <body>
+        <div id="transportationResults">
         <div id="google_translate_element"></div>
         <script type="text/javascript">
         function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
         }
         </script>
-        <div id="transportationResults">
         </div>
-        <a href="{% url 'index' %}">Home</a>
         {% verbatim %}
             <script id="handlebarsTest" type="text/x-handlebars-template">
             {{#each .}}
