@@ -12,71 +12,60 @@
         <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
     </head>
     <body>
-      <div class="crisisPage">
-
-        <div class="leftColumn ltblueColumn">
-          <img src="{% static 'images/Crisis4_WH.png' %}" class="ParticularIcon" alt="crisis Icon" />
-          <h1>CRISIS</h1>
-          <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
-
-        </div>
-
-        <div class="rightSideWhole">
-          <div class="titleBar">
-            <h1>Click Name for Location and Map</h1>
-          </div>
-
-          <div class="bottomBar">
-            <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
-          </div>
-
-
-
-
-        <div id="crisisResults">
-            <div id="google_translate_element"></div>
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-            }
-            </script>
-        </div>
-            {% verbatim %}
-                <script id="handlebarsTest" type="text/x-handlebars-template">
-                    {{#each this}}
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#crisisModal{{@index}}">{{this.crisisname}}</button>
-                        <br>
-                        <div id="crisisModal{{@index}}" class="modal fade" role="dialog">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">{{this.crisisname}}</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>{{this.contact_information}}</p>
-                                        {{#if this.second_phone}}
-                                            <p>second phone: {{this.second_phone}}</p>
-                                        {{/if}}
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="crisisPage">
+            <div class="leftColumn ltblueColumn">
+                <img src="{% static 'images/Crisis4_WH.png' %}" class="ParticularIcon" alt="crisis Icon" />
+                <h1>CRISIS</h1>
+                <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
+            </div>
+            <div class="rightSideWhole">
+                <div class="titleBar">
+                    <h1>Click Name for Location and Map</h1>
+                </div>
+                <div class="bottomBar">
+                    <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+                </div>
+                <div id="crisisResults">
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                        }
+                    </script>
+                </div>
+                {% verbatim %}
+                    <script id="handlebarsTest" type="text/x-handlebars-template">
+                        {{#each this}}
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#crisisModal{{@index}}">{{this.crisisname}}</button>
+                            <br>
+                            <div id="crisisModal{{@index}}" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">{{this.crisisname}}</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>{{this.contact_information}}</p>
+                                            {{#if this.second_phone}}
+                                                <p>second phone: {{this.second_phone}}</p>
+                                            {{/if}}
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    {{/each}}
-                </script>
-            {% endverbatim %}
-
-            <div class="bottomBar">
-              <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+                        {{/each}}
+                    </script>
+                {% endverbatim %}
+                <div class="bottomBar">
+                    <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+                </div>
             </div>
-
-
-            </div>
-              </div>
-
+        </div>
     </body>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>

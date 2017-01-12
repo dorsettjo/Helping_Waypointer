@@ -6,89 +6,72 @@
         <title>WayPointer</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
-
         <link rel="stylesheet" href="{% static 'css/remodal.css' %}" />
         <link rel="stylesheet" href="{% static 'css/remodal-default-theme.css' %}" />
-
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
         <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
     </head>
     <body>
-
-      <div class="shelterPage">
-
-        <div class="leftColumn">
-          <img src="{% static 'images/Shelter1_WH.png' %}" class="ParticularIcon" alt="shelterIcon" />
-          <h1>SHELTERS</h1>
-          <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
-
-        </div>
-
-        <div class="rightSideWhole">
-          <div class="titleBar">
-            <h1>Click Name for Location and Map</h1>
-          </div>
-
-          <div class="bottomBar">
-            <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
-          </div>
-        <div id="shelterResults">
-            <div id="google_translate_element"></div>
-                <script type="text/javascript">
-                function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-                }
-                </script>
-          </div>
-        {% verbatim %}
-            <script id="handlebarsTest" type="text/x-handlebars-template">
-                {{#each .}}
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#shelterModal{{@index}}">{{this.sheltername}}</button>
-                    <div id="shelterModal{{@index}}" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">{{this.sheltername}}</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>{{this.description_text}}</p>
-                                    <p>{{this.phone_number}}</p>
-                                    <p class="notranslate">{{this.website}}</p>
-                                    <p class="notranslate">{{this.address}}</p>
-                                    <p id="dist{{@index}}">Distance{{showDistance this.address @index}}</p>
-                                    <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
-                                        &zoom=17
-                                        &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
-                                    </iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="shelterPage">
+            <div class="leftColumn">
+                <img src="{% static 'images/Shelter1_WH.png' %}" class="ParticularIcon" alt="shelterIcon" />
+                <h1>SHELTERS</h1>
+                <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
+            </div>
+            <div class="rightSideWhole">
+                <div class="titleBar">
+                    <h1>Click Name for Location and Map</h1>
+                </div>
+                <div class="bottomBar">
+                    <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+                </div>
+                <div id="shelterResults">
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+                        }
+                    </script>
+                </div>
+                {% verbatim %}
+                    <script id="handlebarsTest" type="text/x-handlebars-template">
+                        {{#each .}}
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#shelterModal{{@index}}">{{this.sheltername}}</button>
+                            <div id="shelterModal{{@index}}" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">{{this.sheltername}}</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>{{this.description_text}}</p>
+                                            <p>{{this.phone_number}}</p>
+                                            <p class="notranslate">{{this.website}}</p>
+                                            <p class="notranslate">{{this.address}}</p>
+                                            <p id="dist{{@index}}">Distance{{showDistance this.address @index}}</p>
+                                            <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
+                                                &zoom=17
+                                                &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
+                                            </iframe>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <p class="list-information">{{this.description_text}}</p>
-                {{/each}}
-            </script>
-     {% endverbatim %}
-     <p id="latitude"></p>
-     <p id="longitude"></p>
-
-
-
-     <div class="bottomBar">
-       <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
-     </div>
-
-
-  </div>
-       </div>
-
-
+                            <p class="list-information">{{this.description_text}}</p>
+                        {{/each}}
+                    </script>
+                {% endverbatim %}
+                <div class="bottomBar">
+                    <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
+                </div>
+            </div>
+        </div>
     </body>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
