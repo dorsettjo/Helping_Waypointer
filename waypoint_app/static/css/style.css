@@ -26,11 +26,11 @@ p {
 
 .btn-lg {
   background-color: black;
-  border: none; }
+  border: none;
+  border-radius: 0px 10px 10px 0px; }
 
 .btn-lg:hover {
-  background-color: #8ad5dd;
-  border-radius: 0px 10px 10px 0px; }
+  background-color: #8ad5dd; }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
   outline: none;
