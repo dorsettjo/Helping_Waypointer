@@ -24,6 +24,9 @@ p {
   text-align: center;
   font-size: 18px; }
 
+#shelterResults {
+  padding-top: 75px; }
+
 .btn-lg {
   background-color: black;
   border: none;
