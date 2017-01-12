@@ -17,16 +17,25 @@ p {font-family: 'Roboto Condensed', sans-serif;
 text-align: center;
 font-size: 18px}
 
+#shelterResults {
+  padding-top: 75px;
+}
+
 
 .btn-lg {
   background-color: black;
   border: none;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 15px 15px 0px;
 }
 
 .btn-lg:hover{
   background-color: #8ad5dd;
+}
 
+.btn-info.focus, .btn-info:focus {
+   color: #fff;
+   background-color: #8ad5dd ;
+   border-color: #8ad5dd ;
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
@@ -34,6 +43,7 @@ font-size: 18px}
    outline-color: none;
    outline-width: none;
    outline-offset: none;
+   background-color: #8ad5dd;
 }
 
 .outerRim {
