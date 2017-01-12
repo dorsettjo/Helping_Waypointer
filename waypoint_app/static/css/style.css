@@ -24,7 +24,7 @@ p {
   text-align: center;
   font-size: 18px; }
 
-.btn btn-info btn-lg {
+.btn-lg {
   background-color: black; }
 
 .outerRim {
@@ -153,9 +153,5 @@ p {
     display: block;
     margin: 0 auto;
     width: 50%; }
-
-#shelterResults{
-    padding-top: 100px;
-}
 
 /*# sourceMappingURL=style.css.map */
