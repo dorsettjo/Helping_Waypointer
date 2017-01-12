@@ -41,7 +41,8 @@ p {
   outline: none;
   outline-color: none;
   outline-width: none;
-  outline-offset: none; }
+  outline-offset: none;
+  background-color: #8ad5dd; }
 
 .outerRim {
   width: 600px;
