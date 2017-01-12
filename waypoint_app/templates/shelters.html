@@ -53,11 +53,11 @@
                                     <h4 class="modal-title">{{this.sheltername}}</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <li>{{this.description_text}}</li>
-                                    <li>{{this.phone_number}}</li>
-                                    <li>{{this.website}}</li>
-                                    <li>{{this.address}}</li>
-                                    <li id="dist{{@index}}">Distance{{showDistance this.address @index}}</li>
+                                    <p>{{this.description_text}}</p>
+                                    <p>{{this.phone_number}}</p>
+                                    <p>{{this.website}}</p>
+                                    <p>{{this.address}}</p>
+                                    <p id="dist{{@index}}">Distance{{showDistance this.address @index}}</p>
                                     <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
                                         &zoom=17
                                         &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">

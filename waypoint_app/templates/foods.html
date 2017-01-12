@@ -29,10 +29,10 @@
                                     <h4 class="modal-title">{{this.providername}}</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <li>{{this.address}}</li>
-                                    <li id="dist{{@index}}">Distance{{showDistance this.address @index }}</li>
-                                    <li>{{this.website}}</li>
-                                    <li>{{this.phone_number}}</li>
+                                    <p>{{this.address}}</p>
+                                    <p id="dist{{@index}}">Distance{{showDistance this.address @index }}</p>
+                                    <p>{{this.website}}</p>
+                                    <p>{{this.phone_number}}</p>
                                     <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
                                         &zoom=17
                                         &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
