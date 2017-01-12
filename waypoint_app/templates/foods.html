@@ -19,7 +19,7 @@
         {% verbatim %}
             <script id="handlebarsTest" type="text/x-handlebars-template">
                 {{#each .}}
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#foodModal{{@index}}">{{this.providername}}</button>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#foodModal{{@index}}"><h4>{{this.providername}}</h4></button>
                     <p class="list-information">{{this.times}}</p>
                     <div id="foodModal{{@index}}" class="modal fade" role="dialog">
                         <div class="modal-dialog">
