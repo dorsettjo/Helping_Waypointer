@@ -36,7 +36,8 @@ p {
   outline: none;
   outline-color: none;
   outline-width: none;
-  outline-offset: none; }
+  outline-offset: none;
+background-color: #8ad5dd; }
 
 .outerRim {
   width: 600px;
@@ -165,4 +166,7 @@ p {
     margin: 0 auto;
     width: 50%; }
 
+#shelterResults{
+    padding-top: 75px;
+}
 /*# sourceMappingURL=style.css.map */
