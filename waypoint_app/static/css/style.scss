@@ -26,7 +26,12 @@ font-size: 18px}
 
 .btn-lg:hover{
   background-color: #8ad5dd;
+}
 
+.btn-info.focus, .btn-info:focus {
+   color: #fff;
+   background-color: none ;
+   border-color: none ;
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
