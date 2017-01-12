@@ -189,21 +189,25 @@ font-size: 18px}
 }
 
 .titleBar {
-  background-color: black;
-  height: 75px;
+  background-color: #000;
+  height: 60px;
   color: white;
-  font-family: sans-serif;
   top: 0;
   right: 0;
   margin: 0;
   padding: 0;
   position: fixed;
   width:60%;
+
+  h1 {font-family:'Roboto Condensed', sans-serif;
+  text-align: center;text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 100;}
 }
 
 .bottomBar {
   background-color: black;
-  height: 75px;
+  height: 55px;
   font-family: sans-serif;
   bottom: 0;
   right: 0;
@@ -213,7 +217,7 @@ font-size: 18px}
   width:60%;
 
   .tagline {
-    border-top: 5px solid black;
+    border-top: 10px solid black;
     // padding-top: 100px;
     margin-bottom: 20%;
     padding-top: 25px;
@@ -221,7 +225,7 @@ font-size: 18px}
     padding: 0;
     display: block;
     margin:0 auto;
-    width: 50%;
+    width: 30%;
   }
 }
 
