@@ -34,18 +34,18 @@ font-size: 18px}
   border-radius: 0px;
   font-family: 'Covered By Your Grace', cursive;
   font-size: 24px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   width:100%;
 }
 
 .btn-lg:hover{
-  background-color: #8ad5dd;
+  background-color: #fff;
 }
 
 .btn-info.focus, .btn-info:focus {
-   color: #fff;
-   background-color: #8ad5dd ;
-   border-color: #8ad5dd ;
+   color: #000;
+   background-color: #fff ;
+   border-color: #fff ;
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
@@ -53,7 +53,7 @@ font-size: 18px}
    outline-color: none;
    outline-width: none;
    outline-offset: none;
-   background-color: #8ad5dd;
+   background-color: #fff;
 }
 
 .outerRim {
