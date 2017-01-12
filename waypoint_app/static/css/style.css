@@ -27,6 +27,9 @@ p {
 #shelterResults {
   padding-top: 75px; }
 
+.list-information {
+  text-align: left; }
+
 .btn-lg {
   background-color: black;
   border: none;
