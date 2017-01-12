@@ -13,13 +13,13 @@
       </head>
 
     <body>
+        <div id="foodResults">
         <div id="google_translate_element"></div>
         <script type="text/javascript">
         function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
         }
         </script>
-        <div id="foodResults">
         </div>
         <a href="{% url 'index' %}">Home</a>
         {% verbatim %}

@@ -12,13 +12,14 @@
         <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
     </head>
     <body>
-        <div id="google_translate_element"></div>
-        <script type="text/javascript">
-        function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
-        </script>
-        <div id="crisisResults"></div>
+        <div id="crisisResults">
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+        </div>
             {% verbatim %}
                 <script id="handlebarsTest" type="text/x-handlebars-template">
                     {{#each this}}
