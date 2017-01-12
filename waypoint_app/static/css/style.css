@@ -25,7 +25,11 @@ p {
   font-size: 18px; }
 
 .btn-lg {
-  background-color: black; }
+  background-color: black;
+  border: none; }
+
+.btn-lg:hover {
+  background-color: #8ad5dd; }
 
 .outerRim {
   width: 600px;
