@@ -141,6 +141,10 @@ p {
 .map {
    }
 
+.modal-body {
+    text-align: center;
+}
+
 .leftColumn {
   background-color: #0f4580;
   width: 40%;
