@@ -136,14 +136,31 @@ p {
     margin: 0 auto;
     padding-top: 10%;
     padding-bottom: 5%; }
+  .leftColumn .movingPart {
+    position: relative; }
   .leftColumn .Compass {
-    padding-top: 12%;
-    padding-right: 38%;
-    padding: 0;
     display: block;
     margin: 0 auto;
-    width: 125px; }
-
+    width: 225px;
+    position: absolute; }
+  .leftColumn .sticker {
+    width: 75px;
+    height: 75px;
+    background: url(../images/WParrow.png);
+    background-repeat: no-repeat;
+    animation: spin 10s linear infinite;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused;
+    z-index: 100;
+    position: absolute;
+    left: 78px;
+    top: 29px; }
+  .leftColumn .sticker:hover {
+    /* Toggle our animation play state to running when we are hovering over our sticker */
+    animation-play-state: running; }
+@keyframes spin {
+  100% {
+    transform: rotate(1turn); } }
 .redColumn {
   background-color: #ff0033; }
 
