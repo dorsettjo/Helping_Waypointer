@@ -16,7 +16,12 @@
             <div class="leftColumn redColumn">
                 <img src="{% static 'images/Food2_WH.png' %}" class="ParticularIcon" alt="shelterIcon" />
                 <h1>FOOD</h1>
-                <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
+                <div class="movingPart">
+                    <a href="{% url 'index' %}"> <img src="{% static 'images/WPmarker.png' %}" class="Compass" alt="compass image" /></a>
+                    <a href="{% url 'index' %}">
+                        <div class="sticker"></div>
+                    </a>
+                </div>
             </div>
             <div class="rightSideWhole">
                 <div class="titleBar">

@@ -15,7 +15,12 @@
             <div class="leftColumn ltblueColumn">
                 <img src="{% static 'images/Legal5_WH.png' %}" class="ParticularIcon" alt="legal Icon" />
                 <h1>LEGAL ASSISTANCE</h1>
-                <a href="{% url 'index' %}"> <img src="{% static 'images/wayCompass.svg' %}" class="Compass" alt="compass image" /></a>
+                <div class="movingPart">
+                    <a href="{% url 'index' %}"> <img src="{% static 'images/WPmarker.png' %}" class="Compass" alt="compass image" /></a>
+                    <a href="{% url 'index' %}">
+                        <div class="sticker"></div>
+                    </a>
+                </div>
             </div>
             <div class="rightSideWhole">
                 <div class="titleBar">
