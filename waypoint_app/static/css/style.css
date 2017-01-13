@@ -1,3 +1,7 @@
+.mainpage {
+    background-image: url(../images/map_BG.jpg);
+}
+
 body {
   width: 100%;
   margin: 0 auto; }
@@ -27,6 +31,26 @@ p {
 #shelterResults {
   padding-top: 75px;
   padding-bottom: 100px; }
+
+#crisisResults {
+    padding-top: 75px;
+    padding-bottom: 100px; }
+
+#transportationResults {
+    padding-top: 75px;
+    padding-bottom: 100px; }
+
+#medicalResults {
+        padding-top: 75px;
+        padding-bottom: 100px; }
+
+#foodResults {
+    padding-top: 75px;
+    padding-bottom: 100px; }
+
+#legalResults {
+    padding-top: 75px;
+    padding-bottom: 100px; }
 
 .list-information {
   text-align: left;
