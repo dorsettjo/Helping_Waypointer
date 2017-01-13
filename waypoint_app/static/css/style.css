@@ -245,4 +245,8 @@ p {
     margin: 0 auto;
     width: 30%; }
 
+.modal-body {
+    text-align:center;
+}
+
 /*# sourceMappingURL=style.css.map */
