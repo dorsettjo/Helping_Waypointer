@@ -12,6 +12,9 @@ body {
   width: 100%;
   margin: 0 auto; }
 
+#google_translate_element {
+  padding-left: 10px; }
+
 h1 {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center; }
@@ -224,6 +227,49 @@ p {
         outline-offset: none;
         background-color: #ff0033; }
 
+.crisisBtn {
+    background-color: white;
+    border: none;
+    border-radius: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    width: 100%; }
+
+.crisisBtn:hover {
+    background-color: white; }
+
+.crisisBtn.focus, .crisisBtn:focus {
+    color: #fff;
+    background-color: white;
+}
+
+.crisisBtn.active.focus, .crisisBtn.active:focus, .crisisBtn.focus, .crisisBtn:active.focus, .crisisBtn:active:focus, .crisisBtn:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: white; }
+
+.closes {
+    background-color: white;
+}
+
+.closes:hover {
+    background-color: white; }
+
+.closes.focus, .closes:focus {
+    color: #fff;
+    background-color: white;
+ }
+
+.closes.active.focus, .closes.active:focus, .closes.focus, .closes:active.focus, .closes:active:focus, .closes:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: white; }
+
 .rightSideWhole {
   background-color: white;
   width: 60%;
@@ -267,39 +313,5 @@ p {
     display: block;
     margin: 0 auto;
     width: 30%; }
-
-.modal-body {
-    text-align:center;
-}
-
-.crisisBtn {
-  background-color: white;
-  border: none;
-  border-radius: 0px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  letter-spacing: 2px;
-  width: 100%;
-  color: black;
- }
-
-.crisisBtn:hover {
-  background-color: white;
-  color: black;
- }
-
-.crisisBtn.focus, .crisisBtn:focus {
-  color: black;
-  background-color: white;
- }
-
-.crisisBtn.active.focus, .crisisBtn.active:focus, .crisisBtn.focus, .crisisBtn:active.focus, .crisisBtn:active:focus, .crisisBtn:focus {
-  outline: none;
-  outline-color: none;
-  outline-width: none;
-  outline-offset: none;
-  background-color: white;
-  color: black;
-}
 
 /*# sourceMappingURL=style.css.map */
