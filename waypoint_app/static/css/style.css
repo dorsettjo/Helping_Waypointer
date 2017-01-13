@@ -200,12 +200,12 @@ p {
 .ltblueBtn:hover {
   background-color: #8ad5dd; }
 
-.ltblueColumn.focus, .ltblueColumn:focus {
+.ltblueBtn.focus, .ltblueBtn:focus {
     color: #fff;
     background-color: #8ad5dd;
     border-color: #8ad5dd; }
 
- .ltblueColumn.active.focus, .ltblueColumn.active:focus, .ltblueColumn.focus, .ltblueColumn:active.focus, .ltblueColumn:active:focus, .ltblueColumn:focus {
+ .ltblueBtn.active.focus, .ltblueBtn.active:focus, .ltblueBtn.focus, .ltblueBtn:active.focus, .ltblueBtn:active:focus, .ltblueBtn:focus {
     outline: none;
     outline-color: none;
     outline-width: none;
