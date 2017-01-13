@@ -100,7 +100,7 @@ font-size: 18px}
 
 
 
-@mixin on-circle($item-count, $circle-size, $item-size) {
+@mixin on-circle ($item-count, $circle-size, $item-size) {
   position: relative;
   width:  $circle-size;
   height: $circle-size;
