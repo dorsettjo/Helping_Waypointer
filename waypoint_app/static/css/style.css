@@ -1,3 +1,4 @@
+
 .modal {
     overflow-y: auto;
 }
@@ -10,6 +11,7 @@
 html {
     background-image: url(../images/map_BG.jpg);
 }
+
 body {
   width: 100%;
   margin: 0 auto; }
@@ -39,6 +41,27 @@ p {
 #shelterResults {
   padding-top: 60px;
   padding-bottom: 60px; }
+
+
+#crisisResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+#foodResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+#transportationResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+#legalResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+#medicalResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
 
 .list-information {
   text-align: left;
@@ -150,6 +173,18 @@ p {
     display: block;
     margin: 0 auto;
     width: 125px; }
+
+.redColumn {
+  background-color: #ff0033; }
+
+.ltblueColumn {
+  background-color: #8ad5dd; }
+
+.redBtn:Hover {
+  background-color: #ff0033; }
+
+.ltblueBtn:Hover {
+  background-color: #8ad5dd; }
 
 .rightSideWhole {
   background-color: white;
