@@ -15,7 +15,7 @@ h3 {
   text-align: center; }
 
 h4 {
-  font-family: 'Covered By Your Grace', cursive;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 200%; }
 
@@ -110,10 +110,6 @@ p {
   height: 2000px;
   margin: 0;
   padding: 0, 0, 0, 0; }
-
-.modal-body {
-    text-align: center;
-}
 
 .leftColumn {
   background-color: #0f4580;
