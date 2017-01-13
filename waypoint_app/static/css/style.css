@@ -1,3 +1,17 @@
+
+.modal {
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: auto;
+}
+
+
+.mainpage {
+    background-image: url(../images/map_BG.jpg);
+}
+
 body {
   width: 100%;
   margin: 0 auto; }
@@ -25,8 +39,29 @@ p {
   font-size: 18px; }
 
 #shelterResults {
-  padding-top: 75px;
-  padding-bottom: 100px; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+
+#crisisResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+#foodResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+#transportationResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+#legalResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+#medicalResults {
+    padding-top: 60px;
+    padding-bottom: 60px; }
 
 .list-information {
   text-align: left;
@@ -104,12 +139,7 @@ p {
       filter: grayscale(0); }
 
 .map {
-  background-image: url(../images/map_BG.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 2000px;
-  margin: 0;
-  padding: 0, 0, 0, 0; }
+   }
 
 .leftColumn {
   background-color: #0f4580;
@@ -167,11 +197,35 @@ p {
 .ltblueColumn {
   background-color: #8ad5dd; }
 
-.redBtn:Hover {
+.redBtn:hover {
   background-color: #ff0033; }
 
-.ltblueBtn:Hover {
+.ltblueBtn:hover {
   background-color: #8ad5dd; }
+
+.redBtn-info.focus, .redBtn-info:focus {
+    color: #fff;
+    background-color: #ff0033;
+    border-color: #ff0033; }
+
+.redBtn.active.focus, .redBtn.active:focus, .redBtn.focus, .redBtn:active.focus, .redBtn:active:focus, .redBtn:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: #ff0033; }
+
+.ltblueBtn.focus, .ltblueBtn:focus {
+      color: #fff;
+      background-color: #8ad5dd;
+      border-color: #8ad5dd; }
+
+.ltblueBtn.active.focus, .ltblueBtn.active:focus, .ltblueBtn.focus, .ltblueBtn:active.focus, .ltblueBtn:active:focus, .ltblueBtn:focus {
+      outline: none;
+      outline-color: none;
+      outline-width: none;
+      outline-offset: none;
+      background-color: #8ad5dd; }
 
 .rightSideWhole {
   background-color: white;
@@ -216,5 +270,6 @@ p {
     display: block;
     margin: 0 auto;
     width: 30%; }
+
 
 /*# sourceMappingURL=style.css.map */
