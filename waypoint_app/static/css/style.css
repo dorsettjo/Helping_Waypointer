@@ -228,6 +228,7 @@ p {
         background-color: #ff0033; }
 
 .crisisBtn {
+    color: black;
     background-color: white;
     border: none;
     border-radius: 0px;
@@ -237,10 +238,11 @@ p {
     width: 100%; }
 
 .crisisBtn:hover {
+    color: black;
     background-color: white; }
 
 .crisisBtn.focus, .crisisBtn:focus {
-    color: #fff;
+    color: black;
     background-color: white;
 }
 
@@ -249,7 +251,8 @@ p {
     outline-color: none;
     outline-width: none;
     outline-offset: none;
-    background-color: white; }
+    background-color: white;
+    color: black; }
 
 .closes {
     background-color: white;
@@ -269,6 +272,10 @@ p {
     outline-width: none;
     outline-offset: none;
     background-color: white; }
+
+.modal-body {
+    text-align: center;
+}
 
 .rightSideWhole {
   background-color: white;
