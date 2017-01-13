@@ -139,7 +139,8 @@ p {
   background-color: #0f4580;
   width: 40%;
   margin: 0;
-  padding: 0;
+  display: block;
+  margin: 0 auto;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -162,13 +163,13 @@ p {
     padding-bottom: 5%; }
   .leftColumn .movingPart {
     position: relative;
-    width: 325px; }
+    width: 325px;
+    display: block;
+    margin: 0 auto; }
   .leftColumn .Compass {
     display: block;
     margin: 0 auto;
-    width: 225px;
-    position: absolute;
-    left: 125px; }
+    width: 225px; }
   .leftColumn .sticker {
     width: 75px;
     height: 75px;
@@ -179,8 +180,8 @@ p {
     animation-play-state: paused;
     z-index: 100;
     position: absolute;
-    left: 203px;
-    top: 29px;
+    left: 131px;
+    top: 31px;
     display: block;
     margin: 0 auto; }
   .leftColumn .sticker:hover {
