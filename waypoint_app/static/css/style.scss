@@ -5,6 +5,15 @@ body {
 #google_translate_element {
   padding-left: 10px;
 }
+.mainpage {
+   background-image: url(../images/map_BG.jpg);
+}
+
+.centerImage{
+   margin-top: -60px;
+   width: 500px;
+   margin-left: -250px;
+}
 
 h1 {font-family: 'Roboto Condensed', sans-serif;
 text-align: center;}
@@ -24,6 +33,26 @@ font-size: 18px}
   padding-bottom: 100px;
 }
 
+#crisisResults {
+   padding-top: 75px;
+   padding-bottom: 100px; }
+
+#transportationResults {
+   padding-top: 75px;
+   padding-bottom: 100px; }
+
+#medicalResults {
+       padding-top: 75px;
+       padding-bottom: 100px; }
+
+#foodResults {
+   padding-top: 75px;
+   padding-bottom: 100px; }
+
+#legalResults {
+   padding-top: 75px;
+   padding-bottom: 100px; }
+
 .list-information {
   text-align: left;
   padding-left: 10px;
@@ -39,6 +68,26 @@ font-size: 18px}
   letter-spacing: 2px;
   width:100%;
 }
+
+
+.btn-lg:hover{
+  background-color: #0f4580;
+}
+
+.btn-info.focus, .btn-info:focus {
+   color: #fff;
+   background-color: #0f4580 ;
+   border-color: #0f4580 ;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+   outline: none;
+   outline-color: none;
+   outline-width: none;
+   outline-offset: none;
+   background-color: #0f4580;
+}
+
 
  .crisisBtn {
   background-color: white;
@@ -66,24 +115,6 @@ font-size: 18px}
    outline-width: none;
    outline-offset: none;
    background-color: white;
-}
-
-.btn-lg:hover{
-  background-color: #0f4580;
-}
-
-.btn-info.focus, .btn-info:focus {
-   color: #fff;
-   background-color: #0f4580 ;
-   border-color: #0f4580 ;
-}
-
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-   outline: none;
-   outline-color: none;
-   outline-width: none;
-   outline-offset: none;
-   background-color: #0f4580;
 }
 
 .outerRim {
@@ -140,7 +171,6 @@ font-size: 18px}
     display: block;
     max-width: 100%;
     filter: opacity(85%);
-    // border: solid 5px tomato;
     transition: .15s;
 
     &:hover {
@@ -173,7 +203,7 @@ font-size: 18px}
   float: left;
   height: 100vh;
   color: white;
-  border-right: 2px solid black;
+
 
   h1 {
     padding: 0;
@@ -235,12 +265,6 @@ font-size: 18px}
   }
 
 
-  //  .movingPart .Compass .sticker {
-  //    display: block;
-  //    margin: 0 auto;
-  //  }
-
-
 }
 .redColumn {
   background-color:#ff0033;
@@ -249,11 +273,57 @@ font-size: 18px}
   background-color:#8ad5dd;
 }
 
-.redBtn:Hover {
-  background-color:#ff0033;
+.redBtn:hover {
+ background-color: #ff0033 ; }
+
+.ltblueBtn:hover {
+ background-color: #8ad5dd ; }
+
+.ltblueBtn.focus, .ltblueBtn:focus {
+   color: #fff;
+   background-color: #8ad5dd ;
+   border-color: #8ad5dd ; }
+
+.ltblueBtn.active.focus, .ltblueBtn.active:focus, .ltblueBtn.focus, .ltblueBtn:active.focus, .ltblueBtn:active:focus, .ltblueBtn:focus {
+   outline: none;
+   outline-color: none;
+   outline-width: none;
+   outline-offset: none;
+   background-color: #8ad5dd ; }
+
+.redBtn.focus, .redBtn:focus {
+       color: #fff;
+       background-color: #ff0033 ;
+       border-color: #ff0033 ; }
+
+.redBtn.active.focus, .redBtn.active:focus, .redBtn.focus, .redBtn:active.focus, .redBtn:active:focus, .redBtn:focus {
+       outline: none;
+       outline-color: none;
+       outline-width: none;
+       outline-offset: none;
+       background-color: #ff0033 ; }
+
+       .closes {
+   background-color: white;
 }
-.ltblueBtn:Hover {
-  background-color:#8ad5dd;
+
+.closes:hover {
+   background-color: white; }
+
+.closes.focus, .closes:focus {
+   color: #fff;
+   background-color: white;
+}
+
+.closes.active.focus, .closes.active:focus, .closes.focus, .closes:active.focus, .closes:active:focus, .closes:focus {
+   outline: none;
+   outline-color: none;
+   outline-width: none;
+   outline-offset: none;
+   background-color: white; }
+
+.modal-body {
+   text-align: center;
 }
 
 .rightSideWhole {
@@ -263,52 +333,5 @@ font-size: 18px}
   padding: 0;
   height: 100vh;
   float: right;
-  // .img {
-  //
-  // }
-}
-
-.titleBar {
-  background-color: #000;
-  height: 60px;
-  color: white;
-  top: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  width:60%;
-
-  h1 {font-family:'Roboto Condensed', sans-serif;
-  text-align: center;text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 100;}
-}
-
-.bottomBar {
-  background-color: black;
-  height: 55px;
-  font-family: sans-serif;
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  width:60%;
-
-  .tagline {
-    border-top: 10px solid black;
-    // padding-top: 100px;
-    margin-bottom: 20%;
-    padding-top: 25px;
-    // padding-right: 38%;
-    padding: 0;
-    display: block;
-    margin:0 auto;
-    width: 30%;
-  }
-}
-
-.btn btn-info btn-lg {
 
 }
