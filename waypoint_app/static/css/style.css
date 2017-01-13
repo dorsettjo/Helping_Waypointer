@@ -1,3 +1,13 @@
+.mainpage {
+    background-image: url(../images/map_BG.jpg);
+}
+
+.centerImage{
+    margin-top: -60px;
+    width: 500px;
+    margin-left: -250px;
+}
+
 body {
   width: 100%;
   margin: 0 auto; }
@@ -30,6 +40,26 @@ p {
 #shelterResults {
   padding-top: 75px;
   padding-bottom: 100px; }
+
+#crisisResults {
+    padding-top: 75px;
+    padding-bottom: 100px; }
+
+#transportationResults {
+    padding-top: 75px;
+    padding-bottom: 100px; }
+
+#medicalResults {
+        padding-top: 75px;
+        padding-bottom: 100px; }
+
+#foodResults {
+    padding-top: 75px;
+    padding-bottom: 100px; }
+
+#legalResults {
+    padding-top: 75px;
+    padding-bottom: 100px; }
 
 .list-information {
   text-align: left;
@@ -129,14 +159,6 @@ p {
     transition: .15s; }
     .circle-container img:hover {
       filter: grayscale(0); }
-
-.map {
-  background-image: url(../images/map_BG.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 2000px;
-  margin: 0;
-  padding: 0, 0, 0, 0; }
 
 .leftColumn {
   background-color: #0f4580;
