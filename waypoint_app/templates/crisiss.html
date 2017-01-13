@@ -25,7 +25,7 @@
             </div>
             <div class="rightSideWhole">
                 <div class="titleBar">
-                    <h1>Click Name for Location and Map</h1>
+                    <h1>Click for Phone Numbers</h1>
                 </div>
                 <div class="bottomBar">
                     <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
@@ -42,7 +42,7 @@
                 {% verbatim %}
                     <script id="handlebarsTest" type="text/x-handlebars-template">
                         {{#each this}}
-                            <button type="button" class="btn btn-info btn-lg ltblueBtn" data-toggle="modal" data-target="#crisisModal{{@index}}">{{this.crisisname}}</button>
+                            <button type="button" class="btn btn-info btn-lg crisisBtn" data-toggle="modal" data-target="#crisisModal{{@index}}">{{this.crisisname}}</button>
                             <br>
                             <div id="crisisModal{{@index}}" class="modal fade" role="dialog">
                                 <div class="modal-dialog">
@@ -66,6 +66,7 @@
                         {{/each}}
                     </script>
                 {% endverbatim %}
+
                 <div class="bottomBar">
                     <img src="{% static 'images/wp_logotext.png' %}" class="tagline" alt="logo text" />
                 </div>

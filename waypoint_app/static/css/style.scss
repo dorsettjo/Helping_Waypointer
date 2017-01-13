@@ -38,6 +38,34 @@ font-size: 18px}
   width:100%;
 }
 
+ .crisisBtn {
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  width:100%;
+}
+
+.crisisBtn:hover{
+  background-color: white;
+}
+
+.crisisBtn.focus, .crisisBtn:focus {
+   color: #fff;
+   background-color: white;
+   border-color: #0f4580;
+}
+
+.crisisBtn.active.focus, .crisisBtn.active:focus, .crisisBtn.focus, .crisisBtn:active.focus, .crisisBtn:active:focus, .crisisBtn:focus {
+   outline: none;
+   outline-color: none;
+   outline-width: none;
+   outline-offset: none;
+   background-color: white;
+}
+
 .btn-lg:hover{
   background-color: #0f4580;
 }
