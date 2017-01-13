@@ -170,11 +170,35 @@ p {
 .ltblueColumn {
   background-color: #8ad5dd; }
 
-.redBtn:Hover {
+.redBtn:hover {
   background-color: #ff0033; }
 
-.ltblueBtn:Hover {
+.ltblueBtn:hover {
   background-color: #8ad5dd; }
+
+.redBtn-info.focus, .redBtn-info:focus {
+    color: #fff;
+    background-color: #ff0033;
+    border-color: #ff0033; }
+
+.redBtn.active.focus, .redBtn.active:focus, .redBtn.focus, .redBtn:active.focus, .redBtn:active:focus, .redBtn:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: #ff0033; }
+
+.ltblueBtn.focus, .ltblueBtn:focus {
+      color: #fff;
+      background-color: #8ad5dd;
+      border-color: #8ad5dd; }
+
+.ltblueBtn.active.focus, .ltblueBtn.active:focus, .ltblueBtn.focus, .ltblueBtn:active.focus, .ltblueBtn:active:focus, .ltblueBtn:focus {
+      outline: none;
+      outline-color: none;
+      outline-width: none;
+      outline-offset: none;
+      background-color: #8ad5dd; }
 
 .rightSideWhole {
   background-color: white;
