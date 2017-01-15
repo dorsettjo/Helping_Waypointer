@@ -2,73 +2,56 @@
 {% load static %}
 <html class="mainpage">
     <head>
-      <meta charset="utf-8">
-      <title>WayPointer</title>
-      <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
-      <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
-      <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <meta charset="utf-8">
+        <title>WayPointer</title>
+        <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
+        <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     </head>
-
     <body>
-
-
-
-      <div class="map">
-        <ul class='circle-container'>
-
-            <li>
-              <a href="{% url 'shelters' %}">
-                <img src="{% static 'images/1icon_shelter.png' %}" alt="shelter Link" />
-              </a>
-            </li>
-
-            <li>
-              <a href="{% url 'foods' %}">
-                <img src="{% static 'images/2icon_food.png' %}" alt="food Link" />
-              </a>
-              </li>
-
-            <li>
-              <a href="{% url 'medicals' %}">
-                <img src="{% static 'images/3icon_medical.png' %}" alt="medical Link" />
-              </a>
-            </li>
-
-            <li>
-              <a href="{% url 'crisiss' %}">
-                <img src="{% static 'images/4icon_crisis.png' %}" alt="crisis Link" />
-              </a>
-            </li>
-
-            <li>
-              <a href="{% url 'legals' %}">
-                <img src="{% static 'images/5icon_legal.png' %}" alt="legal Link" />
-              </a>
-            </li>
-
-            <li>
-              <a href="{% url 'transportations' %}">
-                <img class="image" src="{% static 'images/6icon_transportation.png' %}" alt="Transportation Link" />
-              </a>
-            </li>
-            <li class="centerImage">
-                <img src="{% static 'images/way_PointerLogo_Tagline.png' %}" alt="logo Link" />
-            </li>
-
-          </ul>
-      </div>
-
-  </body>
-
+        <div class="map">
+            <ul class='circle-container'>
+                <li>
+                    <a href="{% url 'shelters' %}">
+                        <img src="{% static 'images/1icon_shelter.png' %}" alt="shelter Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'foods' %}">
+                        <img src="{% static 'images/2icon_food.png' %}" alt="food Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'medicals' %}">
+                        <img src="{% static 'images/3icon_medical.png' %}" alt="medical Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'crisiss' %}">
+                        <img src="{% static 'images/4icon_crisis.png' %}" alt="crisis Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'legals' %}">
+                        <img src="{% static 'images/5icon_legal.png' %}" alt="legal Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'transportations' %}">
+                        <img class="image" src="{% static 'images/6icon_transportation.png' %}" alt="Transportation Link" />
+                    </a>
+                </li>
+                <li class="centerImage">
+                    <img src="{% static 'images/way_PointerLogo_Tagline.png' %}" alt="logo Link" />
+                </li>
+            </ul>
+        </div>
+    </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-
-    <script src="{% static '/js/remodal.js' %}"></script>
-    <script src="{% static '/js/remodal.min.js' %}"></script>
-
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
 
 </html>
