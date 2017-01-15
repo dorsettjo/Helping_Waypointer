@@ -1,8 +1,12 @@
-navigator.geolocation.getCurrentPosition(function(location) {
-    $("#latitude").val(location.coords.latitude)
-    $("#longitude").html(location.coords.longitude)
-});
+navigator.geolocation.getCurrentPosition(whereareyou)
 
+var currentlatitudei = 40.712784;
+var currentlongitudei = -74.005941;
 
-lat = document.getElementById("latitude");
-lon = document.getElementById("longitude");
+function whereareyou(positioncurrent) {
+    var todisect = positioncurrent.coords
+    currentlatitudei = todisect.latitude
+    currentlongitudei = todisect.longitude
+    console.log(currentlongitudei)
+    console.log(currentlatitudei)
+}

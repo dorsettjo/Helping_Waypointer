@@ -1,14 +1,14 @@
 navigator.geolocation.getCurrentPosition(whereareyou)
 
-var currentlatitude = 40.712784;
-var currentlongitude = -74.005941;
+var currentlatitudem = 40.712784;
+var currentlongitudem = -74.005941;
 
 function whereareyou(positioncurrent) {
     var todisect = positioncurrent.coords
-    currentlatitude = todisect.latitude
-    currentlongitude = todisect.longitude
-    console.log(currentlongitude)
-    console.log(currentlatitude)
+    currentlatitudem = todisect.latitude
+    currentlongitudem = todisect.longitude
+    console.log(currentlongitudem)
+    console.log(currentlatitudem)
 }
 
 function medicalList(){
@@ -25,7 +25,7 @@ medicalList()
 function getDistance(address,id){
     var splitAddress = address.split(' ')
     var joinAddress = splitAddress.join('+')
-    var ronald = currentlatitude + ',' + currentlongitude
+    var ronald = currentlatitudem + ',' + currentlongitudem
     console.log(ronald)
     // return joinAddress
     $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins="+ronald+"&destinations="+joinAddress).done(function(results){
