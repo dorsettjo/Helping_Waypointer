@@ -13,6 +13,20 @@
 //
 // $("#foodButton").click(function(){location.href='foods'}).done(foodList())
 
+navigator.geolocation.getCurrentPosition(whereareyou)
+
+var currentlatitude = 40.712784;
+var currentlongitude = -74.005941;
+
+function whereareyou(positioncurrent) {
+    var todisect = positioncurrent.coords
+    currentlatitude = todisect.latitude
+    currentlongitude = todisect.longitude
+    console.log(currentlongitude)
+    console.log(currentlatitude)
+}
+
+
 function foodList(){
         $.getJSON("/api/foods/").done(function(results){
             var source = $("#handlebarsTest").html();
@@ -21,27 +35,21 @@ function foodList(){
             $('#foodResults').append(html);
         })
 }
-foodList()
 
+foodList()
 
 function getDistance(address,id){
     var splitAddress = address.split(' ')
     var joinAddress = splitAddress.join('+')
-    var ronald = getCoords(lat, lon)
+    var ronald = currentlatitude + ',' + currentlongitude
     console.log(ronald)
     // return joinAddress
-    $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=35.7778208,-78.6388908&destinations="+joinAddress).done(function(results){
+    $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins="+ronald+"&destinations="+joinAddress).done(function(results){
         var distance = results['rows'][0]['elements'][0]['distance'].text
         $("#dist" + id).html(distance)
     })
 }
 
-function getCoords(lat, lon){
-    console.log('test')
-    console.log(lat)
-    console.log('endtest')
-    return lat + lon;
-}
 
 
 Handlebars.registerHelper("showDistance", function(address, id) {
