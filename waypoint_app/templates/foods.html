@@ -22,8 +22,6 @@
                 </div>
             </div>
             <div class="rightSideWhole">
-
-
                 <div id="foodResults">
                     <div id="google_translate_element">
                     </div>
@@ -54,6 +52,10 @@
                                                 &zoom=17
                                                 &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
                                             </iframe>
+                                            <p id="maps{{@index}}">{{showMap this.address @index }}</p>
+                                            {{showDistance this.address @index }}
+                                            <div id="{{@index}}dirmap" style="float:left;width:70%; height:100%"></div>
+                                            <div id="directionsPanel{{@index}}" style="float:right;width:30%;height 100%"></div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default closes" data-dismiss="modal">Close</button>
@@ -65,7 +67,6 @@
                         {{/each}}
                     </script>
                 {% endverbatim %}
-
             </div>
         </div>
     </body>
@@ -75,7 +76,9 @@
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
     <script type="text/javascript" src="{% static '/js/foods.js' %}"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvKLD4wY0XHP5oHEDOjUw4pMbpXPSU_Z4&callback=initMap">
+    </script>
 </html>

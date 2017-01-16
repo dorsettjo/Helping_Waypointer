@@ -9,6 +9,7 @@ function whereareyou(positioncurrent) {
     currentlongitudel = todisect.longitude
     console.log(currentlongitudel)
     console.log(currentlatitudel)
+    legalList()
 }
 
 function legalList(){
@@ -19,8 +20,6 @@ function legalList(){
             $('#legalResults').append(html);
         })
 }
-legalList()
-
 
 function getDistance(address,id){
     var splitAddress = address.split(' ')

@@ -9,6 +9,7 @@ function whereareyou(positioncurrent) {
     currentlongitudem = todisect.longitude
     console.log(currentlongitudem)
     console.log(currentlatitudem)
+    medicalList()
 }
 
 function medicalList(){
@@ -19,7 +20,7 @@ function medicalList(){
             $('#medicalResults').append(html);
         })
 }
-medicalList()
+
 
 
 function getDistance(address,id){

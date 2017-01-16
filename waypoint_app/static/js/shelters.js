@@ -9,6 +9,7 @@ function whereareyou(positioncurrent) {
     currentlongitudes = todisect.longitude
     console.log(currentlongitudes)
     console.log(currentlatitudes)
+    shelterList()
 }
 
 function shelterList(){
@@ -19,7 +20,7 @@ function shelterList(){
             $('#shelterResults').append(html);
         })
 }
-shelterList()
+
 
 
 function getDistance(address,id){
