@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
         <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
       </head>
     <body>
         <div class="foodPage">
@@ -52,7 +54,7 @@
                                                 &zoom=17
                                                 &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
                                             </iframe>
-                                            <p id="maps{{@index}}">{{showMap this.address @index }}</p>
+
                                             {{showDistance this.address @index }}
                                             <div id="{{@index}}dirmap" style="float:left;width:70%; height:100%"></div>
                                             <div id="directionsPanel{{@index}}" style="float:right;width:30%;height 100%"></div>

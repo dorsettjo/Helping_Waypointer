@@ -56,7 +56,9 @@ Handlebars.registerHelper("showDistance", function(address, id) {
     getDistance(address, id)
 })
 
-//
+
+//directions map
+
 //
 // function makeMap(address,id){
 //     var objectforgoogle = {
@@ -116,49 +118,47 @@ Handlebars.registerHelper("showDistance", function(address, id) {
 //     }
 //   });
 // }
-//
-// var directionsDisplay;
-// var directionsService = new google.maps.DirectionsService();
-// var map;
-// var currentlocal = new google.maps.LatLng(currentlatitudef, currentlongitudef);
-//
-// function initialize() {
-//   directionsDisplay = new google.maps.DirectionsRenderer();
-//   var mapOptions = {
-//     zoom: 14,
-//     center: currentlocal
-//   }
-//   map = new google.maps.Map(document.getElementById('map'), mapOptions);
-//   directionsDisplay.setMap(map);
-// }
-//
-// function calcRoute(dest) {
-//   var request = {
-//       origin: currentlocal,
-//       destination: dest,
-//       // Note that Javascript allows us to access the constant
-//       // using square brackets and a string value as its
-//       // "property."
-//       travelMode: WALKING,
-//       unitSystem: UnitSystem.IMPERIAL,
-//       provideRouteAlternatives: false,
-//       region: String
-//   };
-//   directionsService.route(request, function(response, status) {
-//     if (status == 'OK') {
-//       directionsDisplay.setDirections(response);
-//     }
-//   });
-// }
 
-// Handlebars.registerHelper("showDistance", function(distance) {
-//     var splitAddress = address.split(' ')
-//     var joinAddress = splitAddress.join('+')
-//     // return joinAddress
-//     $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?origins=35.7778208,-78.6388908&destinations="+joinAddress).done(function(results){
-//         var distance = results
-//         console.log(distance['rows'][0]['elements'][0]['distance'].text)
-//         return distance['rows'][0]['elements'][0]['distance'].text;
-//     })
-//
-// })
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var map;
+var currentlocal = new google.maps.LatLng(currentlatitudef, currentlongitudef);
+
+function initialize(divey) {
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  var mapOptions = {
+    zoom: 14,
+    center: currentlocal
+  }
+  map = new google.maps.Map(divey, mapOptions);
+  directionsDisplay.setMap(map);
+}
+
+Handlebars.registerHelper("initializeHelp", function(address, id) {
+    console.log(address)
+    initialize(address, id)
+})
+
+function calcRoute(dest) {
+  var request = {
+      origin: currentlocal,
+      destination: dest,
+      // Note that Javascript allows us to access the constant
+      // using square brackets and a string value as its
+      // "property."
+      travelMode: WALKING,
+      unitSystem: UnitSystem.IMPERIAL,
+      provideRouteAlternatives: false,
+      region: String
+  };
+  directionsService.route(request, function(response, status) {
+    if (status == 'OK') {
+      directionsDisplay.setDirections(response);
+    }
+  });
+}
+
+Handlebars.registerHelper("calcRouteHelp", function(address, id) {
+    console.log(address)
+    calcRoute(address, id)
+})
