@@ -3,15 +3,15 @@ body {
   margin: 0 auto; }
 
 #google_translate_element {
-  padding-left: 10px; }
+  padding-left: 20px;
+  padding-bottom: 20px; }
 
-.mainpage {
-  background-image: url(../images/map_BG.jpg); }
-
-.centerImage {
-  margin-top: -60px;
-  width: 500px;
-  margin-left: -250px; }
+html {
+  height: 100vh;
+  background-image: url(../images/Map_BG1.jpg);
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: top right; }
 
 h1 {
   font-family: 'Roboto Condensed', sans-serif;
@@ -155,16 +155,12 @@ p {
     max-width: 100%;
     filter: opacity(85%);
     transition: .15s; }
-    .circle-container img:hover {
-      filter: grayscale(0); }
 
-.map {
-  background-image: url(../images/map_BG.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 2000px;
-  margin: 0;
-  padding: 0, 0, 0, 0; }
+.PointerLogo {
+  margin-top: -60px;
+  width: 500px;
+  margin-right: 500px;
+  margin-left: -250px; }
 
 .leftColumn {
   background-color: #0f4580;
