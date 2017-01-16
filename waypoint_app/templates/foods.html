@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-        <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>    
+        <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
       </head>
     <body>
@@ -53,8 +53,8 @@
                                                 &zoom=17
                                                 &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
                                             </iframe>
-
-                                            {{showDistance this.address @index }}
+                                            {{initializeHelp @index}}
+                                            {{calcRouteHelp this.address}}
                                             <div id="{{@index}}dirmap" style="float:left;width:70%; height:100%"></div>
                                             <div id="directionsPanel{{@index}}" style="float:right;width:30%;height 100%"></div>
                                         </div>
