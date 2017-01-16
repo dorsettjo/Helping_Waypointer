@@ -1,3 +1,12 @@
+html {
+   height: 100vh;
+   background-image: url(../images/Map_BG1.svg);
+   background-size: fill;
+   background-repeat: no-repeat;
+   background-position: top right;
+
+}
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -6,14 +15,14 @@ body {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-html {
-   height: 100vh;
-   background-image: url(../images/Map_BG1.jpg);
-   background-size: fill;
-   background-repeat: no-repeat;
-   background-position: top right;
-
-}
+// html {
+//    height: 100vh;
+//    background-image: url(../images/Map_BG1.jpg);
+//    background-size: fill;
+//    background-repeat: no-repeat;
+//    background-position: top right;
+//
+// }
 
 
 
@@ -64,7 +73,7 @@ font-size: 18px}
 
 
 .btn-lg {
-  background-color: black;
+  background-color: #ffffff;
   border: none;
   border-radius: 0px;
   font-family: 'Roboto', sans-serif;
@@ -94,7 +103,8 @@ font-size: 18px}
 
 
  .crisisBtn {
-  background-color: white;
+  background-color: #000000;
+  color:#ffffff;
   border: none;
   border-radius: 0px;
   font-family: 'Roboto', sans-serif;
@@ -104,12 +114,13 @@ font-size: 18px}
 }
 
 .crisisBtn:hover{
-  background-color: white;
+  background-color: #000000;
+  color:#ffffff;
 }
 
 .crisisBtn.focus, .crisisBtn:focus {
-   color: #fff;
-   background-color: white;
+   color: #ffffff;
+   background-color: #000000;
    border-color: #0f4580;
 }
 
@@ -118,113 +129,290 @@ font-size: 18px}
    outline-color: none;
    outline-width: none;
    outline-offset: none;
-   background-color: white;
-}
-
-.outerRim {
-    width: 600px;
-    height: 600px;
-    position: relative;
-}
-
-.outerRim img{
-    position: absolute;
-    width: 21%;
-    height: 21%;
+   background-color:#000000;
+   color:#ffffff;
 }
 
 
 
-@mixin on-circle ($item-count, $circle-size, $item-size) {
-  position: relative;
-  width:  $circle-size;
-  height: $circle-size;
-  border-radius: 50%;
-  padding: 0;
-  list-style: none;
 
-  > * {
+
+body {
+ width: 100%;
+ margin: 0 auto; }
+
+.topBox {
+ height: 100px;
+ background-color: green; }
+
+.topBox img {
+ top: 90%;
+ margin: 0 auto;
+ display: block; }
+
+.stationaryWayPointerIcon {
+ background-color: #8ad5dd ;
+ width: 100%;
+ height: 100px; }
+
+h1 {
+ font-family: 'Roboto', sans-serif;
+ text-align: center; }
+
+h2 {
+ font-family: 'Roboto Condensed', sans-serif;
+ text-align: center; }
+
+h3 {
+ font-family: 'Roboto', sans-serif;
+ text-align: center; }
+
+h4 {
+ font-family: 'Covered By Your Grace', cursive;
+ text-align: center;
+ font-size: 200%; }
+
+p {
+ font-family: 'Roboto Condensed', sans-serif;
+ text-align: center; }
+
+.row2 {
+ background-color: #0a3666 ;
+ height: 300px;
+ width: 100%;
+ padding-left: 5%;
+ padding-right: 5%; }
+
+.row1 {
+ background-color: #8ad5dd ;
+ height: 300px;
+ width: 100%;
+ padding-left: 5%;
+ padding-right: 5%; }
+
+.row1 .row2 {
+  // height: 500px;
+ width: 95%;
+ float: left;
+ margin: 1%; }
+
+.row2 {
+ clear: both;
+ margin-right: 0%; }
+
+
+ .Shelter {
+  //  margin-top: 20%;
+  float: left;
+  width: 30%;
+  // overflow: hidden;
+  // position: absolute;;
+  // text-align: center;
+    img {
+    // top: 60%;
+    margin: 0 auto;
     display: block;
-    position: absolute;
-    top:  50%;
-    left: 50%;
-    margin: -($item-size / 2);
-    width:  $item-size;
-    height: $item-size;
-
-    $angle: (360 / $item-count);
-    $rot: 0;
-
-    @for $i from 1 through $item-count {
-      &:nth-of-type(#{$i}) {
-        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
-      }
-
-      $rot: $rot + $angle;
-    }
+    border-radius: 50%;
   }
-}
 
-.circle-container {
-  @include on-circle($item-count: 6, $circle-size:50em, $item-size: 18em);
-  margin: 5em auto 0;
-  z-index: 10;
+  // img:hover {
+  //   opacity: 0;
+  // }
 
 
-  img {
-    display: block;
-    max-width: 100%;
-    filter: opacity(85%);
-    transition: .15s;
+ }
 
-    // &:hover {
-    //   filter: grayscale(0);
-    // }
+ .Food {
+  float: left;
+  width: 30%;
+  // margin-top: 10%;
+    img {
+      // top: 30%;
+      margin: 0 auto;
+      display: block;
   }
-}
-.PointerLogo {
-  margin-top: -60px;
-  width: 500px;
-  margin-right: 500px;
-  margin-left: -250px;
+ }
 
-}
+ .Medical {
+  //  margin-top: 20%;
+  float: left;
+  width: 30%;
+    img {
+      // top: 60%;
+      margin: 0 auto;
+      display: block;
+  }
+ }
+ .Crisis {
+  //  margin-top:-20%;
+  float: left;
+  width: 30%;
+    img {
+      // bottom: 60%;
+      margin: 0 auto;
+      display: block;
+  }
+ }
 
-// ul li .map .circle-container .PointerLogo {
-// height:200%;
-// overflow: visible;
-// opacity: 100%;
+ .Legal {
+  float: left;
+  width: 30%;
+  // margin-top: -10%;
+    img {
+      // bottom: 30%;
+      margin: 0 auto;
+      display: block;
+  }
+ }
+
+ .Transportation {
+  //  margin-top: -20%;
+  float: left;
+  width: 30%;
+    img {
+      bottom: 60%;
+      margin: 0 auto;
+      display: block;
+  }
+ }
+
+.iconsRow1 img {
+ clear: both;
+ width: 100%;
+ align-self: center; }
+
+.centerTag {
+ z-index: 10;
+ width: 80%;
+
+ background-color: yellow;
+ background-size: cover;
+ display: block;
+ margin: 0 auto;
+clear: both;}
+
+ .centerTag img {
+  //  width: 80%;
+   height: 200%;
+  //  height: auto;
+   align-self: center;
+  //  top: -90%;
+   margin: 0 auto;
+   margin-bottom: 5%;
+   display: block;
+ }
+
+.iconsRow2 img {
+ width: 100%;
+ align-self: center; }
+
+/*# sourceMappingURL=style.css.map */
+
+// [11:59]
+
+// [12:01]
+// style .scss
+
+// [12:01]
+// body {
+//  width: 100%;
+//  margin: 0 auto;
+// }
+// #content {overflow: auto;}
+// #nav. #feature. #footer {
+//   margin: 1%;}
+// }
+
+// .topBox {
+//  height: 100px;
+//  background-color: green;
+// }
+
+// .topBox img {
+// top: 90%;
 // margin: 0 auto;
 // display: block;
-// float:left;
 // }
-// .circle-container img.PointerLogo  {
-// height:110%;
-// max-width: none;
-// opacity: 100%;
-// // margin-right: 40%;
-// display: block;
 //
+// .stationaryWayPointerIcon {
+//  background-color: #8ad5dd ;
+//  width: 100%;
+//  height: 100px;
+// }
+
+// h1 {font-family: 'Roboto', sans-serif;
+// text-align: center;}
+// h2 {font-family: 'Roboto Condensed', sans-serif;
+// text-align: center;}
+// h3 {font-family: 'Roboto', sans-serif;
+// text-align: center;}
+// h4 {font-family: 'Covered By Your Grace', cursive;
+// text-align: center;
+// font-size: 200%}
+// p {font-family: 'Roboto Condensed', sans-serif;
+// text-align: center;}
+
+
+// .row2 {
+//  background-color: #0a3666 ;
+//  height: 500px;
+//  width: 100%;
+//  padding-left: 5%;
+//  padding-right: 5%;
+// }
+
+// .row1 {
+//  background-color: #8ad5dd ;
+//  height: 500px;
+//  width: 100%;
+//  padding-left: 5%;
+//  padding-right: 5%;
+// }
+
+// .row1 .row2 {
+//  width: 31.3%;
+//  float: left;
+//  margin: 1%;
+// }
+
+// .row2 {
+//  clear:both;
+//  margin-right: 0%;
 // }
 
 
-// #result-side-menu li.li-no-hover:hover {
-//     background-color: transparent;
+// .iconsRow1 img {
+//   clear: both;
+//   width: 30%;
+//   align-self: center;
+//
+//
+//  // height: 25px;
 // }
-
-
-
-// .centerImage {
-//   display: block;
-//    width:500px;
-//     z-index: 100;
+// .centerTag {
+//  z-index: 10;
+//  width: 80%;
+//  height: 300px;
+//  background-color: yellow;
+//  background-size: cover;
+//  display:block;
+//  margin: 0 auto;
+//   img {
+//     width: 60%;
+//     height: auto;
+//     align-self: center;
+//     top: 90%;
+//     margin: 0 auto;
+//     display: block;
 // }
-//  margin-top: 60px;
-//  margin-bottom: 0;
-//  margin-right: 0;
-//  margin-left: 0;
-//  margin-left: 260px;
-
+// }
+//
+// .iconsRow2 img {
+//  width: 30%;
+//  align-self: center;
+//
+//  // height: 25px;
+// }
 
 
 
