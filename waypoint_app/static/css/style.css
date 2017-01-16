@@ -1,7 +1,7 @@
 html {
-  height: 100vh;
+  height: 140vh;
   background-image: url(../images/Map_BG1.svg);
-  background-size: fill;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top right; }
 
@@ -118,20 +118,6 @@ body {
   width: 100%;
   margin: 0 auto; }
 
-.topBox {
-  height: 100px;
-  background-color: green; }
-
-.topBox img {
-  top: 90%;
-  margin: 0 auto;
-  display: block; }
-
-.stationaryWayPointerIcon {
-  background-color: #8ad5dd;
-  width: 100%;
-  height: 100px; }
-
 h1 {
   font-family: 'Roboto', sans-serif;
   text-align: center; }
@@ -154,16 +140,16 @@ p {
   text-align: center; }
 
 .row2 {
-  background-color: #0a3666;
   height: 300px;
   width: 100%;
+  padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%; }
 
 .row1 {
-  background-color: #8ad5dd;
   height: 300px;
   width: 100%;
+  padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%; }
 
@@ -189,14 +175,16 @@ p {
   width: 30%; }
   .Food img {
     margin: 0 auto;
-    display: block; }
+    display: block;
+    border-radius: 50%; }
 
 .Medical {
   float: left;
   width: 30%; }
   .Medical img {
     margin: 0 auto;
-    display: block; }
+    display: block;
+    border-radius: 50%; }
 
 .Crisis {
   float: left;
@@ -210,7 +198,8 @@ p {
   width: 30%; }
   .Legal img {
     margin: 0 auto;
-    display: block; }
+    display: block;
+    border-radius: 50%; }
 
 .Transportation {
   float: left;
@@ -218,31 +207,32 @@ p {
   .Transportation img {
     bottom: 60%;
     margin: 0 auto;
-    display: block; }
+    display: block;
+    border-radius: 50%; }
 
 .iconsRow1 img {
   clear: both;
-  width: 100%;
-  align-self: center; }
+  width: 85%;
+  align-self: center;
+  padding-bottom: 0; }
 
 .centerTag {
   z-index: 10;
   width: 80%;
-  background-color: yellow;
   background-size: cover;
   display: block;
   margin: 0 auto;
-  clear: both; }
+  clear: both;
+  padding: 0; }
 
 .centerTag img {
   height: 200%;
   align-self: center;
   margin: 0 auto;
-  margin-bottom: 5%;
   display: block; }
 
 .iconsRow2 img {
-  width: 100%;
+  width: 85%;
   align-self: center; }
 
 /*# sourceMappingURL=style.css.map */
