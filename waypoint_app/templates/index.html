@@ -9,54 +9,120 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     </head>
     <body>
+      <!DOCTYPE html>
+      {% load static %}
+      <html>
+         <head>
+           <meta charset="utf-8">
+           <title>WayPointer</title>
+           <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
+
+           <link rel="stylesheet" href="{% static 'css/remodal.css' %}" />
+           <link rel="stylesheet" href="{% static 'css/remodal-default-theme.css' %}" />
+
+           <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+         </head>
+
+         <body>
+           <!-- <div class="topBox">
+             <h1>WayPointer</h1>
+             <img src="{% static 'images/images/way_PointerLogo.png' %}" alt="tagline" />
+           </div> -->
 
 
 
-      <div class="map">
-        <ul class='circle-container'>
+      <div class="row1">
 
-            <li>
-              <a href="{% url 'shelters' %}">
-                <img src="{% static 'images/1icon_shelter.png' %}" alt="shelter Link" />
-              </a
+             <div class="Shelter">
+               <div class="iconsRow1">
+                   <a href="{% url 'shelters' %}">
+                     <img class="shelterimg" src="{% static 'images/1icon_shelter.svg' %}" alt="shelter Link"
+                     />
+                   </a>
+                 </div>
+             </div>
 
-            </li>
+             <div class="Food">
+               <div class="iconsRow1">
+                   <a href="{% url 'foods' %}">
+                     <img class="foodimg" src="{% static 'images/2icon_food.svg' %}" alt="food Link" />
+                   </a>
+                 </div>
+             </div>
 
-            <li>
-              <a href="{% url 'foods' %}">
-                <img src="{% static 'images/2icon_food.png' %}" alt="food Link" />
-              </a>
-              </li>
 
-            <li>
-              <a href="{% url 'medicals' %}">
-                <img src="{% static 'images/3icon_medical.png' %}" alt="medical Link" />
-              </a>
-            </li>
+      <div class="Medical">
+               <div class="iconsRow1">
+                   <a href="{% url 'medicals' %}">
+                     <img class="medicalimg"  src="{% static 'images/3icon_medical.svg' %}" alt="medical Link" />
+                   </a>
+                 </div>
+             </div>
+       </div>
 
-            <li>
-              <a href="{% url 'crisiss' %}">
-                <img src="{% static 'images/4icon_crisis.png' %}" alt="crisis Link" />
-              </a>
-            </li>
-
-            <li>
-              <a href="{% url 'legals' %}">
-                <img src="{% static 'images/5icon_legal.png' %}" alt="legal Link" />
-              </a>
-            </li>
-
-            <li>
-              <a href="{% url 'transportations' %}">
-                <img class="image" src="{% static 'images/6icon_transportation.png' %}" alt="Transportation Link" />
-              </a>
-            </li>
-
-              <li class="PointerLogo">
-                  <img src="{% static 'images/way_PointerLogo_Tagline.png' %}"  alt="logo Link" />
-              </li>
-          </ul>
+      <div class="centerTag">
+       <img src="{% static 'images/way_PointerLogo_Tagline.png' %}" class="centerTag"alt="tagline" />
       </div>
+
+      <div class="row2">
+
+           <div class="Crisis">
+
+             <div class="iconsRow2">
+                 <a href="{% url 'crisiss' %}">
+                   <img class="crisisimg"  src="{% static 'images/4icon_crisis.svg' %}" alt="crisis Link" />
+                 </a>
+               </div>
+           </div>
+
+
+           <div class="Legal">
+             <div class="iconsRow2">
+
+                 <a href="{% url 'legals' %}">
+                   <img class="legalimg" src="{% static 'images/5icon_legal.svg' %}" alt="legal Link" />
+                 </a>
+
+               </div>
+           </div>
+
+           <div class="Transportation">
+             <div class="iconsRow2">
+
+                 <a href="{% url 'transportations' %}">
+                   <img class="transportationimg" src="{% static 'images/6icon_transportation.svg' %}" alt="Transportation Link" />
+                 </a>
+
+               </div>
+           </div>
+         </div>
+
+
+
+       </body>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+         <script
+         src="https://code.jquery.com/jquery-3.1.1.min.js"
+         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+         crossorigin="anonymous"></script>
+
+         <script src="{% static '/js/remodal.js' %}"></script>
+         <script src="{% static '/js/remodal.min.js' %}"></script>
+
+         <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
+
+<html>
+
+</html>
+
+
+
+      </html>
+
+
+
+
   </body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
@@ -66,4 +132,51 @@
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
 
+
+    <script>
+    $(".shelterimg").hover(function(){
+      $(this).attr("src", "{% static 'images/1Icon_shelterhover.svg' %}");
+        }, function(){
+          $(this).attr("src", "{% static 'images/1icon_shelter.svg' %}");
+    });
+    </script>
+
+    <script>
+    $(".foodimg").hover(function(){
+      $(this).attr("src", "{% static 'images/2Icon_foodhover.svg' %}");
+        }, function(){
+          $(this).attr("src", "{% static 'images/2icon_food.svg' %}");
+    });
+    </script>
+
+    <script>
+    $(".medicalimg").hover(function(){
+      $(this).attr("src", "{% static 'images/3Icon_medicalhover.svg' %}");
+        }, function(){
+          $(this).attr("src", "{% static 'images/3icon_medical.svg' %}");
+    });
+    </script>
+
+    <script>
+    $(".crisisimg").hover(function(){
+      $(this).attr("src", "{% static 'images/4Icon_crisishover.svg' %}");
+        }, function(){
+          $(this).attr("src", "{% static 'images/4icon_crisis.svg' %}");
+    });
+    </script>
+    <script>
+    $(".legalimg").hover(function(){
+      $(this).attr("src", "{% static 'images/5Icon_legalhover.svg' %}");
+        }, function(){
+          $(this).attr("src", "{% static 'images/5icon_legal.svg' %}");
+    });
+    </script>
+
+    <script>
+    $(".transportationimg").hover(function(){
+      $(this).attr("src", "{% static 'images/6Icon_transportationhover.svg' %}");
+        }, function(){
+          $(this).attr("src", "{% static 'images/6icon_transportation.svg' %}");
+    });
+    </script>
 </html>
