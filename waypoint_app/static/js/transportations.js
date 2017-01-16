@@ -9,6 +9,7 @@ function whereareyou(positioncurrent) {
     currentlongitudet = todisect.longitude
     console.log(currentlongitudet)
     console.log(currentlatitudet)
+    transportationList()
 }
 
 function transportationList(){
@@ -19,7 +20,7 @@ function transportationList(){
             $('#transportationResults').append(html);
         })
 }
-transportationList()
+
 
 
 function getDistance(city,id){
