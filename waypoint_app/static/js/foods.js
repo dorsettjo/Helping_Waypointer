@@ -46,7 +46,7 @@ function getDistance(address,id){
     console.log(ronald)
     $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins="+ronald+"&destinations="+joinAddress).done(function(results){
         var distance = results['rows'][0]['elements'][0]['distance'].text
-        $("#dist" + id).html(distance)
+        $("#dist" + id).html("Distance" + distance)
     })
 }
 
@@ -56,68 +56,6 @@ Handlebars.registerHelper("showDistance", function(address, id) {
     getDistance(address, id)
 })
 
-
-//directions map
-
-//
-// function makeMap(address,id){
-//     var objectforgoogle = {
-//       origin: currentlatitudef + ',' + currentlongitudef,
-//       destination: this.address,
-//       travelMode: WALKING,
-//       unitSystem: UnitSystem.IMPERIAL,
-//       provideRouteAlternatives: false,
-//       region: String
-//     }
-//     var splitAddress = address.split(' ')
-//     var joinAddress = splitAddress.join('+')
-//     var ronald = currentlatitudef + ',' + currentlongitudef
-//     console.log(ronald)
-//     // return joinAddress
-//     $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins="+ronald+"&destinations="+joinAddress).done(function(results){
-//         var distance = results['rows'][0]['elements'][0]['distance'].text
-//         $("#dist" + id).html(distance)
-//     })
-// }
-//
-//
-//
-// Handlebars.registerHelper("showMap", function(address, id) {
-//     console.log(address)
-//     makeMap(address, id)
-// })
-//
-//
-//
-// var directionsDisplay;
-// var directionsService = new google.maps.DirectionsService();
-// var map;
-//
-// function initialize() {
-//   directionsDisplay = new google.maps.DirectionsRenderer();
-//   var chicago = new google.maps.LatLng(41.850033, -87.6500523);
-//   var mapOptions = {
-//     zoom:7,
-//     center: chicago
-//   }
-//   map = new google.maps.Map(document.getElementById('map'), mapOptions);
-//   directionsDisplay.setMap(map);
-// }
-//
-// function calcRoute() {
-//   var start = document.getElementById('start').value;
-//   var end = document.getElementById('end').value;
-//   var request = {
-//     origin: start,
-//     destination: end,
-//     travelMode: 'DRIVING'
-//   };
-//   directionsService.route(request, function(result, status) {
-//     if (status == 'OK') {
-//       directionsDisplay.setDirections(result);
-//     }
-//   });
-// }
 
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
@@ -130,22 +68,19 @@ function initialize(divey) {
     zoom: 14,
     center: currentlocal
   }
-  map = new google.maps.Map(divey, mapOptions);
-  directionsDisplay.setMap(map);
+  map = new google.maps.Map((divey + "dirmap"), mapOptions);
+  directionsDisplay.setMap((divey + "dirmap"));
 }
 
-Handlebars.registerHelper("initializeHelp", function(address, id) {
-    console.log(address)
-    initialize(address, id)
+Handlebars.registerHelper("initializeHelp", function(divey) {
+    console.log(divey)
+    initialize(divey)
 })
 
 function calcRoute(dest) {
   var request = {
       origin: currentlocal,
       destination: dest,
-      // Note that Javascript allows us to access the constant
-      // using square brackets and a string value as its
-      // "property."
       travelMode: WALKING,
       unitSystem: UnitSystem.IMPERIAL,
       provideRouteAlternatives: false,
@@ -158,7 +93,7 @@ function calcRoute(dest) {
   });
 }
 
-Handlebars.registerHelper("calcRouteHelp", function(address, id) {
-    console.log(address)
-    calcRoute(address, id)
+Handlebars.registerHelper("calcRouteHelp", function(dest) {
+    console.log(dest)
+    calcRoute(dest)
 })
