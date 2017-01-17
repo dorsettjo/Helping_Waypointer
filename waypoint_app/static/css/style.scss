@@ -467,6 +467,8 @@ padding: 0;}
   display: none;
 }
 
+
+
 @media only screen and (max-width: 767px) {
   .laptop {
     display: none;
@@ -498,36 +500,41 @@ padding: 0;}
       padding-bottom: 5%;
     }
 
-    .leftColumn .movingPart {
-     position: relative;
-     width: 130px;
+    // .leftColumn .movingPart {
+    .movingPart {
+
+    position: relative;
+     width:50%;
      display: block;
      margin:0 auto;
    }
 
+
+
   .leftColumn .Compass {
      display: block;
-     margin:0 auto;
-     width: 90px;
+     margin:0;
+     width: 150px;
     //  position: absolute;
     //  left: 125px;
    }
 
-  //  .leftColumn .sticker {
-  //    width:30px;
-  //    height:30px;
-  //    background:  url(../images/WParrow.png);
-  //    background-repeat: no-repeat;
-  //    animation: spin 10s linear infinite;
-  //    /*Set our animation play state to paused initially */
-  //    animation-play-state: paused;
-  //    z-index: 100;
-  //    position: absolute;
-  //    left: 131px;
-  //    top: 31px;
-  //    display: block;
-  //    margin: 0 auto;
-  //  }
+    .leftColumn .sticker {
+     width:50px;
+     height:50px;
+     background:  url(../images/WParrow.png);
+     background-repeat: no-repeat;
+     animation: spin 10s linear infinite;
+     /*Set our animation play state to paused initially */
+     animation-play-state: paused;
+     z-index: 100;
+     position: absolute;
+     left: 52px;
+     top: 20px;
+     display: block;
+     margin: 0 auto;
+     background-size: contain;
+   }
   .rightSideWhole h1 {
    display:block;
    margin: 0 auto;
@@ -536,9 +543,9 @@ padding: 0;}
    color: black;
    padding-top: 4%;
   }
-  .row1 .row2 {
-   display: none;
-   }
+  // .row1 .row2 {
+  //  display: none;
+  //  }
 
    .row1MOBY .row2MOBY .row3MOBY {
      display: block;
@@ -546,11 +553,17 @@ padding: 0;}
        display: none;
       }
    }
+
+  .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 {
+    width: 85%;
+  }
+
   .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 img {
     width: 85%;
     align-self: center;
     display: block;
   }
+
 .mobyTag {
   padding-top: 10px;
   display: block;
@@ -562,9 +575,9 @@ padding: 0;}
   margin: 0 auto;
 }
 
-  .Shelter .Food .Medical .Crisis .Legal .Transportation img {
-    float: none;
-    width: 100%;
+  .Shelter, .Food, .Medical, .Crisis, .Legal, .Transportation {
+    float: left;
+    width: 50%;
       img {
         bottom: 60%;
         margin: 0 auto;
@@ -572,8 +585,6 @@ padding: 0;}
         border-radius: 50%;
         }
       }
-      .shelterimg .foodimg .medicalimg .crisisimg .legalimg .transportationimg {
-        width: 100%;
-        float: none;
-      }
-    }
+
+
+  }

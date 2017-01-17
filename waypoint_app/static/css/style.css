@@ -395,16 +395,32 @@ p {
     padding-top: 10%;
     padding-bottom: 5%; }
 
-  .leftColumn .movingPart {
+  .movingPart {
     position: relative;
-    width: 130px;
+    width: 50%;
     display: block;
     margin: 0 auto; }
 
   .leftColumn .Compass {
     display: block;
+    margin: 0;
+    width: 150px; }
+
+  .leftColumn .sticker {
+    width: 50px;
+    height: 50px;
+    background: url(../images/WParrow.png);
+    background-repeat: no-repeat;
+    animation: spin 10s linear infinite;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused;
+    z-index: 100;
+    position: absolute;
+    left: 52px;
+    top: 20px;
+    display: block;
     margin: 0 auto;
-    width: 90px; }
+    background-size: contain; }
 
   .rightSideWhole h1 {
     display: block;
@@ -414,13 +430,13 @@ p {
     color: black;
     padding-top: 4%; }
 
-  .row1 .row2 {
-    display: none; }
-
   .row1MOBY .row2MOBY .row3MOBY {
     display: block; }
     .row1MOBY .row2MOBY .row3MOBY .centerTag {
       display: none; }
+
+  .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 {
+    width: 85%; }
 
   .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 img {
     width: 85%;
@@ -435,17 +451,13 @@ p {
     align-self: center;
     margin: 0 auto; }
 
-  .Shelter .Food .Medical .Crisis .Legal .Transportation img {
-    float: none;
-    width: 100%; }
-    .Shelter .Food .Medical .Crisis .Legal .Transportation img img {
+  .Shelter, .Food, .Medical, .Crisis, .Legal, .Transportation {
+    float: left;
+    width: 50%; }
+    .Shelter img, .Food img, .Medical img, .Crisis img, .Legal img, .Transportation img {
       bottom: 60%;
       margin: 0 auto;
       display: block;
-      border-radius: 50%; }
-
-  .shelterimg .foodimg .medicalimg .crisisimg .legalimg .transportationimg {
-    width: 100%;
-    float: none; } }
+      border-radius: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
