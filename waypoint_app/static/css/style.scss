@@ -454,8 +454,26 @@ padding: 0;}
  .rightSideWhole h1 {
   display: none;
 }
+.row1MOBY .row2MOBY .row3MOBY {
+  display: none;
+}
+.iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 img {
+  display: none;
+}
+.phone {
+  display: none;
+}
+.mobyTag {
+  display: none;
+}
 
 @media only screen and (max-width: 767px) {
+  .laptop {
+    display: none;
+  }
+  .phone {
+    display: block;
+  }
     .leftColumn {
         width: 30%;
     }
@@ -517,6 +535,45 @@ padding: 0;}
    font-size: 36px;
    color: black;
    padding-top: 4%;
- }
-
   }
+  .row1 .row2 {
+   display: none;
+   }
+
+   .row1MOBY .row2MOBY .row3MOBY {
+     display: block;
+     .centerTag {
+       display: none;
+      }
+   }
+  .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 img {
+    width: 85%;
+    align-self: center;
+    display: block;
+  }
+.mobyTag {
+  padding-top: 10px;
+  display: block;
+  width: 100%;
+  height: 200%;
+ //  height: auto;
+  align-self: center;
+ //  top: -90%;
+  margin: 0 auto;
+}
+
+  .Shelter .Food .Medical .Crisis .Legal .Transportation img {
+    float: none;
+    width: 100%;
+      img {
+        bottom: 60%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+        }
+      }
+      .shelterimg .foodimg .medicalimg .crisisimg .legalimg .transportationimg {
+        width: 100%;
+        float: none;
+      }
+    }
