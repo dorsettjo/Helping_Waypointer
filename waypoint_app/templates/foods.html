@@ -8,7 +8,6 @@
         <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto+Condensed:300,400,700|Roboto:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
         <link rel='icon' href="{% static 'images/wayCompassBig.png' %}" type='image/png' sizes="32x32"/>
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
       </head>
     <body>
         <div class="foodPage">
@@ -45,9 +44,9 @@
                                             <h4 class="modal-title">{{this.providername}}</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <p>{{this.address}}</p>
+                                            <p class="notranslate">{{this.address}}</p>
                                             <p id="dist{{@index}}">Distance{{showDistance this.address @index }}</p>
-                                            <p>{{this.website}}</p>
+                                            <p class="notranslate">{{this.website}}</p>
                                             <p>{{this.phone_number}}</p>
                                             <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
                                                 &zoom=17
@@ -71,7 +70,6 @@
             </div>
         </div>
     </body>
-    <script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script
