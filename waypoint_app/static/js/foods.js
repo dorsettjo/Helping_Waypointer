@@ -15,8 +15,10 @@
 
 navigator.geolocation.getCurrentPosition(whereareyou)
 
+
 var currentlatitudef = 40.712784;
 var currentlongitudef = -74.005941;
+
 
 function whereareyou(positioncurrent) {
     var todisect = positioncurrent.coords
@@ -24,7 +26,18 @@ function whereareyou(positioncurrent) {
     currentlongitudef = todisect.longitude
     console.log(currentlongitudef)
     console.log(currentlatitudef)
-    foodList()
+    zipcodeList(currentlatitudef, currentlongitudef)
+}
+
+
+function zipcodeList(currentlatitudef, currentlongitudef) {
+    var zipurl = "http://api.geonames.org/findNearbyPostalCodes?lat=" + currentlatitudef +"&lng=" + currentlongitudef + "&country=US&radius=10&username=Ronaldcoor"
+    $.ajax({
+        url: zipurl,
+    }).done(function(data) {
+        console.log(data)
+        foodList()
+    }
 }
 
 
@@ -36,7 +49,6 @@ function foodList(){
             $('#foodResults').append(html);
         })
 }
-
 
 
 function getDistance(address,id){
@@ -57,43 +69,43 @@ Handlebars.registerHelper("showDistance", function(address, id) {
 })
 
 
-var directionsDisplay;
-var directionsService = new google.maps.DirectionsService();
-var map;
-var currentlocal = new google.maps.LatLng(currentlatitudef, currentlongitudef);
-
-function initialize(divey) {
-  directionsDisplay = new google.maps.DirectionsRenderer();
-  var mapOptions = {
-    zoom: 14,
-    center: currentlocal
-  }
-  map = new google.maps.Map((divey + "dirmap"), mapOptions);
-  directionsDisplay.setMap((divey + "dirmap"));
-}
-
-Handlebars.registerHelper("initializeHelp", function(divey) {
-    console.log(divey)
-    initialize(divey)
-})
-
-function calcRoute(dest) {
-  var request = {
-      origin: currentlocal,
-      destination: dest,
-      travelMode: WALKING,
-      unitSystem: UnitSystem.IMPERIAL,
-      provideRouteAlternatives: false,
-      region: String
-  };
-  directionsService.route(request, function(response, status) {
-    if (status == 'OK') {
-      directionsDisplay.setDirections(response);
-    }
-  });
-}
-
-Handlebars.registerHelper("calcRouteHelp", function(dest) {
-    console.log(dest)
-    calcRoute(dest)
-})
+// var directionsDisplay;
+// var directionsService = new google.maps.DirectionsService();
+// var map;
+// var currentlocal = new google.maps.LatLng(currentlatitudef, currentlongitudef);
+//
+// function initialize(divey) {
+//   directionsDisplay = new google.maps.DirectionsRenderer();
+//   var mapOptions = {
+//     zoom: 14,
+//     center: currentlocal
+//   }
+//   map = new google.maps.Map((divey + "dirmap"), mapOptions);
+//   directionsDisplay.setMap((divey + "dirmap"));
+// }
+//
+// Handlebars.registerHelper("initializeHelp", function(divey) {
+//     console.log(divey)
+//     initialize(divey)
+// })
+//
+// function calcRoute(dest) {
+//   var request = {
+//       origin: currentlocal,
+//       destination: dest,
+//       travelMode: WALKING,
+//       unitSystem: UnitSystem.IMPERIAL,
+//       provideRouteAlternatives: false,
+//       region: String
+//   };
+//   directionsService.route(request, function(response, status) {
+//     if (status == 'OK') {
+//       directionsDisplay.setDirections(response);
+//     }
+//   });
+// }
+//
+// Handlebars.registerHelper("calcRouteHelp", function(dest) {
+//     console.log(dest)
+//     calcRoute(dest)
+// })
