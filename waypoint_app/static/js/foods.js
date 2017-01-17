@@ -37,7 +37,7 @@ function zipcodeList(currentlatitudef, currentlongitudef) {
     }).done(function(data) {
         console.log(data)
         foodList()
-    }
+    })
 }
 
 
