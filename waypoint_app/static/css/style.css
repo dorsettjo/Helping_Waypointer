@@ -77,10 +77,12 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   letter-spacing: 2px;
-  width: 100%; }
+  width: 100%;
+  white-space: normal; }
 
 .btn-lg:hover {
-  background-color: #0f4580; }
+  background-color: #0f4580;
+  white-space: normal; }
 
 .btn-info.focus, .btn-info:focus {
   color: #fff;
