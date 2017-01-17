@@ -23,6 +23,7 @@
             </div>
             <div class="rightSideWhole">
                 <div id="foodResults">
+                    <h2>chọn ngôn ngữ</h2>
                     <div id="google_translate_element">
                     </div>
                     <script type="text/javascript">
@@ -44,6 +45,7 @@
                                             <h4 class="modal-title">{{this.providername}}</h4>
                                         </div>
                                         <div class="modal-body">
+                                            <p class="list-information">{{this.description_text}}</p>
                                             <p class="notranslate">{{this.address}}</p>
                                             <p id="dist{{@index}}">Distance{{showDistance this.address @index }}</p>
                                             <p class="notranslate">{{this.website}}</p>
@@ -59,7 +61,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="list-information">{{this.description_text}}</p>
                         {{/each}}
                     </script>
                 {% endverbatim %}
