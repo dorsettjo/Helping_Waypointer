@@ -131,9 +131,9 @@ h3 {
   text-align: center; }
 
 h4 {
-  font-family: 'Covered By Your Grace', cursive;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  font-size: 200%; }
+  font-size: 28px; }
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
@@ -234,7 +234,6 @@ p {
   width: 85%;
   align-self: center; }
 
-/*# sourceMappingURL=style.css.map */
 .leftColumn {
   background-color: #0f4580;
   width: 40%;
