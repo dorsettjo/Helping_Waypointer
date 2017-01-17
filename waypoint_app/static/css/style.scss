@@ -201,9 +201,6 @@ p {
 
   }
 
-
-
-
  }
 
  .Food {
@@ -270,7 +267,7 @@ p {
  clear: both;
  width: 85%;
  align-self: center;
-padding-bottom: 0;
+ padding-bottom: 0;
 }
 
 .centerTag {
@@ -333,7 +330,7 @@ padding: 0;}
   }
 
  .ParticularIcon {
-    width: 500px;
+    width: 300px;
     padding: 0;
     display: block;
     margin:0 auto;
@@ -381,8 +378,9 @@ padding: 0;}
     100% {transform: rotate(1turn); }
   }
 
-
 }
+
+
 .redColumn {
   background-color:#ff0033;
 }
@@ -452,3 +450,73 @@ padding: 0;}
   float: right;
 
 }
+
+ .rightSideWhole h1 {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .leftColumn {
+        width: 30%;
+    }
+    .leftColumn h1 {
+      display: none
+    }
+
+    .rightSideWhole {
+      width:70%;
+    }
+    #google_translate_element {
+    padding-top: 4%;
+    padding-left: 25px;
+    }
+
+    .leftColumn .ParticularIcon {
+      width: 150px;
+      padding: 0;
+      display: block;
+      margin:0 auto;
+      padding-top: 10%;
+      padding-bottom: 5%;
+    }
+
+    .leftColumn .movingPart {
+     position: relative;
+     width: 130px;
+     display: block;
+     margin:0 auto;
+   }
+
+  .leftColumn .Compass {
+     display: block;
+     margin:0 auto;
+     width: 90px;
+    //  position: absolute;
+    //  left: 125px;
+   }
+
+  //  .leftColumn .sticker {
+  //    width:30px;
+  //    height:30px;
+  //    background:  url(../images/WParrow.png);
+  //    background-repeat: no-repeat;
+  //    animation: spin 10s linear infinite;
+  //    /*Set our animation play state to paused initially */
+  //    animation-play-state: paused;
+  //    z-index: 100;
+  //    position: absolute;
+  //    left: 131px;
+  //    top: 31px;
+  //    display: block;
+  //    margin: 0 auto;
+  //  }
+  .rightSideWhole h1 {
+   display:block;
+   margin: 0 auto;
+   font-family: 'Roboto', sans-serif;
+   font-size: 36px;
+   color: black;
+   padding-top: 4%;
+ }
+
+  }
