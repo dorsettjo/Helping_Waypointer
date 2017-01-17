@@ -1,3 +1,12 @@
+<!-- {{initializeHelp @index}}
+{{calcRouteHelp this.address}}
+<div id="{{@index}}dirmap" style="float:left;width:70%; height:100%"></div>
+<div id="directionsPanel{{@index}}" style="float:right;width:30%;height 100%"></div> -->
+
+<!-- <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvKLD4wY0XHP5oHEDOjUw4pMbpXPSU_Z4&callback=initMap">
+</script> -->
+
 goal:
 if current location is not given permission or takes longer than 30 seconds, ask for location.
 Then, when have location one way or another, run function to get list
@@ -6,6 +15,48 @@ Also feed current location into list...
 if DirectionsStatus == OK
 then
 
+
+
+// var directionsDisplay;
+// var directionsService = new google.maps.DirectionsService();
+// var map;
+// var currentlocal = new google.maps.LatLng(currentlatitudef, currentlongitudef);
+//
+// function initialize(divey) {
+//   directionsDisplay = new google.maps.DirectionsRenderer();
+//   var mapOptions = {
+//     zoom: 14,
+//     center: currentlocal
+//   }
+//   map = new google.maps.Map((divey + "dirmap"), mapOptions);
+//   directionsDisplay.setMap((divey + "dirmap"));
+// }
+//
+// Handlebars.registerHelper("initializeHelp", function(divey) {
+//     console.log(divey)
+//     initialize(divey)
+// })
+//
+// function calcRoute(dest) {
+//   var request = {
+//       origin: currentlocal,
+//       destination: dest,
+//       travelMode: WALKING,
+//       unitSystem: UnitSystem.IMPERIAL,
+//       provideRouteAlternatives: false,
+//       region: String
+//   };
+//   directionsService.route(request, function(response, status) {
+//     if (status == 'OK') {
+//       directionsDisplay.setDirections(response);
+//     }
+//   });
+// }
+//
+// Handlebars.registerHelper("calcRouteHelp", function(dest) {
+//     console.log(dest)
+//     calcRoute(dest)
+// })
 
 
 {

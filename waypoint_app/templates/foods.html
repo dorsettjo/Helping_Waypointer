@@ -23,6 +23,8 @@
             </div>
             <div class="rightSideWhole">
                 <div id="foodResults">
+                    <h5>chọn ngôn ngữ</h5>
+                    <h5>Escoja el lenguaje</h5>
                     <div id="google_translate_element">
                     </div>
                     <script type="text/javascript">
@@ -44,18 +46,15 @@
                                             <h4 class="modal-title">{{this.providername}}</h4>
                                         </div>
                                         <div class="modal-body">
+                                            <p class="list-information">{{this.description_text}}</p>
                                             <p class="notranslate">{{this.address}}</p>
                                             <p id="dist{{@index}}">Distance{{showDistance this.address @index }}</p>
                                             <p class="notranslate">{{this.website}}</p>
                                             <p>{{this.phone_number}}</p>
                                             <iframe src="//www.google.com/maps/embed/v1/place?q={{this.address}}
                                                 &zoom=17
-                                                &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM">
+                                                &key=AIzaSyBjUkLmUDYWsijYFWknWvVvjjeiYZWyCZM" width="400" height="275">
                                             </iframe>
-                                            <!-- {{initializeHelp @index}}
-                                            {{calcRouteHelp this.address}}
-                                            <div id="{{@index}}dirmap" style="float:left;width:70%; height:100%"></div>
-                                            <div id="directionsPanel{{@index}}" style="float:right;width:30%;height 100%"></div> -->
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default closes" data-dismiss="modal">Close</button>
@@ -63,7 +62,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="list-information">{{this.description_text}}</p>
                         {{/each}}
                     </script>
                 {% endverbatim %}
@@ -78,7 +76,4 @@
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static '/js/foods.js' %}"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvKLD4wY0XHP5oHEDOjUw4pMbpXPSU_Z4&callback=initMap">
-    </script> -->
 </html>
