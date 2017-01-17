@@ -1,9 +1,9 @@
-html {
+.mainpage {
   height: 140vh;
   background-image: url(../images/Map_BG1.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top right; }
+  background-position: center; }
 
 body {
   width: 100%;
@@ -154,9 +154,8 @@ p {
   padding-right: 5%; }
 
 .row1 .row2 {
-  width: 95%;
-  float: left;
-  margin: 1%; }
+  width: 100%;
+  float: left; }
 
 .row2 {
   clear: both;

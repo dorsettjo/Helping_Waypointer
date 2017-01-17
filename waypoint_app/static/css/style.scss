@@ -1,9 +1,9 @@
-html {
+.mainpage {
    height: 140vh;
    background-image: url(../images/Map_BG1.svg);
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: top right;
+   background-position: center;
 
 }
 
@@ -11,21 +11,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
 #google_translate_element {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-// html {
-//    height: 100vh;
-//    background-image: url(../images/Map_BG1.jpg);
-//    background-size: fill;
-//    background-repeat: no-repeat;
-//    background-position: top right;
-//
-// }
-
-
-
 
 
 h1 {font-family: 'Roboto Condensed', sans-serif;
@@ -187,9 +177,9 @@ p {
 
 .row1 .row2 {
   // height: 500px;
- width: 95%;
+ width: 100%;
  float: left;
- margin: 1%; }
+  }
 
 .row2 {
  clear: both;
@@ -211,9 +201,7 @@ p {
 
   }
 
-  // img:hover {
-  //   opacity: 0;
-  // }
+
 
 
  }
