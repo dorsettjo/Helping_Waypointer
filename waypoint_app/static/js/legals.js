@@ -29,7 +29,7 @@ function getDistance(address,id){
     // return joinAddress
     $.getJSON("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins="+ronald+"&destinations="+joinAddress).done(function(results){
         var distance = results['rows'][0]['elements'][0]['distance'].text
-        $("#dist" + id).html(distance)
+        $("#dist" + id).html("Distance: " + distance)
     })
 }
 
