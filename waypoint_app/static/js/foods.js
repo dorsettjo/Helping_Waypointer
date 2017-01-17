@@ -26,19 +26,20 @@ function whereareyou(positioncurrent) {
     currentlongitudef = todisect.longitude
     console.log(currentlongitudef)
     console.log(currentlatitudef)
-    zipcodeList(currentlatitudef, currentlongitudef)
+    foodList()
+    // zipcodeList(currentlatitudef, currentlongitudef)
 }
 
-
-function zipcodeList(currentlatitudef, currentlongitudef) {
-    var zipurl = "https://api.geonames.org/findNearbyPostalCodes?lat=" + currentlatitudef +"&lng=" + currentlongitudef + "&country=US&radius=10&username=Ronaldcoor"
-    $.ajax({
-        url: zipurl,
-    }).done(function(data) {
-        console.log(data)
-        foodList()
-    })
-}
+//
+// function zipcodeList(currentlatitudef, currentlongitudef) {
+//     var zipurl = "https://api.geonames.org/findNearbyPostalCodes?lat=" + currentlatitudef +"&lng=" + currentlongitudef + "&country=US&radius=10&username=Ronaldcoor"
+//     $.ajax({
+//         url: zipurl,
+//     }).done(function(data) {
+//         console.log(data)
+//         foodList()
+//     })
+// }
 
 
 function foodList(){
