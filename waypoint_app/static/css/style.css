@@ -390,6 +390,8 @@ p {
       width: 30%; }
     .phone .leftColumn h1 {
       display: none; }
+    .phone .leftColumn h2 {
+      display: none; }
     .phone .rightSideWhole {
       width: 70%; }
     .phone #google_translate_element {
