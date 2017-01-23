@@ -476,12 +476,13 @@ padding: 0;}
 
 
 
+// @media only screen and (max-width: 736px) and (min-device-width: 414px) and (-webkit-min-device-pixel-ratio: 3)
 
-
-@media only screen and (max-width: 736px) and (min-device-width: 414px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (max-width: 736px) {
   .laptop {
     display: none;
   }
+
   .phone {
     display: block;
     margin:0 auto;
