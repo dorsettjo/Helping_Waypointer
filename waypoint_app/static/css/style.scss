@@ -476,7 +476,7 @@ padding: 0;}
 
 
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 736px) and (min-device-width: 414px) {
   .laptop {
     display: none;
   }
