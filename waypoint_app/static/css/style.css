@@ -381,7 +381,8 @@ p {
     display: none; }
 
   .phone {
-    display: block; }
+    display: block;
+    margin: 0 auto; }
 
   .leftColumn {
     width: 30%; }
