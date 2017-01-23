@@ -549,7 +549,15 @@ padding: 0;}
    display:block;
    margin: 0 auto;
    font-family: 'Roboto', sans-serif;
-   font-size: 36px;
+   max-font-size: 36px;
+   color: black;
+   padding-top: 4%;
+  }
+  .rightSideWhole h2 {
+   display:block;
+   margin: 0 auto;
+   font-family: 'Roboto', sans-serif;
+   font-size: 30px;
    color: black;
    padding-top: 4%;
   }

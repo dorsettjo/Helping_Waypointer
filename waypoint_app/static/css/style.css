@@ -1,16 +1,16 @@
 /*
 Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
-        on line 601 of css/style.scss
+        on line 609 of css/style.scss
 
-596:         }
-597:       }
-598: 
-599: 
-600:   }
-601: }
+604:         }
+605:       }
+606: 
+607: 
+608:   }
+609: }
 
 Backtrace:
-css/style.scss:601
+css/style.scss:609
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:42:in `parse'
@@ -32,4 +32,4 @@ css/style.scss:601
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 601 of css/style.scss\A \A 596:         }\A 597:       }\A 598: \A 599: \A 600:   }\A 601: }"; }
+  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 609 of css/style.scss\A \A 604:         }\A 605:       }\A 606: \A 607: \A 608:   }\A 609: }"; }
