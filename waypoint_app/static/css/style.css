@@ -261,6 +261,8 @@ p {
     font-size: 50px;
     font-weight: 600;
     padding-bottom: 15%; }
+    .leftColumn h1 .isSecondary {
+      font-size: 40px; }
   .leftColumn .ParticularIcon {
     width: 300px;
     padding: 0;
@@ -360,11 +362,11 @@ p {
   padding: 0;
   height: 100vh;
   float: right; }
+  .rightSideWhole .isSecondary {
+    font-size: 30px; }
 
 .rightSideWhole h1 {
   display: none; }
-
-
 
 .row1MOBY .row2MOBY .row3MOBY {
   display: none; }
@@ -388,8 +390,6 @@ p {
     .phone .leftColumn {
       width: 30%; }
     .phone .leftColumn h1 {
-      display: none; }
-    .phone .leftColumn h2 {
       display: none; }
     .phone .rightSideWhole {
       width: 70%; }
@@ -432,13 +432,6 @@ p {
       margin: 0 auto;
       font-family: 'Roboto', sans-serif;
       font-size: 36px;
-      color: black;
-      padding-top: 4%; }
-    .phone .rightSideWhole h2 {
-      display: block;
-      margin: 0 auto;
-      font-family: 'Roboto', sans-serif;
-      font-size: 30px;
       color: black;
       padding-top: 4%; }
     .phone .row1MOBY .row2MOBY .row3MOBY {

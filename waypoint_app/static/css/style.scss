@@ -332,8 +332,9 @@ padding: 0;}
     font-size: 50px;
     font-weight: 600;
     padding-bottom: 15%;
-
-
+    .isSecondary {
+      font-size:40px;
+    }
   }
 
  .ParticularIcon {
@@ -456,14 +457,17 @@ padding: 0;}
   height: 100vh;
   float: right;
 
+  .isSecondary {
+    font-size: 30px;
+
+  }
+
 }
 
  .rightSideWhole h1 {
   display: none;
 }
-.rightSideWhole h2 {
- display: none;
-}
+
 
 .row1MOBY .row2MOBY .row3MOBY {
   display: none;
@@ -498,9 +502,7 @@ padding: 0;}
     .leftColumn h1 {
       display: none
     }
-    .leftColumn h2 {
-      display: none
-    }
+
 
 
     .rightSideWhole {
@@ -564,14 +566,7 @@ padding: 0;}
    color: black;
    padding-top: 4%;
   }
-  .rightSideWhole h2 {
-   display:block;
-   margin: 0 auto;
-   font-family: 'Roboto', sans-serif;
-   font-size: 30px;
-   color: black;
-   padding-top: 4%;
-  }
+
   // .row1 .row2 {
   //  display: none;
   //  }
