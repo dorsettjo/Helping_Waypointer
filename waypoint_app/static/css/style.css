@@ -376,7 +376,7 @@ p {
 .mobyTag {
   display: none; }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 767px) {
   .laptop {
     display: none; }
 
