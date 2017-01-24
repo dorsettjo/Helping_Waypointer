@@ -156,11 +156,12 @@ p {
   padding-right: 5%; }
 
 .row1 {
-  height: 300px;
   width: 100%;
   padding-top: 5%;
   padding-left: 5%;
-  padding-right: 5%; }
+  padding-right: 5%;
+  padding-bottom: 0%;
+  margin-bottom: 1px; }
 
 .row1 .row2 {
   width: 100%;
@@ -231,7 +232,7 @@ p {
   display: block;
   margin: 0 auto;
   clear: both;
-  padding: 0; }
+  padding: 0%; }
 
 .centerTag img {
   height: 200%;
@@ -393,7 +394,7 @@ p {
     display: block; }
 
   .leftColumn {
-    width: 30%; }
+    width: 150px; }
 
   .leftColumn h1 {
     display: none; }

@@ -176,11 +176,13 @@ p {
 
 .row1 {
 
- height: 300px;
+ // height: 300px;
  width: 100%;
  padding-top: 5%;
  padding-left: 5%;
  padding-right: 5%;
+ padding-bottom: 0%;
+ margin-bottom: 1px;
 }
 
 .row1 .row2 {
@@ -284,10 +286,10 @@ p {
  background-size: cover;
  display: block;
  margin: 0 auto;
- // margin-top: -10%;
-
 clear: both;
-padding: 0;}
+padding: 0%}
+
+
 
  .centerTag img {
   //  width: 80%;
@@ -299,6 +301,7 @@ padding: 0;}
   //  margin-top: -5%;
 
    display: block;
+
  }
 
 .iconsRow2 img {
@@ -498,7 +501,7 @@ padding: 0;}
     display: block;
   }
     .leftColumn {
-        width: 30%;
+        width: 150px;
     }
     .leftColumn h1 {
       display: none
