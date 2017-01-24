@@ -149,7 +149,6 @@ p {
   text-align: center; }
 
 .row2 {
-  height: 300px;
   width: 100%;
   padding-bottom: 5%;
   padding-left: 5%;
@@ -400,6 +399,9 @@ p {
     display: none; }
 
   .leftColumn .isSecondary h1 {
+    display: none; }
+
+  .leftColumn h5 {
     display: none; }
 
   .rightSideWhole {

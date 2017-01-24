@@ -167,7 +167,7 @@ p {
 
 .row2 {
 
- height: 300px;
+ // height: 300px;
  width: 100%;
  padding-bottom: 5%;
  padding-left: 5%;
@@ -507,6 +507,9 @@ padding: 0%}
       display: none
     }
     .leftColumn .isSecondary h1 {
+      display: none;
+    }
+    .leftColumn h5{
       display: none;
     }
 
