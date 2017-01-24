@@ -10,6 +10,7 @@
 body {
   width: 100%;
   margin: 0 auto;
+  // height: 100vh;
 }
 
 #google_translate_element {
@@ -332,9 +333,17 @@ padding: 0;}
     font-size: 50px;
     font-weight: 600;
     padding-bottom: 15%;
-    .isSecondary {
-      font-size:40px;
-    }
+
+  }
+  .leftColumn .isSecondary {
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+    font-size:36px;
+    font-weight: 600;
+    padding-bottom: 15%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
   }
 
  .ParticularIcon {
@@ -456,12 +465,6 @@ padding: 0;}
   padding: 0;
   height: 100vh;
   float: right;
-
-  .isSecondary {
-    font-size: 30px;
-
-  }
-
 }
 
  .rightSideWhole h1 {
@@ -486,28 +489,26 @@ padding: 0;}
 
 
 
-@media only screen and (max-width: 767px) {
 
+@media only screen and (max-width: 736px) {
   .laptop {
     display: none;
   }
-
   .phone {
     display: block;
-    margin:0 auto;
-
+  }
     .leftColumn {
         width: 30%;
     }
     .leftColumn h1 {
       display: none
     }
-
-
+    .leftColumn .isSecondary h1 {
+      display: none;
+    }
 
     .rightSideWhole {
-      width:70%;
-
+      width:60%;
     }
     #google_translate_element {
     padding-top: 4%;
@@ -523,7 +524,7 @@ padding: 0;}
       padding-bottom: 5%;
     }
 
-
+    // .leftColumn .movingPart {
     .movingPart {
 
     position: relative;
@@ -536,7 +537,7 @@ padding: 0;}
 
   .leftColumn .Compass {
      display: block;
-     margin:0 auto;
+     margin:0;
      width: 150px;
     //  position: absolute;
     //  left: 125px;
@@ -566,7 +567,6 @@ padding: 0;}
    color: black;
    padding-top: 4%;
   }
-
   // .row1 .row2 {
   //  display: none;
   //  }
@@ -592,7 +592,7 @@ padding: 0;}
   padding-top: 10px;
   display: block;
   width: 100%;
-  height: 200px;
+  height: 200%;
  //  height: auto;
   align-self: center;
  //  top: -90%;
@@ -609,6 +609,11 @@ padding: 0;}
         border-radius: 50%;
         }
       }
-      }
+
+
+  .rightSideWhole .isSecondary {
+    font-size: 24px;
+  }
+
 
   }
