@@ -21,6 +21,10 @@ body {
   font-size: 20px !important;
 }
 
+.goog-te-combo {
+  padding-left: 5%;
+}
+
 
 h1 {font-family: 'Roboto Condensed', sans-serif;
 text-align: center;}
@@ -318,7 +322,7 @@ padding: 0%}
 
 .leftColumn {
   background-color: #0f4580;
-  width: 40%;
+  width: 20%;
   margin: 0;
   display: block;
   margin:0 auto;
@@ -333,16 +337,15 @@ padding: 0%}
   h1 {
     padding: 0;
     margin: 0;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     padding-bottom: 15%;
 
   }
   .leftColumn .isSecondary {
-    font-size: 45px;
     padding: 0;
-    margin: 0;
-    font-size:36px;
+    margin: 0 auto;
+    font-size: 20px;
     font-weight: 600;
     padding-bottom: 15%;
     font-family: 'Roboto', sans-serif;
@@ -356,6 +359,7 @@ padding: 0%}
     margin:0 auto;
     padding-top: 10%;
     padding-bottom: 5%;
+    float: left;
   }
 
    .movingPart {
@@ -363,12 +367,14 @@ padding: 0%}
     width: 325px;
     display: block;
     margin:0 auto;
+    float: left;
   }
 
  .Compass {
     display: block;
     margin:0 auto;
     width: 225px;
+    float: left;
     // position: absolute;
     // left: 125px;
   }
@@ -383,15 +389,17 @@ padding: 0%}
     animation-play-state: paused;
     z-index: 100;
     position: absolute;
-    left: 131px;
+    left: 80px;
     top: 31px;
     display: block;
     margin: 0 auto;
+    float: left;
   }
 
   .sticker:hover {
     /* Toggle our animation play state to running when we are hovering over our sticker */
     animation-play-state: running;
+    float: left;
   }
 
   @keyframes spin {
@@ -463,7 +471,7 @@ padding: 0%}
 
 .rightSideWhole {
   background-color: white;
-  width: 60%;
+  width: 80%;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -493,15 +501,15 @@ padding: 0%}
 
 
 
-@media only screen and (max-width: 736px) {
-  .laptop {
+@media only screen and (max-width: 767px) {
+    .laptop {
     display: none;
-  }
-  .phone {
+    }
+    .phone {
     display: block;
-  }
+    }
     .leftColumn {
-        width: 150px;
+        width: 20%;
     }
     .leftColumn h1 {
       display: none
@@ -512,38 +520,36 @@ padding: 0%}
     .leftColumn h5{
       display: none;
     }
-
     .rightSideWhole {
-      width:60%;
+      width:80%;
     }
     #google_translate_element {
     padding-top: 4%;
-    padding-left: 25px;
+    padding-left: 5%px;
     }
 
     .leftColumn .ParticularIcon {
-      width: 150px;
+
       padding: 0;
       display: block;
       margin:0 auto;
       padding-top: 10%;
       padding-bottom: 5%;
+      float: left;
     }
 
     // .leftColumn .movingPart {
     .movingPart {
-
-    position: relative;
-     width:50%;
+     position: relative;
+     width:45%;
      display: block;
      margin:0 auto;
+     float:left;
    }
-
-
 
   .leftColumn .Compass {
      display: block;
-     margin:0;
+     margin:0 auto;
      width: 150px;
     //  position: absolute;
     //  left: 125px;
@@ -564,6 +570,7 @@ padding: 0%}
      display: block;
      margin: 0 auto;
      background-size: contain;
+     float: left;
    }
   .rightSideWhole h1 {
    display:block;
@@ -572,6 +579,7 @@ padding: 0%}
    font-size: 36px;
    color: black;
    padding-top: 4%;
+   clear:both;
   }
   // .row1 .row2 {
   //  display: none;

@@ -16,6 +16,9 @@ body {
 .goog-te-combo, .goog-te-banner *, .goog-te-ftab *, .goog-te-menu *, .goog-te-menu2 *, .goog-te-balloon * {
   font-size: 20px !important; }
 
+.goog-te-combo {
+  padding-left: 5%; }
+
 h1 {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center; }
@@ -245,7 +248,7 @@ p {
 
 .leftColumn {
   background-color: #0f4580;
-  width: 40%;
+  width: 20%;
   margin: 0;
   display: block;
   margin: 0 auto;
@@ -258,14 +261,13 @@ p {
   .leftColumn h1 {
     padding: 0;
     margin: 0;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     padding-bottom: 15%; }
   .leftColumn .leftColumn .isSecondary {
-    font-size: 45px;
     padding: 0;
-    margin: 0;
-    font-size: 36px;
+    margin: 0 auto;
+    font-size: 20px;
     font-weight: 600;
     padding-bottom: 15%;
     font-family: 'Roboto', sans-serif;
@@ -276,16 +278,19 @@ p {
     display: block;
     margin: 0 auto;
     padding-top: 10%;
-    padding-bottom: 5%; }
+    padding-bottom: 5%;
+    float: left; }
   .leftColumn .movingPart {
     position: relative;
     width: 325px;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    float: left; }
   .leftColumn .Compass {
     display: block;
     margin: 0 auto;
-    width: 225px; }
+    width: 225px;
+    float: left; }
   .leftColumn .sticker {
     width: 75px;
     height: 75px;
@@ -296,13 +301,15 @@ p {
     animation-play-state: paused;
     z-index: 100;
     position: absolute;
-    left: 131px;
+    left: 80px;
     top: 31px;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    float: left; }
   .leftColumn .sticker:hover {
     /* Toggle our animation play state to running when we are hovering over our sticker */
-    animation-play-state: running; }
+    animation-play-state: running;
+    float: left; }
 @keyframes spin {
   100% {
     transform: rotate(1turn); } }
@@ -364,7 +371,7 @@ p {
 
 .rightSideWhole {
   background-color: white;
-  width: 60%;
+  width: 80%;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -385,7 +392,7 @@ p {
 .mobyTag {
   display: none; }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 767px) {
   .laptop {
     display: none; }
 
@@ -393,7 +400,7 @@ p {
     display: block; }
 
   .leftColumn {
-    width: 150px; }
+    width: 20%; }
 
   .leftColumn h1 {
     display: none; }
@@ -405,29 +412,30 @@ p {
     display: none; }
 
   .rightSideWhole {
-    width: 60%; }
+    width: 80%; }
 
   #google_translate_element {
     padding-top: 4%;
-    padding-left: 25px; }
+    padding-left: 5% px; }
 
   .leftColumn .ParticularIcon {
-    width: 150px;
     padding: 0;
     display: block;
     margin: 0 auto;
     padding-top: 10%;
-    padding-bottom: 5%; }
+    padding-bottom: 5%;
+    float: left; }
 
   .movingPart {
     position: relative;
-    width: 50%;
+    width: 45%;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    float: left; }
 
   .leftColumn .Compass {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     width: 150px; }
 
   .leftColumn .sticker {
@@ -444,7 +452,8 @@ p {
     top: 20px;
     display: block;
     margin: 0 auto;
-    background-size: contain; }
+    background-size: contain;
+    float: left; }
 
   .rightSideWhole h1 {
     display: block;
@@ -452,7 +461,8 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     color: black;
-    padding-top: 4%; }
+    padding-top: 4%;
+    clear: both; }
 
   .row1MOBY .row2MOBY .row3MOBY {
     display: block; }
