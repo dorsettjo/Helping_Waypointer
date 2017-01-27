@@ -14,11 +14,13 @@
         <div class="transportationPage">
             <div class="leftColumn">
                 <img src="{% static 'images/Transportation6_WH.svg' %}" class="ParticularIcon" alt="Transportation Icon" />
-                <h1 class="isSecondary">TRANSPORTATION</h1>
+                <div class="textfit" data-textfit-min="8px"
+     data-textfit-max="8px">
+                  <h1 class="primary">TRANSPORTATION</h1></div>
                 <div class="movingPart">
                     <a href="{% url 'index' %}"> <img src="{% static 'images/WPmarker.png' %}" class="Compass" alt="compass image" /></a>
                     <a href="{% url 'index' %}">
-                        <div class="sticker"></div>
+                        <img src="{% static 'images/WParrow.png' %}"class="sticker">
                     </a>
                 </div>
             </div>
@@ -27,8 +29,8 @@
                 <h1 class="isSecondary">TRANSPORTATION</h1>
                 <div id="transportationResults">
                     <div id="google_translate_element">
-                        <h5>Chọn ngôn ngữ</h5>
-                        <h5>Escoja el lenguaje</h5>
+                        <h4>Chọn ngôn ngữ</h4>
+                        <h4>Escoja el lenguaje</h4>
                     </div>
                     <script type="text/javascript">
                         function googleTranslateElementInit() {
@@ -71,6 +73,10 @@
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
+    <!-- a text fit -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+<script src="{% static '/js/textfit.js' %}"></script>
+  <!-- a text fit -->
     <script type="text/javascript" src="{% static '/js/transportations.js' %}"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>

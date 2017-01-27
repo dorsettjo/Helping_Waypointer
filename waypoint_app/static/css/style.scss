@@ -1,633 +1,664 @@
 .mainpage {
-   height: 140vh;
-   background-image: url(../images/Map_BG1.svg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-
+    height: 140vh;
+    background-image: url("../images/Map_BG1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 body {
-  width: 100%;
-  margin: 0 auto;
-  // height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    // height: 100vh;
 }
 
 #google_translate_element {
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-.goog-te-combo, .goog-te-banner *, .goog-te-ftab *, .goog-te-menu *, .goog-te-menu2 *, .goog-te-balloon * {
-  font-size: 20px !important;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
 }
 
-.goog-te-combo {
-  padding-left: 5%;
+.goog-te-balloon *,
+.goog-te-combo *.goog-te-banner *,
+.goog-te-ftab *,
+.goog-te-menu *,
+.goog-te-menu2 * {
+    font-size: 20px !important;
 }
-
-
-h1 {font-family: 'Roboto Condensed', sans-serif;
-text-align: center;}
-h2 {font-family: 'Roboto Condensed', sans-serif;
-text-align: center;}
-h3 {font-family: 'Roboto Condensed', sans-serif;
-text-align: center;}
-h4 {font-family: 'Roboto', sans-serif;
-text-align: center;
-font-size: 200%}
-h5 {font-family: 'Roboto Condensed', sans-serif;
-font-size: 20px}
-p {font-family: 'Roboto Condensed', sans-serif;
-text-align: center;
-font-size: 18px}
 
 #shelterResults {
-  padding-top: 10px;
-  padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #crisisResults {
-   padding-top: 10px;
-   padding-bottom: 10px; }
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 #transportationResults {
-   padding-top: 10px;
-   padding-bottom: 10px; }
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 #medicalResults {
-       padding-top: 10px;
-       padding-bottom: 10px; }
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 #foodResults {
-   padding-top: 10px;
-   padding-bottom: 10px; }
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 #legalResults {
-   padding-top: 10px;
-   padding-bottom: 10px; }
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .list-information {
-  text-align: left;
-  padding-left: 10px;
+    text-align: left;
+    padding-left: 5px;
 }
-
 
 .btn-lg {
-  background-color: black;
-  border: none;
-  border-radius: 0px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  letter-spacing: 2px;
-  width:100%;
-  white-space: normal;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    width: 100%;
+    white-space: normal;
 }
 
-
-.btn-lg:hover{
-  background-color: #0f4580;
-  white-space: normal;
-
+.btn-lg:hover {
+    background-color: #0f4580;
+    white-space: normal;
 }
 
-.btn-info.focus, .btn-info:focus {
-   color: #fff;
-   background-color: #0f4580 ;
-   border-color: #0f4580 ;
+.btn-info.focus,
+.btn-info:focus {
+    color: #fff;
+    background-color: #0f4580;
+    border-color: #0f4580;
 }
 
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-   outline: none;
-   outline-color: none;
-   outline-width: none;
-   outline-offset: none;
-   background-color: #0f4580;
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: #0f4580;
 }
 
- .crisisBtn {
-  background-color: #ffffff;
-  color:#000000;
-  border: none;
-  border-radius: 0px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  letter-spacing: 2px;
-  width:100%;
+.crisisBtn {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    width: 100%;
 }
 
-.crisisBtn:hover{
-  background-color: #ffffff;
-  color:#000000;
+.crisisBtn:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
-.crisisBtn.focus, .crisisBtn:focus {
-   color: #ffffff;
-   background-color: #000000;
-   border-color: #0f4580;
+.crisisBtn.focus,
+.crisisBtn:focus {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #0f4580;
 }
 
-.crisisBtn.active.focus, .crisisBtn.active:focus, .crisisBtn.focus, .crisisBtn:active.focus, .crisisBtn:active:focus, .crisisBtn:focus {
-   outline: none;
-   outline-color: none;
-   outline-width: none;
-   outline-offset: none;
-   background-color:#ffffff;
-   color:#000000;
+.crisisBtn.active.focus,
+.crisisBtn.active:focus,
+.crisisBtn.focus,
+.crisisBtn:active.focus,
+.crisisBtn:active:focus,
+.crisisBtn:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: #ffffff;
+    color: #000000;
 }
-
-
-
-
-
-body {
- width: 100%;
- margin: 0 auto; }
-
-// .stationaryWayPointerIcon {
-//  background-color: #8ad5dd ;
-//  width: 100%;
-//  height: 100px; }
 
 h1 {
- font-family: 'Roboto', sans-serif;
- text-align: center; }
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
 
 h2 {
- font-family: 'Roboto Condensed', sans-serif;
- text-align: center; }
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
 
 h3 {
- font-family: 'Roboto', sans-serif;
- text-align: center; }
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
 
 h4 {
- font-family: 'Roboto', sans-serif;
- text-align: center;
- font-size: 28px; }
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
 
 p {
- font-family: 'Roboto Condensed', sans-serif;
- text-align: center; }
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
 
 .row2 {
-
- // height: 300px;
- width: 100%;
- padding-bottom: 5%;
- padding-left: 5%;
- padding-right: 5%;
+    // height: 300px;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .row1 {
-
- // height: 300px;
- width: 100%;
- padding-top: 5%;
- padding-left: 5%;
- padding-right: 5%;
- padding-bottom: 0%;
- margin-bottom: 1px;
+    // height: 300px;
+    width: 100%;
+    padding: 5% 5% 0;
+    margin-bottom: 1px;
 }
 
 .row1 .row2 {
-  // height: 500px;
- width: 100%;
- float: left;
-  }
+    // height: 500px;
+    width: 100%;
+    float: left;
+}
 
 .row2 {
- clear: both;
- margin-right: 0%; }
-
-
- .Shelter {
-  //  margin-top: 4%;
-  float: left;
-  width: 30%;
-  // overflow: hidden;
-  // position: absolute;;
-  // text-align: center;
-    img {
-    // top: 60%;
-    margin: 0 auto;
-    display: block;
-    border-radius: 50%;
-
-  }
-
- }
-
- .Food {
-  float: left;
-  width: 30%;
-  // margin-top: 10%;
-    img {
-      // top: 30%;
-      margin: 0 auto;
-      display: block;
-      border-radius: 50%;
-  }
- }
-
- .Medical {
-  //  margin-top: 4%;
-  float: left;
-  width: 30%;
-    img {
-      // top: 60%;
-      margin: 0 auto;
-      display: block;
-      border-radius: 50%;
-  }
- }
- .Crisis {
-  //  margin-top:-4%;
-  float: left;
-  width: 30%;
-    img {
-      // bottom: 60%;
-      margin: 0 auto;
-      display: block;
-  }
- }
-
- .Legal {
-  float: left;
-  width: 30%;
-  // margin-top: -10%;
-    img {
-      // bottom: 30%;
-      margin: 0 auto;
-      display: block;
-      border-radius: 50%;
-  }
- }
-
- .Transportation {
-  //  margin-top: -4%;
-  float: left;
-  width: 30%;
-    img {
-      bottom: 60%;
-      margin: 0 auto;
-      display: block;
-      border-radius: 50%;
-      // padding-bottom: 10px;
-
-  }
- }
-
-.iconsRow1 img {
- clear: both;
- width: 85%;
- align-self: center;
- padding-bottom: 0;
+    clear: both;
+    margin-right: 0;
 }
 
-.centerTag {
- z-index: 10;
- width: 80%;
- background-size: cover;
- display: block;
- margin: 0 auto;
-clear: both;
-padding: 0%}
-
-
-
- .centerTag img {
-  //  width: 80%;
-   height: 200%;
-  //  height: auto;
-   align-self: center;
-  //  top: -90%;
-   margin: 0 auto;
-  //  margin-top: -5%;
-
-   display: block;
-
- }
-
-.iconsRow2 img {
- width: 85%;
- align-self: center;
-// padding-bottom: 20px;
-}
-
-
-
-
-
-// beginning of pages
-
-.leftColumn {
-  background-color: #0f4580;
-  width: 20%;
-  margin: 0;
-  display: block;
-  margin:0 auto;
-  position: fixed;
-  left:0px;
-  top: 0px;
-  float: left;
-  height: 100vh;
-  color: white;
-
-
-  h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 40px;
-    font-weight: 600;
-    padding-bottom: 15%;
-
-  }
-  .leftColumn .isSecondary {
-    padding: 0;
-    margin: 0 auto;
-    font-size: 20px;
-    font-weight: 600;
-    padding-bottom: 15%;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-  }
-
- .ParticularIcon {
-    width: 300px;
-    padding: 0;
-    display: block;
-    margin:0 auto;
-    padding-top: 10%;
-    padding-bottom: 5%;
+.Shelter {
+    //  margin-top: 4%;
     float: left;
-  }
+    width: 30%;
+    // overflow: hidden;
+    // position: absolute;;
+    // text-align: center;
+    img {
+        // top: 60%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+    }
+}
 
-   .movingPart {
-    position: relative;
-    width: 325px;
-    display: block;
-    margin:0 auto;
+.Food {
     float: left;
-  }
+    width: 30%;
+    // margin-top: 10%;
+    img {
+        // top: 30%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+    }
+}
 
- .Compass {
-    display: block;
-    margin:0 auto;
-    width: 225px;
+.Medical {
+    //  margin-top: 4%;
     float: left;
-    // position: absolute;
-    // left: 125px;
-  }
+    width: 30%;
 
-  .sticker {
-    width:75px;
-    height:75px;
-    background:  url(../images/WParrow.png);
-    background-repeat: no-repeat;
-    animation: spin 10s linear infinite;
-    /*Set our animation play state to paused initially */
-    animation-play-state: paused;
-    z-index: 100;
-    position: absolute;
-    left: 80px;
-    top: 31px;
-    display: block;
-    margin: 0 auto;
+    img {
+        // top: 60%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+    }
+}
+
+.Crisis {
+    //  margin-top:-4%;
     float: left;
-  }
+    width: 30%;
 
-  .sticker:hover {
-    /* Toggle our animation play state to running when we are hovering over our sticker */
-    animation-play-state: running;
+    img {
+        // bottom: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.Legal {
     float: left;
-  }
-
-  @keyframes spin {
-    100% {transform: rotate(1turn); }
-  }
-
-}
-
-
-.redColumn {
-  background-color:#ff0033;
-}
-.ltblueColumn {
-  background-color:#8ad5dd;
-}
-
-.redBtn:hover {
- background-color: #ff0033 ; }
-
-.ltblueBtn:hover {
- background-color: #8ad5dd ; }
-
-.ltblueBtn.focus, .ltblueBtn:focus {
-   color: #fff;
-   background-color: #8ad5dd ;
-   border-color: #8ad5dd ; }
-
-.ltblueBtn.active.focus, .ltblueBtn.active:focus, .ltblueBtn.focus, .ltblueBtn:active.focus, .ltblueBtn:active:focus, .ltblueBtn:focus {
-   outline: none;
-   outline-color: none;
-   outline-width: none;
-   outline-offset: none;
-   background-color: #8ad5dd ; }
-
-.redBtn.focus, .redBtn:focus {
-       color: #fff;
-       background-color: #ff0033 ;
-       border-color: #ff0033 ; }
-
-.redBtn.active.focus, .redBtn.active:focus, .redBtn.focus, .redBtn:active.focus, .redBtn:active:focus, .redBtn:focus {
-       outline: none;
-       outline-color: none;
-       outline-width: none;
-       outline-offset: none;
-       background-color: #ff0033 ; }
-
-       .closes {
-   background-color: white;
-}
-
-.closes:hover {
-   background-color: white; }
-
-.closes.focus, .closes:focus {
-   color: #fff;
-   background-color: white;
-}
-
-.closes.active.focus, .closes.active:focus, .closes.focus, .closes:active.focus, .closes:active:focus, .closes:focus {
-   outline: none;
-   outline-color: none;
-   outline-width: none;
-   outline-offset: none;
-   background-color: white; }
-
-.modal-body {
-   text-align: center;
-}
-
-.rightSideWhole {
-  background-color: white;
-  width: 80%;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  float: right;
-}
-
- .rightSideWhole h1 {
-  display: none;
-}
-
-
-.row1MOBY .row2MOBY .row3MOBY {
-  display: none;
-}
-.iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 img {
-  display: none;
-}
-.phone {
-  display: none;
-}
-.mobyTag {
-  display: none;
-}
-
-
-
-
-
-
-@media only screen and (max-width: 767px) {
-    .laptop {
-    display: none;
+    width: 30%;
+    // margin-top: -10%;
+    img {
+        // bottom: 30%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
     }
-    .phone {
-    display: block;
-    }
-    .leftColumn {
-        width: 20%;
-    }
-    .leftColumn h1 {
-      display: none
-    }
-    .leftColumn .isSecondary h1 {
-      display: none;
-    }
-    .leftColumn h5{
-      display: none;
-    }
-    .rightSideWhole {
-      width:80%;
-    }
-    #google_translate_element {
-    padding-top: 4%;
-    padding-left: 5%px;
-    }
-
-    .leftColumn .ParticularIcon {
-
-      padding: 0;
-      display: block;
-      margin:0 auto;
-      padding-top: 10%;
-      padding-bottom: 5%;
-      float: left;
-    }
-
-    // .leftColumn .movingPart {
-    .movingPart {
-     position: relative;
-     width:45%;
-     display: block;
-     margin:0 auto;
-     float:left;
-   }
-
-  .leftColumn .Compass {
-     display: block;
-     margin:0 auto;
-     width: 150px;
-    //  position: absolute;
-    //  left: 125px;
-   }
-
-    .leftColumn .sticker {
-     width:50px;
-     height:50px;
-     background:  url(../images/WParrow.png);
-     background-repeat: no-repeat;
-     animation: spin 10s linear infinite;
-     /*Set our animation play state to paused initially */
-     animation-play-state: paused;
-     z-index: 100;
-     position: absolute;
-     left: 52px;
-     top: 20px;
-     display: block;
-     margin: 0 auto;
-     background-size: contain;
-     float: left;
-   }
-  .rightSideWhole h1 {
-   display:block;
-   margin: 0 auto;
-   font-family: 'Roboto', sans-serif;
-   font-size: 36px;
-   color: black;
-   padding-top: 4%;
-   clear:both;
-  }
-  // .row1 .row2 {
-  //  display: none;
-  //  }
-
-   .row1MOBY .row2MOBY .row3MOBY {
-     display: block;
-     .centerTag {
-       display: none;
-      }
-   }
-
-  .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 {
-    width: 85%;
-  }
-
-  .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 img {
-    width: 85%;
-    align-self: center;
-    display: block;
-  }
-
-.mobyTag {
-  padding-top: 10px;
-  display: block;
-  width: 100%;
-  height: 200%;
- //  height: auto;
-  align-self: center;
- //  top: -90%;
-  margin: 0 auto;
 }
 
-  .Shelter, .Food, .Medical, .Crisis, .Legal, .Transportation {
+.Transportation {
+    //  margin-top: -4%;
     float: left;
-    width: 50%;
-      img {
+    width: 30%;
+
+    img {
         bottom: 60%;
         margin: 0 auto;
         display: block;
         border-radius: 50%;
+        // padding-bottom: 10px;
+    }
+}
+
+.iconsRow1 img {
+    clear: both;
+    width: 85%;
+    align-self: center;
+    padding-bottom: 0;
+}
+
+.centerTag {
+    z-index: 10;
+    width: 80%;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding: 0;
+}
+
+.centerTag img {
+    //  width: 80%;
+    height: 200%;
+    //  height: auto;
+    align-self: center;
+    //  top: -90%;
+    margin: 0 auto;
+    //  margin-top: -5%;
+    display: block;
+}
+
+.iconsRow2 img {
+    width: 85%;
+    align-self: center; // padding-bottom: 20px;
+}
+// beginning of pages
+
+.leftColumn {
+    background-color: #0f4580;
+    width: 25%;
+    margin: 0;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    height: 100vh;
+    color: white;
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        // font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 15%;
+        margin-top: 25px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .primary {
+        font-size: 25px;
+        font-weight: 300;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .leftColumn .ParticularIcon {
+        width: 300px;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        float: left;
+    }
+
+    .movingPart {
+        width: 100%;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        position: relative;
+    }
+
+    .Compass {
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+        transform: translateX(-1%);
+    }
+
+    .sticker {
+        width: 33%;
+        z-index: 100;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%) rotate(0);
+    }
+
+    .sticker:hover {
+        /* Toggle our animation play state to running when we are hovering over our sticker */
+        animation: spin 10s linear infinite;
+        // float: left;
+    }
+    @keyframes spin {
+        100% {
+            transform: translateX(-50%) rotate(360deg);
         }
-      }
+    }
+}
 
+.redColumn {
+    background-color: #ff0033;
+}
 
-  .rightSideWhole .isSecondary {
-    font-size: 24px;
-  }
+.ltblueColumn {
+    background-color: #8ad5dd;
+}
 
+.redBtn:hover {
+    background-color: #ff0033;
+}
 
-  }
+.ltblueBtn:hover {
+    background-color: #8ad5dd;
+}
+
+.ltblueBtn.focus,
+.ltblueBtn:focus {
+    color: #fff;
+    background-color: #8ad5dd;
+    border-color: #8ad5dd;
+}
+
+.ltblueBtn.active.focus,
+.ltblueBtn.active:focus,
+.ltblueBtn.focus,
+.ltblueBtn:active.focus,
+.ltblueBtn:active:focus,
+.ltblueBtn:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: #8ad5dd;
+}
+
+.redBtn.focus,
+.redBtn:focus {
+    color: #fff;
+    background-color: #ff0033;
+    border-color: #ff0033;
+}
+
+.redBtn.active.focus,
+.redBtn.active:focus,
+.redBtn.focus,
+.redBtn:active.focus,
+.redBtn:active:focus,
+.redBtn:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: #ff0033;
+}
+
+.closes {
+    background-color: white;
+}
+
+.closes:hover {
+    background-color: white;
+}
+
+.closes.focus,
+.closes:focus {
+    color: #fff;
+    background-color: white;
+}
+
+.closes.active.focus,
+.closes.active:focus,
+.closes.focus,
+.closes:active.focus,
+.closes:active:focus,
+.closes:focus {
+    outline: none;
+    outline-color: none;
+    outline-width: none;
+    outline-offset: none;
+    background-color: white;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.rightSideWhole {
+    background-color: white;
+    width: 75%;
+    margin: 0;
+    padding: 0,0,0,5%;
+    height: 100vh;
+    float: left;
+}
+
+.rightSideWhole h1 {
+    display: none;
+}
+
+.transportationPage {
+    float: none;
+}
+
+.row1MOBY .row2MOBY .row3MOBY {
+    display: none;
+}
+
+.iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 img {
+    display: none;
+}
+
+.phone {
+    display: none;
+}
+
+.mobyTag {
+    display: none;
+}
+// MEDIA START HERE
+@media only screen and (max-width: 667px) {
+    .laptop {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    .leftColumn {
+        width: 50px;
+    }
+
+    .leftColumn h1 {
+        display: none;
+    }
+
+    .leftColumn .isSecondary h1 {
+        display: none;
+    }
+
+    .leftColumn h5 {
+        display: none;
+    }
+
+    #google_translate_element {
+        padding-left: 1px;
+        padding-bottom: 1px;
+        padding-right: 1px;
+
+        .skiptranslate {
+            font-size: 9px;
+        }
+    }
+
+    h4 {
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .leftColumn .ParticularIcon {
+        width: 75px;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        float: left;
+    }
+
+    .movingPart {
+        width: 65%;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        position: relative;
+    }
+
+    .leftColumn .movingPart .Compass {
+        display: block;
+        margin: 0 auto;
+        width: 76%;
+        transform: translateX(-1%);
+    }
+
+    .leftColumn .sticker {
+        width: 40%;
+        z-index: 100;
+        position: absolute;
+        left: 49%;
+        top: 56%;
+        transform: translateX(-50%);
+        display: block;
+
+        &:hover {
+            animation: none;
+        }
+    }
+
+    .rightSideWhole h1 {
+        display: block;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        color: black;
+        padding-top: 4%;
+        clear: both;
+    }
+
+    .row1MOBY .row2MOBY .row3MOBY {
+        display: block;
+
+        .centerTag {
+            display: none;
+        }
+    }
+
+    .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 {
+        width: 85%;
+    }
+
+    .iconsMobyRow1 .iconsMobyRow2 .iconsMobyRow3 img {
+        width: 85%;
+        align-self: center;
+        display: block;
+    }
+
+    .mobyTag {
+        padding-top: 10px;
+        display: block;
+        width: 100%;
+        height: 200%;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .Crisis,
+    .Food,
+    .Legal,
+    .Medical,
+    .Shelter,
+    .Transportation {
+        float: left;
+        width: 50%;
+
+        img {
+            bottom: 60%;
+            margin: 0 auto;
+            display: block;
+            border-radius: 50%;
+        }
+    }
+
+    .rightSideWhole .isSecondary {
+        font-size: 24px;
+    }
+
+    .goog-te-balloon *,
+    .goog-te-banner *,
+    .goog-te-combo *,
+    .goog-te-ftab *,
+    .goog-te-menu *,
+    .goog-te-menu2 * {
+        font-size: 10px !important;
+    }
+
+    .crisisPage .leftColumn,
+    .foodPage .leftColumn,
+    .legalPage .leftColumn,
+    .medicalPage .leftColumn,
+    .shelterPage .leftColumn,
+    .transportationPage .leftColumn {
+        width: 20%;
+    }
+
+    .goog-te-combo * {
+        padding-left: 10%;
+        font-size: 10px;
+    }
+}
