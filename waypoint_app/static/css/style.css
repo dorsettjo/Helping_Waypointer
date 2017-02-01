@@ -447,7 +447,7 @@ p {
     z-index: 100;
     position: absolute;
     left: 49%;
-    top: 56%;
+    top: 54%;
     transform: translateX(-50%);
     display: block; }
     .leftColumn .sticker:hover {
