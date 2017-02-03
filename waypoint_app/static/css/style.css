@@ -239,6 +239,7 @@ p {
   margin: 0 auto;
   float: left;
   height: 100vh;
+  min-height: 100%;
   color: white; }
   .leftColumn h1 {
     padding: 0;
