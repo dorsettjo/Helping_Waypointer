@@ -396,7 +396,8 @@ p {
     display: block; }
 
   .leftColumn {
-    width: 50px; }
+    width: 50px;
+    min-height: 100%; }
 
   .leftColumn h1 {
     display: none; }
