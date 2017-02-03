@@ -1,4 +1,10 @@
-navigator.geolocation.getCurrentPosition(whereareyou)
+var options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+}
+
+navigator.geolocation.getCurrentPosition(whereareyou, error, options)
 
 
 var currentlatitudet = 40.712784;
@@ -31,6 +37,12 @@ function getDistance(city,id){
         var distance = results['rows'][0]['elements'][0]['distance'].text
         $("#dist" + id).html("Distance: " + distance)
     })
+}
+
+
+function error(){
+    var errormessage = "Could not determine location"
+    $('#foodResults').append(errormessage);
 }
 
 
