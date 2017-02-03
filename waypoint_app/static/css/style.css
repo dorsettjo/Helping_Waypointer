@@ -523,7 +523,8 @@ p {
   .shelterPage .leftColumn,
   .transportationPage .leftColumn {
     width: 20%;
-    min-height: 100%; }
+    min-height: 100%;
+    min-height: fill-available; }
 
   .goog-te-combo * {
     padding-left: 10%;
