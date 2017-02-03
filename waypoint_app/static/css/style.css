@@ -8,7 +8,8 @@
 body {
   width: 100%;
   margin: 0 auto;
-  min-height: 100%; }
+  min-height: 100%;
+  min-height: fill-available; }
 
 #google_translate_element {
   padding-left: 10px;
@@ -239,7 +240,6 @@ p {
   display: block;
   margin: 0 auto;
   float: left;
-  height: 100vh;
   min-height: 100%;
   color: white; }
   .leftColumn h1 {
@@ -523,7 +523,8 @@ p {
   .shelterPage .leftColumn,
   .transportationPage .leftColumn {
     width: 20%;
-    min-height: 100%; }
+    min-height: 100%;
+    min-height: fill-available; }
 
   .goog-te-combo * {
     padding-left: 10%;
