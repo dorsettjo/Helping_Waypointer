@@ -168,12 +168,6 @@ p {
     text-align: center;
 }
 
-.leftColumn .isSecondary h1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 24px;
-}
-
 .row2 {
     // height: 300px;
     width: 100%;
@@ -509,6 +503,12 @@ p {
 
 .mobyTag {
     display: none;
+}
+
+.leftColumn .isSecondary h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 24px;
 }
 // MEDIA START HERE
 @media only screen and (max-width: 667px) {
