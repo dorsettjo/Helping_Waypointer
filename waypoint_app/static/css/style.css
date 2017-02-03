@@ -522,7 +522,8 @@ p {
   .medicalPage .leftColumn,
   .shelterPage .leftColumn,
   .transportationPage .leftColumn {
-    width: 20%; }
+    width: 20%;
+    min-height: 100%; }
 
   .goog-te-combo * {
     padding-left: 10%;
