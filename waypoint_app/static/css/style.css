@@ -1,5 +1,5 @@
 .mainpage {
-  height: 200vh;
+  height: 800vh;
   background-image: url("../images/Map_BG1.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -241,7 +241,7 @@ p {
   display: block;
   margin: 0 auto;
   float: left;
-  height: 200vh;
+  height: 800vh;
   color: white; }
   .leftColumn h1 {
     padding: 0;
@@ -369,7 +369,7 @@ p {
   width: 75%;
   margin: 0;
   padding: 0,0,0,5%;
-  height: 200vh;
+  height: 800vh;
   float: left; }
 
 .rightSideWhole h1 {
@@ -390,7 +390,7 @@ p {
 .mobyTag {
   display: none; }
 
-.leftColumn .isSecondary h1 {
+.leftColumn .isThird h1 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 24px; }

@@ -1,5 +1,5 @@
 .mainpage {
-    height: 200vh;
+    height: 800vh;
     background-image: url("../images/Map_BG1.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -313,7 +313,7 @@ p {
     display: block;
     margin: 0 auto;
     float: left;
-    height: 200vh;
+    height: 800vh;
     // min-height: 100%;
     // min-height: fill-available;
     color: white;
@@ -476,7 +476,7 @@ p {
     width: 75%;
     margin: 0;
     padding: 0,0,0,5%;
-    height: 200vh;
+    height: 800vh;
     // min-height: fill-available;
     float: left;
 }
@@ -505,7 +505,7 @@ p {
     display: none;
 }
 
-.leftColumn .isSecondary h1 {
+.leftColumn .isThird h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 24px;
