@@ -411,6 +411,12 @@ p {
   .leftColumn .isSecondary h1 {
     display: none; }
 
+    .leftColumn h3 {
+      display: none; }
+
+    .leftColumn .isSecondary h3 {
+      display: none; }
+
   .leftColumn h5 {
     display: none; }
 
